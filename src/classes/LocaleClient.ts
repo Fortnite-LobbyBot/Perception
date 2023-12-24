@@ -4,7 +4,7 @@ export enum Locales {
 	De = 'de',
 	Fr = 'fr',
 	It = 'it',
-	Pt = 'pt'
+	Pt = 'pt',
 }
 
 export type LocalesString = `${Locales}`;
@@ -16,9 +16,11 @@ export class LocaleClient {
 
 	constructor({
 		locale,
-		localeModule
+		localeRoute,
+		localeModule,
 	}: {
 		locale?: LocalesString;
+		localeRoute: string;
 		localeModule: string;
 	}) {
 		this.defaultLocaleString = Locales.Default;
@@ -27,9 +29,13 @@ export class LocaleClient {
 		let requiredLocale;
 
 		try {
-			requiredLocale = require(`../locales/${locale}.json`);
+			requiredLocale = require(
+				`../locales/${localeRoute}/${locale}.json`,
+			);
 		} catch {
-			requiredLocale = require(`../locales/${this.defaultLocaleString}.json`);
+			requiredLocale = require(
+				`../locales/${localeRoute}/${this.defaultLocaleString}.json`,
+			);
 			this.localeString = this.defaultLocaleString;
 		}
 
