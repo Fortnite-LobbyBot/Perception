@@ -1,5 +1,5 @@
-import { writeFileSync, existsSync, readFileSync } from 'fs';
 import translator from 'google-translate-api-x';
+import { writeFileSync, existsSync, readFileSync } from 'fs';
 
 const settings = {
 	langPath: './src/locales/',
@@ -30,7 +30,7 @@ const translatorError = (text: string): void => {
 };
 
 const wait = (time: number) =>
-	new Promise((resolve) => setTimeout(resolve, time));
+	new Promise((res) => setTimeout(res, time));
 
 const main = async () => {
 	const rootLangCode = settings.rootLangCode;
