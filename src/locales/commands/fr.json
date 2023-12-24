@@ -1,0 +1,577 @@
+{
+  "command.handler": {
+    "errors.only_for_party_members": "Cette commande n'est disponible que pour les membres de mon parti.",
+    "errors.only_for_private_messages": "Cette commande n'est disponible que dans des messages privés.",
+    "errors.need_party_leader": "J'ai besoin d'être le chef de parti pour exécuter cette commande!",
+    "errors.only_for_owners": "Cette commande n'est disponible que pour les propriétaires de bots.",
+    "errors.only_for_admins": "Cette commande n'est disponible que pour les administrateurs de bot.",
+    "errors.only_for_whitelist": "Cette commande n'est disponible que pour les utilisateurs sur la liste blanche du bot."
+  },
+  "command.config.all_items": {
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "usage.filter.options.outfits": "Tenues",
+    "usage.filter.options.backpacks": "Sac à dos",
+    "usage.filter.options.emojis": "Emojis",
+    "usage.filter.options.emotes": "Émotes",
+    "usage.filter.options.pickaxes": "Pic",
+    "usage.filter.description": "Le filtre à définir en affichant les éléments."
+  },
+  "command.run.all_items": {
+    "msg.no_items": "Impossible de récupérer les articles.",
+    "msg.items_already_displaying": "Les cosmétiques sont déjà affichés, il doit d'abord être arrêté avec la commande \"stop\".",
+    "msg.setting_items": "Définir tous les éléments de jeu ... {filtered}",
+    "msg.filtered_by": "(filtré par {filter})",
+    "msg.items_showed": "J'ai fini de montrer tous les articles ..."
+  },
+  "command.config.backpack": {
+    "description": "Définit le sac à dos du bot.",
+    "usage.query.name": "Nom de sac à dos ou identifiant",
+    "usage.query.description": "Le nom ou l'ID du sac à dos à régler."
+  },
+  "command.run.backpack": {
+    "msg.backpack_not_found": "Sac à dos {item} introuvable!",
+    "msg.backpack_changed": "Définissez le sac à dos sur {name}! ({id})"
+  },
+  "command.config.backpack_variants": {
+    "description": "Définit les variantes du sac à dos."
+  },
+  "command.run.backpack_variants": {
+    "msg.backpack_not_found": "Le bot n'a pas de sac à dos!",
+    "msg.invalid_backpack": "Sac à dos non valide!",
+    "msg.variants_not_founded": "Ce sac à dos n'a pas de variantes!",
+    "msg.variants_select": "Envoyer la variante que vous souhaitez sélectionner pour {type}",
+    "msg.variants_changed": "Réglez les variantes de sac à dos!"
+  },
+  "command.config.banner": {
+    "description": "Définit la bannière du bot.",
+    "usage.query.name": "Nom de la bannière ou identifiant",
+    "usage.query.description": "Le nom ou l'identifiant de la bannière à définir."
+  },
+  "command.run.banner": {
+    "msg.banner_not_found": "Bannière {item} introuvable!",
+    "msg.banner_changed": "Définissez la bannière sur {name}! ({id})"
+  },
+  "command.config.clear_backpack": {
+    "description": "Supprime le sac à dos du bot."
+  },
+  "command.run.clear_backpack": {
+    "msg.backpack_cleared": "Sac à dos effacé!"
+  },
+  "command.config.clear_emote": {
+    "description": "Arrête la danse du bot."
+  },
+  "command.run.clear_emote": {
+    "msg.emote_cleared": "Emote effacé!"
+  },
+  "command.config.copy": {
+    "description": "Copiez les cosmétiques d'un utilisateur ou copiez les cosmétiques si vous ne spécifiez pas d'arguments.",
+    "usage.filter.options.all": "Toute",
+    "usage.filter.options.outfit": "Tenue",
+    "usage.filter.options.backpack": "Sac à dos",
+    "usage.filter.options.emoji": "Emoji",
+    "usage.filter.options.emote": "Émoter",
+    "usage.filter.options.pickaxe": "Pioche",
+    "usage.filter.description": "Le filtre à définir lors de la copie des cosmétiques.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre pour copier les cosmétiques."
+  },
+  "command.run.copy": {
+    "msg.members_found": "Trouvé plusieurs membres:",
+    "msg.member_not_found": "Membre {member} introuvable!",
+    "msg.member_not_at_party": "Vous n'êtes pas membre de mon parti.",
+    "msg.member_copied": "Copié {member}!"
+  },
+  "command.config.cosmetic": {
+    "description": "Définit le cosmétique du bot.",
+    "usage.query.name": "Nom ou pièce d'identité esthétique",
+    "usage.query.description": "Le nom ou l'identifiant du cosmétique à définir."
+  },
+  "command.run.cosmetic": {
+    "msg.cosmetic_not_found": "Cosmetic {query} introuvable!",
+    "msg.cosmetic_changed": "Définissez le {type} sur {name}! ({id})"
+  },
+  "command.config.emoji": {
+    "description": "Définit les emoji du bot.",
+    "usage.query.name": "Nom ou identifiant des emoji",
+    "usage.query.description": "Le nom ou l'identifiant de l'emoji à définir."
+  },
+  "command.run.emoji": {
+    "msg.emoji_not_found": "Emoji {query} n'est pas trouvé!",
+    "msg.emoji_changed": "Définissez les emoji sur {name}! ({id})"
+  },
+  "command.config.emote": {
+    "description": "Définit l'émote du bot.",
+    "usage.query.name": "Nom émote ou identifiant",
+    "usage.query.description": "Le nom ou l'identifiant de l'emote à définir."
+  },
+  "command.run.emote": {
+    "msg.emote_not_found": "EMOTE {query} INTORSST!",
+    "msg.emote_changed": "Définissez l'emote emoji sur {name}! ({id})"
+  },
+  "command.config.mimic": {
+    "description": "Fait la même chose qu'un utilisateur ou le même que vous ne spécifiez pas les arguments. Utilisez \"Stop\" pour arrêter la commande.",
+    "usage.filter.options.all": "Toute",
+    "usage.filter.options.changes": "Changements",
+    "usage.filter.options.outfits": "Tenues",
+    "usage.filter.options.backpacks": "Sac à dos",
+    "usage.filter.options.emojis": "Emojis",
+    "usage.filter.options.emotes": "Émotes",
+    "usage.filter.options.pickaxes": "Pic",
+    "usage.filter.description": "Le filtre à définir lors de l'imitation des cosmétiques.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre pour imiter les cosmétiques."
+  },
+  "command.run.mimic": {
+    "msg.members_found": "Trouvé plusieurs membres:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.member_not_at_party": "Vous n'êtes pas membre de mon parti.",
+    "msg.mimic_enabled": "Activé Mimic pour {member} {filter}!",
+    "msg.filter": "avec filtre {filter}"
+  },
+  "command.config.new_items": {
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "usage.filter.options.outfits": "Tenues",
+    "usage.filter.options.backpacks": "Sac à dos",
+    "usage.filter.options.emojis": "Emojis",
+    "usage.filter.options.emotes": "Émotes",
+    "usage.filter.options.pickaxes": "Pic",
+    "usage.filter.description": "Le filtre à définir en affichant les éléments."
+  },
+  "command.run.new_items": {
+    "msg.type_error": "Si vous voulez un filtre, assurez-vous que vous êtes valide, seulement des tenues, des sacs à dos, des emojis, des émotes ou des pickax",
+    "msg.cosmetic_fetch_error": "Impossible de récupérer des cosmétiques récemment ajoutés.",
+    "msg.already_showing": "Les cosmétiques sont déjà affichés, il doit d'abord être arrêté avec la commande \"stop\".",
+    "msg.showing_cosmetics": "Définition de tous les éléments récemment ajoutés ... {filter}",
+    "msg.filter": "(filtré par {filter})",
+    "msg.ended": "Fini de montrer tous les articles récemment ajoutés ..."
+  },
+  "command.config.outfit": {
+    "description": "Définit la tenue du bot.",
+    "usage.query.name": "Nom ou identifiant de tenue",
+    "usage.query.description": "Le nom ou l'identifiant de la tenue à définir."
+  },
+  "command.run.outfit": {
+    "msg.outfit_not_found": "Tenue {query} n'est pas trouvée!",
+    "msg.outfit_changed": "Définissez la tenue sur {name}! ({id})!"
+  },
+  "command.config.outfit_variants": {
+    "description": "Définit les variantes de la tenue."
+  },
+  "command.run.outfit_variants": {
+    "msg.outfit_not_found": "Le bot n'a pas de tenue!",
+    "msg.invalid_outfit": "Tenue invalide!",
+    "msg.variants_not_found": "Cette tenue n'a pas de variantes!",
+    "msg.variants_select": "Envoyer la variante que vous souhaitez sélectionner pour {type}",
+    "msg.changed": "Définissez les variantes de tenue!"
+  },
+  "command.config.perfect_timing": {
+    "description": "Définit les cosmétiques du bot synchronisés.",
+    "usage.query.name": "Nom ou pièce d'identité esthétique",
+    "usage.query.description": "Le nom ou l'identifiant du cosmétique à définir."
+  },
+  "command.run.perfect_timing": {
+    "msg.cosmetic_not_found": "Cosmetic {query} introuvable!",
+    "msg.perfect_timing_success": "Synchronisation pour effectuer un timing parfait ...",
+    "msg.perfect_timing_done": "Synchronisé la {value} à {name}! ({id})"
+  },
+  "command.config.pickaxe": {
+    "description": "Définit la pioche du bot.",
+    "usage.query.name": "Nom ou identifiant Pickaxe",
+    "usage.query.description": "Le nom ou l'identifiant de la pioche à définir."
+  },
+  "command.run.pickaxe": {
+    "msg.pickaxe_not_found": "Pickaxe {query} introuvable!",
+    "msg.pickaxe_changed": "Définissez la pickaxe sur {name}! ({id})"
+  },
+  "command.config.pickaxe_variants": {
+    "description": "Définit les variantes de Pickaxe."
+  },
+  "command.run.pickaxe_variants": {
+    "msg.pickaxe_not_found": "Le bot n'a pas de pioche!",
+    "msg.invalid_pickaxe": "Pickaxe non valide!",
+    "msg.variants_not_found": "Cette pioche n'a pas de variantes!",
+    "msg.variants_select": "Envoyer la variante que vous souhaitez sélectionner pour {type}",
+    "msg.changed": "Définissez les variantes Pickaxe!"
+  },
+  "command.config.shop_items": {
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "usage.filter.options.outfits": "Tenues",
+    "usage.filter.options.backpacks": "Sac à dos",
+    "usage.filter.options.emojis": "Emojis",
+    "usage.filter.options.emotes": "Émotes",
+    "usage.filter.options.pickaxes": "Pic",
+    "usage.filter.description": "Le filtre à définir en affichant les éléments."
+  },
+  "command.run.shop_items": {
+    "msg.invalid_type": "Si vous voulez un filtre, assurez-vous que vous êtes valide, seulement des tenues, des sacs à dos, des emojis, des émotes ou des pickax",
+    "msg.fetch_failed": "Impossible de récupérer les articles de la boutique.",
+    "msg.already_displaying": "Les cosmétiques sont déjà affichés, il doit d'abord être arrêté avec la commande \"stop\".",
+    "msg.showing_items": "Définir tous les articles de la boutique ... {filter}",
+    "msg.filter": "(filtré par {query})",
+    "msg.ended": "J'ai fini de montrer tous les articles du magasin ..."
+  },
+  "command.config.stop": {
+    "description": "Arrête les opérations en instance."
+  },
+  "command.run.stop": {
+    "msg.stopped_items": "Arrêté de montrer des articles!",
+    "msg.stopped_mimic": "Arrêté imiter!",
+    "msg.stopped_emote": "Emote arrêté!",
+    "msg.nothing_to_stop": "Rien à arrêter!"
+  },
+  "command.config.accept_friend": {
+    "description": "Accepter une demande d'ami.",
+    "usage.query.name": "Le nom ou l'identification de l'ami en attente",
+    "usage.query.description": "Le nom ou l'identifiant de l'ami en attente pour accepter."
+  },
+  "command.run.accept_friend": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friends_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.self_request": "La demande d'ami en instance est la mienne!",
+    "msg.error": "Ami en attente non accepté!",
+    "msg.request_accepted": "L'ami en attente $ {name} a accepté avec succès!"
+  },
+  "command.config.add_friend": {
+    "description": "Envoyez une demande d'ami à un utilisateur ou acceptez une demande d'ami.",
+    "usage.query.name": "Nom d'utilisateur ou identifiant",
+    "usage.query.description": "Le nom ou l'ID de l'utilisateur à ajouter."
+  },
+  "command.run.add_friend": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friends_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.already_friends": "Déjà un ami!",
+    "msg.error": "Impossible d'ajouter l'utilisateur!",
+    "msg.request_sent": "Demande d'amie envoyée à {name}"
+  },
+  "command.config.decline_friend": {
+    "description": "Rejeter ou abandonner une demande d'ami.",
+    "usage.query.name": "Le nom ou l'identification de l'ami en attente",
+    "usage.query.description": "Le nom ou l'identifiant de l'ami en attendant de rejeter ou d'abandonner."
+  },
+  "command.run.decline_friend": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friends_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.error": "Ami en attente non supprimé!",
+    "msg.request_sent": "Friend en attente {name} a supprimé avec succès!"
+  },
+  "command.config.friend_count": {
+    "description": "Montre le nombre d'amis du bot."
+  },
+  "command.run.friend_count": {
+    "msg.info": "J'ai {friends} amis, {pending} en attente ({incoming} entrant, {outgoing} sortant) et {blocked} bloqué!"
+  },
+  "command.config.invite": {
+    "description": "Invite un ami ou vous à la fête.",
+    "usage.query.name": "Nom ou ID d'un ami",
+    "usage.query.description": "Le nom ou l'identité de l'ami à inviter."
+  },
+  "command.run.invite": {
+    "msg.alone": "Lors d'une partie avec moi, l'utilisateur à inviter est requis.",
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friends_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.already_on_party": "{name} est déjà dans ma fête!",
+    "msg.invite_error": "Impossible d'envoyer l'invitation à {name}!",
+    "msg.invite_sent": "Invitation envoyée à {name}!"
+  },
+  "command.config.join": {
+    "description": "Rejoint votre groupe ou la fête de l'utilisateur.",
+    "usage.query.name": "Nom ou ID d'un ami",
+    "usage.query.description": "Le nom ou l'identifiant de l'ami à rejoindre."
+  },
+  "command.run.join": {
+    "msg.invalid_param": "Vous devez être mon ami ou spécifier un ami!",
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friend_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.already_on_party": "Ami déjà dans ma fête!",
+    "msg.party_error": "{name} n'a pas de fête!",
+    "msg.join_request_error": "Impossible d'envoyer la demande de jointure à {name}!",
+    "msg.joined": "Joint à {name}!",
+    "msg.join_request_sent": "Recherchez la demande envoyée à {name}!"
+  },
+  "command.config.promote": {
+    "description": "Promose un membre ou vous fait le leader si vous ne spécifiez pas d'arguments.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant de la partie à monter."
+  },
+  "command.run.promote": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.member_not_at_party": "Vous n'êtes pas membre de mon parti.",
+    "msg.member_promoted": "Promu {name}!"
+  },
+  "command.config.remove_all_friends": {
+    "description": "Supprime tous les amis du bot."
+  },
+  "command.run.remove_all_friends": {
+    "msg.unauthorized": "Cette commande ne peut être exécutée que par les propriétaires de bots!",
+    "msg.removing_friends": "Retirer tous les amis!",
+    "msg.remove_friends": "Remoute {count} amis!"
+  },
+  "command.config.remove_friend": {
+    "description": "Supprime l'ami d'un bot.",
+    "usage.query.name": "Nom ou ID d'un ami",
+    "usage.query.description": "Le nom ou l'identifiant de l'ami à supprimer."
+  },
+  "command.run.remove_friend": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friend_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.error": "Impossible de supprimer {name}!",
+    "msg.friend_removed": "Ami {name} a supprimé avec succès!"
+  },
+  "command.run.eval": {
+    "msg.unauthorized_error": "Seuls TNFAngel ont accès à cette commande."
+  },
+  "command.config.help": {
+    "description": "Affiche le panneau d'aide et de commande.",
+    "usage.query.name": "Nom ou identifiant de la commande",
+    "usage.query.description": "Le nom ou l'ID de la commande pour obtenir une aide détaillée."
+  },
+  "command.config.message": {
+    "description": "Envoie un message à la fête.",
+    "usage.message.name": "Message",
+    "usage.message.description": "Le message à envoyer à la fête."
+  },
+  "command.run.message": {
+    "msg.success": "A envoyé un message à la fête"
+  },
+  "command.config.ping": {
+    "description": "Montre la latence du bot."
+  },
+  "command.run.ping": {
+    "msg.measuring": "Mesure...",
+    "msg.info": "Pong! {time} ms"
+  },
+  "command.config.prev": {
+    "description": "Exécute la commande précédente."
+  },
+  "command.run.prev": {
+    "msg.not_found": "Une commande précédente n'a pas été exécutée!"
+  },
+  "command.config.send": {
+    "description": "Envoie une commande à un bot spécifié.",
+    "usage.bot.name": "Id bot",
+    "usage.bot.description": "L'ID Bot pour envoyer la commande.",
+    "usage.command.name": "Commande",
+    "usage.command.description": "La commande à exécuter dans le bot.",
+    "usage.args.name": "Arguments",
+    "usage.args.description": "Les arguments de la commande sont requis."
+  },
+  "command.run.send": {
+    "msg.sending_command": "Commande d'envoi à bot {user}"
+  },
+  "command.config.send_all": {
+    "description": "Envoie une commande à tous les bots.",
+    "usage.command.name": "Commande",
+    "usage.command.description": "La commande à exécuter dans les bots.",
+    "usage.args.name": "Arguments",
+    "usage.args.description": "Les arguments de la commande sont requis."
+  },
+  "command.run.send_all": {
+    "msg.sending_command": "Envoi de la commande à tous les bots ..."
+  },
+  "command.config.send_number": {
+    "description": "Envoie une commande à un nombre de bots spécifier.",
+    "usage.number.name": "Nombre de robots",
+    "usage.number.description": "Le nombre de bots pour envoyer la commande.",
+    "usage.command.name": "Commande",
+    "usage.command.description": "La commande à exécuter dans les bots.",
+    "usage.args.name": "Arguments",
+    "usage.args.description": "Les arguments de la commande sont requis."
+  },
+  "command.run.send_number": {
+    "msg.count_negative": "Le nombre doit être supérieur à 0!",
+    "msg.sending_command": "Commande d'envoi à {number} bots ..."
+  },
+  "command.config.send_party": {
+    "description": "Envoie une commande à tous les robots qui partagent la même partie.",
+    "usage.command.name": "Commande",
+    "usage.command.description": "La commande à exécuter dans les bots.",
+    "usage.args.name": "Arguments",
+    "usage.args.description": "Les arguments de la commande sont requis."
+  },
+  "command.run.send_party": {
+    "msg.sending_command": "Envoi de la commande à tous les robots de ma fête ..."
+  },
+  "command.config.send_shard": {
+    "description": "Envoie une commande à l'éclat de bot.",
+    "usage.command.name": "Commande",
+    "usage.command.description": "La commande à exécuter dans les bots.",
+    "usage.args.name": "Arguments",
+    "usage.args.description": "Les arguments de la commande sont requis."
+  },
+  "command.run.send_shard": {
+    "msg.sending_command": "Envoi de la commande à tous les robots de mon éclat ..."
+  },
+  "command.config.whisper": {
+    "description": "Envoie un message privé à un ami.",
+    "usage.query.name": "Nom ou ID d'un ami",
+    "usage.query.description": "Le nom ou l'identifiant de l'ami pour envoyer le message privé.",
+    "usage.message.name": "Message",
+    "usage.message.description": "Le message à envoyer à l'ami."
+  },
+  "command.run.whisper": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.friend_not_found": "Ami {query} n'est pas trouvé!",
+    "msg.whisper_sent": "Envoyé à {name}!"
+  },
+  "command.config.bp_level": {
+    "description": "Définit le niveau de passe de bataille du bot.",
+    "usage.level.name": "Niveau",
+    "usage.level.description": "Le niveau du pass de bataille à régler."
+  },
+  "command.run.bp_level": {
+    "msg.bp_level_set": "Réglez le niveau de passe de bataille à {level}!"
+  },
+  "command.config.chat_ban": {
+    "description": "Le chat interdit un membre du parti.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre du parti à l'interdiction."
+  },
+  "command.run.chat_ban": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.success": "CHAT-BANNÉ CHATS {name}"
+  },
+  "command.config.crowns": {
+    "description": "Définit les couronnes de bot.",
+    "usage.crowns.name": "Couronnes",
+    "usage.crowns.description": "Les couronnes à définir."
+  },
+  "command.run.crowns": {
+    "msg.success": "Réglez les couronnes sur {crowns}!"
+  },
+  "command.config.hide": {
+    "description": "Cache un joueur de la fête ou vous cache si vous ne spécifiez pas d'arguments.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre du parti à se cacher."
+  },
+  "command.run.hide": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.member_not_at_party": "Vous n'êtes pas membre de mon parti.",
+    "msg.success": "Hidden {name}!"
+  },
+  "command.config.hide_all": {
+    "description": "Cache tous les joueurs du parti."
+  },
+  "command.run.hide_all": {
+    "msg.success": "Caché tous les membres!"
+  },
+  "command.config.kick": {
+    "description": "Kick est un joueur de la fête.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre du parti à expulser."
+  },
+  "command.run.kick": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.success": "Botté {name}!"
+  },
+  "command.config.kick_all": {
+    "description": "Donne un coup de pied à tous les joueurs de la fête."
+  },
+  "command.run.kick_all": {
+    "msg.user_kicked": "Botté {name}!",
+    "msg.success": "A fini de donner des coups de pied à tous les membres!"
+  },
+  "command.config.leave": {
+    "description": "Le bot quitte la fête."
+  },
+  "command.run.leave": {
+    "msg.success": "Au revoir!."
+  },
+  "command.config.level": {
+    "description": "Définit le niveau de bot.",
+    "usage.level.name": "Niveau",
+    "usage.level.description": "Le niveau à définir."
+  },
+  "command.run.level": {
+    "msg.success": "Définir le niveau sur {level}!"
+  },
+  "command.config.match": {
+    "description": "Définit l'état de jouer à un jeu.",
+    "usage.number.name": "Nombre de joueurs",
+    "usage.number.description": "Le nombre de joueurs dans le jeu."
+  },
+  "command.run.match": {
+    "msg.success": "Pour jouer à l'état!"
+  },
+  "command.config.party_info": {
+    "description": "Montre des informations sur la fête."
+  },
+  "command.config.playlist": {
+    "description": "Définit la playlist de la fête.",
+    "usage.query.name": "Nom ou identifiant de la playlist",
+    "usage.query.description": "Le nom ou l'ID de la playlist à définir."
+  },
+  "command.run.playlist": {
+    "msg.error": "Playlist de réglage d'erreur!",
+    "msg.success": "Définissez la playlist sur {query}!"
+  },
+  "command.config.privacy": {
+    "description": "Définit l'intimité du parti.",
+    "usage.privacy.options.public": "Publique",
+    "usage.privacy.options.private": "Privée",
+    "usage.privacy.description": "La confidentialité du parti à définir."
+  },
+  "command.run.privacy": {
+    "msg.success": "Définissez la confidentialité des parties sur {privacy}!",
+    "msg.error": "Intimité invalide, doit être publique ou privée!"
+  },
+  "command.config.rank": {
+    "description": "Définit le rang de bot.",
+    "usage.rank.name": "Rang",
+    "usage.rank.description": "Le rang à régler."
+  },
+  "command.run.rank": {
+    "msg.success": "Définissez le rang sur {rank}!"
+  },
+  "command.config.ready": {
+    "description": "Définit l'état pour être prêt."
+  },
+  "command.run.ready": {
+    "msg.warning": "AVERTISSEMENT: Si vous essayez de faire du matchmaking, n'utilisez pas cette commande! Appuyez simplement sur vous-même et je vais frapper automatiquement.",
+    "msg.success": "Prêt!"
+  },
+  "command.config.show": {
+    "description": "Affiche un lecteur caché de la fête ou vous montre si vous ne spécifiez pas d'arguments.",
+    "usage.query.name": "Nom ou identifiant du membre",
+    "usage.query.description": "Le nom ou l'identifiant du membre du parti à montrer."
+  },
+  "command.run.show": {
+    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
+    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
+    "msg.member_not_at_party": "Vous n'êtes pas membre de mon parti.",
+    "msg.success": "Montré {name}!"
+  },
+  "command.config.show_all": {
+    "description": "Montre tous les joueurs cachés de la fête."
+  },
+  "command.run.show_all": {
+    "msg.success": "Montré à tous les membres!"
+  },
+  "command.config.sit_in": {
+    "description": "Définit l'État pour participer."
+  },
+  "command.run.sit_in": {
+    "msg.success": "S'asseoir dans..."
+  },
+  "command.config.sit_out": {
+    "description": "Définit l'État pour ne pas participer."
+  },
+  "command.run.sit_out": {
+    "msg.success": "Assis ..."
+  },
+  "command.config.unmatch": {
+    "description": "Définit l'état de ne pas jouer à un jeu."
+  },
+  "command.run.unmatch": {
+    "msg.success": "Éliminé l'état de jeu!"
+  },
+  "command.config.unready": {
+    "description": "Définit l'état pour ne pas être prêt."
+  },
+  "command.run.unready": {
+    "msg.success": "Pas prêt!"
+  }
+}

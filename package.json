@@ -1,0 +1,33 @@
+{
+    "name": "perception",
+    "version": "1.0.1",
+    "description": "FNLB Translation Service",
+    "scripts": {
+        "build": "tsc --build --clean && tsc",
+        "translate": "node dist/translator",
+        "lint": "eslint src/**/*.{ts,js}",
+        "pretty": "pnpm prettier --write .",
+        "prebuild": "cpy ./src/locales/* ./dist/locales/ --flat"
+    },
+    "keywords": [],
+    "author": "tnfAngel",
+    "license": "ISC",
+    "dependencies": {
+        "google-translate-api-x": "^10.6.7",
+        "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "ts-node": "^10.9.2",
+        "tslib": "^2.6.2",
+        "typescript": "^5.3.3",
+        "@types/fuzzy-search": "^2.1.5",
+        "@types/node": "^20.10.5",
+        "@types/ontime": "^0.0.3",
+        "@types/ws": "^8.5.10",
+        "@typescript-eslint/eslint-plugin": "^6.15.0",
+        "@typescript-eslint/parser": "^6.15.0",
+        "eslint": "^8.56.0",
+        "prettier": "^3.1.1"
+    }
+}

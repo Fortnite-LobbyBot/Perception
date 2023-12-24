@@ -1,0 +1,8 @@
+node_modules
+items.json
+dist
+*.env
+.env
+*.log
+logs.log
+.env*
