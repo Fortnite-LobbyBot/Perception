@@ -2,13 +2,19 @@
     "name": "perception",
     "version": "1.0.1",
     "description": "FNLB Translation Service",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc --build --clean && tsc",
         "translate": "node dist/translator",
         "lint": "eslint src/**/*.{ts,js}",
         "pretty": "pnpm prettier --write .",
-        "prebuild": "cpy ./src/locales/* ./dist/locales/ --flat"
+        "prebuild": "cpy ./src/locales/* ./dist/locales/ --flat",
+        "prepare": "npm run build"
     },
+    "files": [
+        "dist/**/*"
+    ],
     "keywords": [],
     "author": "tnfAngel",
     "license": "ISC",
