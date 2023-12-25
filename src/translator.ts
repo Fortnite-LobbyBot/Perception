@@ -180,11 +180,11 @@ const translateString = async (
 			? result[0].text
 			: result.text.toString();
 
-		const originalVars = text.match(/{(.*?)}/gi);
+		const originalVars = text.match(/[{(.*?)}|"(.*?)"]/gi);
 
 		let i = 0;
 
-		translation = translation.replace(/{(.*?)}/gi, () => {
+		translation = translation.replace(/[{(.*?)}|"(.*?)"]/gi, () => {
 			const result = originalVars?.[i] ?? '';
 			i++;
 			return result;

@@ -1,6 +1,6 @@
 {
     "name": "perception",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "FNLB Translation Service",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
         "build": "tsc --build --clean && tsc",
         "translate": "node dist/translator",
         "lint": "eslint src/**/*.{ts,js}",
-        "pretty": "pnpm prettier --write .",
+        "pretty": "npm prettier --write .",
         "prebuild": "cpy ./src/locales/* ./dist/locales/ --flat",
         "prepare": "npm run build"
     },
