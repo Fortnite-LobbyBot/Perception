@@ -19,8 +19,8 @@
   "command.run.all_items": {
     "msg.no_items": "No se pueden recuperar los items.",
     "msg.items_already_displaying": "Los cosméticos ya se están mostrando, primero hay que detenerlos con el comando \"stop\".",
-    "msg.setting_items": "Mostrando todos los elementos del juego... {filtrado}",
-    "msg.filtered_by": "(Filtrado por {filtro})",
+    "msg.setting_items": "Mostrando todos los elementos del juego... {filtered}",
+    "msg.filtered_by": "(Filtrado por {filter})",
     "msg.items_showed": "He terminado de mostrar todos los items."
   },
   "command.config.backpack": {
@@ -141,8 +141,8 @@
     "msg.type_error": "Si quieres un filtro, asegúrate de que sea válido, solo trajes, mochilas, emojis, emotes o picos.",
     "msg.cosmetic_fetch_error": "No se pueden recuperar los cosméticos agregados recientemente.",
     "msg.already_showing": "Los cosméticos ya se están mostrando, primero hay que detenerlos con el comando \"stop\".",
-    "msg.showing_cosmetics": "Configurando todos los elementos agregados recientemente... {filtro}",
-    "msg.filter": "(filtrado por {filtro})",
+    "msg.showing_cosmetics": "Configurando todos los elementos agregados recientemente... {filter}",
+    "msg.filter": "(filtrado por {filter})",
     "msg.ended": "Se terminó de mostrar todos los elementos agregados recientemente."
   },
   "command.config.outfit": {
@@ -206,7 +206,7 @@
     "msg.invalid_type": "Si quieres un filtro, asegúrate de que sea válido, solo trajes, mochilas, emojis, bailes o picos.",
     "msg.fetch_failed": "No se pueden recuperar los artículos de la tienda.",
     "msg.already_displaying": "Los cosméticos ya se están mostrando, primero hay que detenerlos con el comando \"stop\".",
-    "msg.showing_items": "Configurando todos los artículos de la tienda... {filtro}",
+    "msg.showing_items": "Configurando todos los artículos de la tienda... {filter}",
     "msg.filter": "(filtrado por {query})",
     "msg.ended": "He terminado de mostrar todos los artículos de la tienda..."
   },
@@ -258,7 +258,7 @@
     "description": "Muestra el número de amigos del bot."
   },
   "command.run.friend_count": {
-    "msg.info": "Tengo {friends} amigos, {pendientes} pendientes ({incoming} entrantes, {outgoing} salientes) y {blocked} bloqueados!"
+    "msg.info": "Tengo {friends} amigos, {pending} pendientes ({incoming} entrantes, {outgoing} salientes) y {blocked} bloqueados!"
   },
   "command.config.invite": {
     "description": "Te invita a un amigo o a ti a la fiesta.",
@@ -357,7 +357,7 @@
     "usage.args.description": "Los argumentos del comando son obligatorios."
   },
   "command.run.send": {
-    "msg.sending_command": "Enviando comando al bot {usuario}"
+    "msg.sending_command": "Enviando comando al bot {user}"
   },
   "command.config.send_all": {
     "description": "Envía un comando a todos los bots.",
@@ -380,7 +380,7 @@
   },
   "command.run.send_number": {
     "msg.count_negative": "¡El número debe ser mayor que 0!",
-    "msg.sending_command": "Enviando comando a {número} bots..."
+    "msg.sending_command": "Enviando comando a {number} bots..."
   },
   "command.config.send_party": {
     "description": "Envía un comando a todos los bots que comparten el mismo grupo.",
@@ -438,7 +438,7 @@
     "usage.crowns.description": "Las coronas a establecer."
   },
   "command.run.crowns": {
-    "msg.success": "¡Coronas establecidas a {coronas}!"
+    "msg.success": "¡Coronas establecidas a {crowns}!"
   },
   "command.config.hide": {
     "description": "Oculta a un jugador del grupo o te oculta a ti si no especificas argumentos.",
@@ -486,7 +486,7 @@
     "usage.level.description": "El nivel a fijar."
   },
   "command.run.level": {
-    "msg.success": "¡Nivel establecido a {nivel}!"
+    "msg.success": "¡Nivel establecido a {level}!"
   },
   "command.config.match": {
     "description": "Establece el estado para jugar un juego.",
@@ -515,7 +515,7 @@
     "usage.privacy.description": "La privacidad de la sala a establecer."
   },
   "command.run.privacy": {
-    "msg.success": "¡Privacidad de la sala establecida como {privacidad}!",
+    "msg.success": "¡Privacidad de la sala establecida como {privacy}!",
     "msg.error": "Privacidad no válida, ¡debe ser pública o privada!"
   },
   "command.config.rank": {

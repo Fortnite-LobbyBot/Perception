@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Este comando está disponível apenas para usuários na lista de permissões do bot."
   },
   "command.config.all_items": {
-    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"Stop\".",
+    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -18,7 +18,7 @@
   },
   "command.run.all_items": {
     "msg.no_items": "Incapaz de buscar os itens.",
-    "msg.items_already_displaying": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"Stop\".",
+    "msg.items_already_displaying": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"stop\".",
     "msg.setting_items": "Definindo todos os itens do jogo ... {filtered}",
     "msg.filtered_by": "(filtrado por {filter})",
     "msg.items_showed": "Eu terminei de mostrar todos os itens ..."
@@ -109,7 +109,7 @@
     "msg.emote_changed": "Defina o emote emoji como {name}! ({id})"
   },
   "command.config.mimic": {
-    "description": "Faz o mesmo que um usuário ou o mesmo que você, se não especificar argumentos. Use \"Stop\" para parar o comando.",
+    "description": "Faz o mesmo que um usuário ou o mesmo que você, se não especificar argumentos. Use \"stop\" para parar o comando.",
     "usage.filter.options.all": "Todos",
     "usage.filter.options.changes": "Mudanças",
     "usage.filter.options.outfits": "Roupas",
@@ -129,7 +129,7 @@
     "msg.filter": "com filtro {filter}"
   },
   "command.config.new_items": {
-    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"Stop\".",
+    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -140,7 +140,7 @@
   "command.run.new_items": {
     "msg.type_error": "Se você deseja um filtro, verifique se é válido, apenas roupas, mochilas, emojis, emotas ou picaretas",
     "msg.cosmetic_fetch_error": "Não é possível buscar cosméticos recentemente adicionados.",
-    "msg.already_showing": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"Stop\".",
+    "msg.already_showing": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"stop\".",
     "msg.showing_cosmetics": "Definindo todos os itens adicionados recentemente ... {filter}",
     "msg.filter": "(filtrado por {filter})",
     "msg.ended": "Terminei de mostrar todos os itens adicionados recentemente ..."
@@ -194,7 +194,7 @@
     "msg.changed": "Defina as variantes da picareta!"
   },
   "command.config.shop_items": {
-    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"Stop\".",
+    "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -205,7 +205,7 @@
   "command.run.shop_items": {
     "msg.invalid_type": "Se você deseja um filtro, verifique se é válido, apenas roupas, mochilas, emojis, emotas ou picaretas",
     "msg.fetch_failed": "Incapaz de buscar os itens da loja.",
-    "msg.already_displaying": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"Stop\".",
+    "msg.already_displaying": "Os cosméticos já estão sendo exibidos, ele deve primeiro ser interrompido com o comando \"stop\".",
     "msg.showing_items": "Definindo todos os itens da loja ... {filter}",
     "msg.filter": "(filtrado por {query})",
     "msg.ended": "Eu terminei de mostrar todos os itens da loja ..."

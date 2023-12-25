@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Dieser Befehl ist nur für Benutzer der Whitelist des Bots verfügbar."
   },
   "command.config.all_items": {
-    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"Stop\" anhalten.",
+    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -18,7 +18,7 @@
   },
   "command.run.all_items": {
     "msg.no_items": "Die Gegenstände nicht abrufen.",
-    "msg.items_already_displaying": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"Stop\" gestoppt werden.",
+    "msg.items_already_displaying": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"stop\" gestoppt werden.",
     "msg.setting_items": "Setzen Sie alle Spielelemente ... {filtered}",
     "msg.filtered_by": "(filtriert von {filter})",
     "msg.items_showed": "Ich habe fertig mit allen Artikeln ..."
@@ -109,7 +109,7 @@
     "msg.emote_changed": "Setzen Sie das Emote Emoji auf {name}! ({id})"
   },
   "command.config.mimic": {
-    "description": "Tut dasselbe wie ein Benutzer oder das gleiche wie Sie, wenn nicht Argumente angeben. Verwenden Sie \"Stop\", um den Befehl zu stoppen.",
+    "description": "Tut dasselbe wie ein Benutzer oder das gleiche wie Sie, wenn nicht Argumente angeben. Verwenden Sie \"stop\", um den Befehl zu stoppen.",
     "usage.filter.options.all": "Alle",
     "usage.filter.options.changes": "Änderungen",
     "usage.filter.options.outfits": "Outfits",
@@ -129,7 +129,7 @@
     "msg.filter": "mit filter {filter}"
   },
   "command.config.new_items": {
-    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"Stop\" anhalten.",
+    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -140,7 +140,7 @@
   "command.run.new_items": {
     "msg.type_error": "Wenn Sie einen Filter wünschen, stellen Sie sicher, dass es gültig ist, nur Outfits, Rucksäcke, Emojis, Emotes oder Spitzhörer",
     "msg.cosmetic_fetch_error": "Kürzlich nicht abzurufen Kosmetika.",
-    "msg.already_showing": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"Stop\" gestoppt werden.",
+    "msg.already_showing": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"stop\" gestoppt werden.",
     "msg.showing_cosmetics": "Setzen Sie alle kürzlich hinzugefügten Elemente ein ... {filter}",
     "msg.filter": "(filtriert von {filter})",
     "msg.ended": "Fertiggestellt alle kürzlich hinzugefügten Artikel ..."
@@ -194,7 +194,7 @@
     "msg.changed": "Setzen Sie die Spickaxe -Varianten!"
   },
   "command.config.shop_items": {
-    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"Stop\" anhalten.",
+    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -205,7 +205,7 @@
   "command.run.shop_items": {
     "msg.invalid_type": "Wenn Sie einen Filter wünschen, stellen Sie sicher, dass es gültig ist, nur Outfits, Rucksäcke, Emojis, Emotes oder Spitzhörer",
     "msg.fetch_failed": "Die Ladenartikel können nicht abrufen.",
-    "msg.already_displaying": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"Stop\" gestoppt werden.",
+    "msg.already_displaying": "Kosmetika werden bereits angezeigt, es muss zuerst mit dem Befehl \"stop\" gestoppt werden.",
     "msg.showing_items": "Stellen Sie alle Artikel im Shop ein ... {filter}",
     "msg.filter": "(gefiltert von {query})",
     "msg.ended": "Ich habe fertig mit allen Artikeln im Laden gezeigt ..."
