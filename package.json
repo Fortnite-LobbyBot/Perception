@@ -1,5 +1,5 @@
 {
-    "name": "perception",
+    "name": "@fnlb/locales",
     "version": "1.0.2",
     "description": "FNLB Translation Service",
     "main": "dist/index.js",
