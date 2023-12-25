@@ -22,7 +22,8 @@
         "strictPropertyInitialization": true,
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "src/**/*.json",
     ],
     "exclude": [
         "node_modules/**/*"
