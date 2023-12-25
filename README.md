@@ -1,3 +1,3 @@
 # Perception
 
-FNLB Locales & Translation Service
+FNLB Locales & Translation Module
