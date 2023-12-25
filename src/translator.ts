@@ -2,8 +2,8 @@ import translator from 'google-translate-api-x';
 import { writeFileSync, existsSync, readFileSync } from 'fs';
 
 const settings = {
-	langPath: './src/locales/',
-	rootLangFile: './src/locales/en.json',
+	langPaths: ['./src/locales/commands/'],
+	rootLangFiles: ['./src/locales/commands/en.json'],
 	rootLangCode: 'en',
 	outputLangs: ['es', 'fr', 'de', 'pt', 'it', 'tr', 'pl'],
 	translateDelay: 100,
@@ -29,107 +29,114 @@ const translatorError = (text: string): void => {
 	throw new Error(`[ Translator ] ${text}`);
 };
 
-const wait = (time: number) =>
-	new Promise((res) => setTimeout(res, time));
+const wait = (time: number) => new Promise((res) => setTimeout(res, time));
 
 const main = async () => {
-	const rootLangCode = settings.rootLangCode;
+	let i = 0;
 
-	debug(
-		`[ ${colors.blue(
-			'main',
-		)} ] Starting root translation service (${colors.green(rootLangCode)})`,
-	);
+	for (const langPath of settings.langPaths) {
+		const rootLangCode = settings.rootLangCode;
 
-	const rootFilePath = settings.rootLangFile;
-
-	if (!existsSync(rootFilePath))
-		return translatorError(
-			'[ main ] Invalid path provided on rootLangFile.',
-		);
-
-	debug(
-		`[ ${colors.blue('main')} ] Opening root file: ${colors.green(
-			rootFilePath,
-		)}`,
-	);
-
-	const rootFileContent = readFileSync(rootFilePath, 'utf8');
-
-	let rootFileObject = null;
-
-	try {
-		rootFileObject = JSON.parse(rootFileContent);
-	} catch {
-		return translatorError(
-			`[ main ] The content in the root file ${rootFilePath} is not a valid JSON object.`,
-		);
-	}
-
-	if (!rootFileObject)
-		return translatorError('[ main ] Invalid root file object.');
-
-	for (const langCode of settings.outputLangs) {
 		debug(
-			`[ ${colors.blue(rootLangCode)} => ${colors.blue(
-				langCode,
-			)} ] Starting translation service (${colors.green(langCode)})`,
+			`[ ${colors.blue(
+				'main',
+			)} ] Starting root translation service (${colors.green(
+				rootLangCode,
+			)})`,
 		);
 
-		const filePath = `${settings.langPath}${langCode}.json`;
+		const rootFilePath = settings.rootLangFiles[i];
 
-		if (!existsSync(filePath)) {
+		if (!existsSync(rootFilePath))
+			return translatorError(
+				'[ main ] Invalid path provided on rootLangFile.',
+			);
+
+		debug(
+			`[ ${colors.blue('main')} ] Opening root file: ${colors.green(
+				rootFilePath,
+			)}`,
+		);
+
+		const rootFileContent = readFileSync(rootFilePath, 'utf8');
+
+		let rootFileObject = null;
+
+		try {
+			rootFileObject = JSON.parse(rootFileContent);
+		} catch {
+			return translatorError(
+				`[ main ] The content in the root file ${rootFilePath} is not a valid JSON object.`,
+			);
+		}
+
+		if (!rootFileObject)
+			return translatorError('[ main ] Invalid root file object.');
+
+		for (const langCode of settings.outputLangs) {
 			debug(
 				`[ ${colors.blue(rootLangCode)} => ${colors.blue(
 					langCode,
-				)} ] Creating file: ${colors.green(filePath)}`,
+				)} ] Starting translation service (${colors.green(langCode)})`,
 			);
 
-			writeFileSync(filePath, '{}');
+			const filePath = `${langPath}${langCode}.json`;
+
+			if (!existsSync(filePath)) {
+				debug(
+					`[ ${colors.blue(rootLangCode)} => ${colors.blue(
+						langCode,
+					)} ] Creating file: ${colors.green(filePath)}`,
+				);
+
+				writeFileSync(filePath, '{}');
+			}
+
+			debug(
+				`[ ${colors.blue(rootLangCode)} => ${colors.blue(
+					langCode,
+				)} ] Opening file: ${colors.green(filePath)}`,
+			);
+
+			const fileContent = readFileSync(filePath, 'utf8');
+
+			let fileObject = null;
+
+			try {
+				fileObject = JSON.parse(fileContent);
+			} catch {
+				return translatorError(
+					`[ ${rootLangCode} => ${langCode} ] The content in the file ${filePath} is not a valid JSON object.`,
+				);
+			}
+
+			if (!fileObject)
+				return translatorError(
+					`[ ${rootLangCode} => ${langCode} ] Invalid file object.`,
+				);
+
+			const rootFileObjPath = {};
+
+			deepMap(fileObject, ['root'], rootFileObjPath);
+
+			const result = await translate(
+				rootFileObject,
+				rootLangCode,
+				langCode,
+				['root'],
+				rootFileObjPath,
+			);
+
+			debug(
+				`[ ${colors.blue(rootLangCode)} => ${colors.blue(
+					langCode,
+				)} ] Translation ended for ${colors.green(langCode)}`,
+			);
+
+			writeFileSync(filePath, JSON.stringify(result, null, 2));
 		}
 
-		debug(
-			`[ ${colors.blue(rootLangCode)} => ${colors.blue(
-				langCode,
-			)} ] Opening file: ${colors.green(filePath)}`,
-		);
-
-		const fileContent = readFileSync(filePath, 'utf8');
-
-		let fileObject = null;
-
-		try {
-			fileObject = JSON.parse(fileContent);
-		} catch {
-			return translatorError(
-				`[ ${rootLangCode} => ${langCode} ] The content in the file ${filePath} is not a valid JSON object.`,
-			);
-		}
-
-		if (!fileObject)
-			return translatorError(
-				`[ ${rootLangCode} => ${langCode} ] Invalid file object.`,
-			);
-
-		const rootFileObjPath = {};
-
-		deepMap(fileObject, ['root'], rootFileObjPath);
-
-		const result = await translate(
-			rootFileObject,
-			rootLangCode,
-			langCode,
-			['root'],
-			rootFileObjPath,
-		);
-
-		debug(
-			`[ ${colors.blue(rootLangCode)} => ${colors.blue(
-				langCode,
-			)} ] Translation ended for ${colors.green(langCode)}`,
-		);
-
-		writeFileSync(filePath, JSON.stringify(result, null, 2));
+		i++;
 	}
 };
 

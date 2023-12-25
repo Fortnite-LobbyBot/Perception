@@ -6,7 +6,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "tsc --build --clean && tsc",
-        "translate": "node dist/translator",
+        "translate": "npm run build && node dist/translator",
         "lint": "eslint src/**/*.{ts,js}",
         "pretty": "npm prettier --write .",
         "prepare": "npm run build"
