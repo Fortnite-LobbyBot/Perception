@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Bu komut yalnızca botun beyaz listesindeki kullanıcılar için kullanılabilir."
   },
   "command.config.all_items": {
-    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"Stop\" komutuyla durabilirsiniz.",
+    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -18,7 +18,7 @@
   },
   "command.run.all_items": {
     "msg.no_items": "Öğeleri alamıyor.",
-    "msg.items_already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"Dur\" komutuyla durdurulmalıdır.",
+    "msg.items_already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
     "msg.setting_items": "Tüm oyun öğelerini ayarlama ... {filtered}",
     "msg.filtered_by": "({filter} tarafından filtrelenmiş)",
     "msg.items_showed": "Tüm öğeleri göstermeyi bitirdim ..."
@@ -109,7 +109,7 @@
     "msg.emote_changed": "Emote emojisini {name} olarak ayarlayın! ({id})"
   },
   "command.config.mimic": {
-    "description": "Bir kullanıcı ile aynı veya bağımsız değişkenler belirtmezseniz sizinle aynı yapar. Komutu durdurmak için \"Dur\" kullanın.",
+    "description": "Bir kullanıcı ile aynı veya bağımsız değişkenler belirtmezseniz sizinle aynı yapar. Komutu durdurmak için \"stop\" kullanın.",
     "usage.filter.options.all": "Tüm",
     "usage.filter.options.changes": "Değişim",
     "usage.filter.options.outfits": "Kıyafetler",
@@ -129,7 +129,7 @@
     "msg.filter": "filtre ile {filter}"
   },
   "command.config.new_items": {
-    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"Stop\" komutuyla durabilirsiniz.",
+    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -140,7 +140,7 @@
   "command.run.new_items": {
     "msg.type_error": "Bir filtre istiyorsanız, geçerli olduğundan emin olun, sadece kıyafetler, sırt çantaları, emojiler, emotlar veya kazıklar",
     "msg.cosmetic_fetch_error": "Yakın zamanda eklenemiyor kozmetikler eklenemiyor.",
-    "msg.already_showing": "Kozmetikler zaten görüntüleniyor, önce \"Dur\" komutuyla durdurulmalıdır.",
+    "msg.already_showing": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
     "msg.showing_cosmetics": "Yakın zamanda eklenen tüm öğeleri ayarlama ... {filter}",
     "msg.filter": "({filter} tarafından filtrelenmiş)",
     "msg.ended": "Yakın zamanda eklenen tüm öğeleri göstermeyi bitirdim ..."
@@ -194,7 +194,7 @@
     "msg.changed": "Picakse varyantlarını ayarlayın!"
   },
   "command.config.shop_items": {
-    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"Stop\" komutuyla durabilirsiniz.",
+    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -205,7 +205,7 @@
   "command.run.shop_items": {
     "msg.invalid_type": "Bir filtre istiyorsanız, geçerli olduğundan emin olun, sadece kıyafetler, sırt çantaları, emojiler, emotlar veya kazıklar",
     "msg.fetch_failed": "Mağaza eşyalarını alamıyor.",
-    "msg.already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"Dur\" komutuyla durdurulmalıdır.",
+    "msg.already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
     "msg.showing_items": "Dükkandaki tüm öğeleri ayarlayın ... {filter}",
     "msg.filter": "({query} tarafından filtrelenmiş)",
     "msg.ended": "Mağazadaki tüm öğeleri göstermeyi bitirdim ..."
@@ -229,7 +229,7 @@
     "msg.friends_not_found": "Arkadaş {query} bulunamadı!",
     "msg.self_request": "Bekleyen arkadaşlık isteği benim!",
     "msg.error": "Bekleyen arkadaş kabul edilmedi!",
-    "msg.request_accepted": "Bekleyen arkadaş $ {name} başarılı bir şekilde kabul edildi!"
+    "msg.request_accepted": "Bekleyen arkadaş {name} başarılı bir şekilde kabul edildi!"
   },
   "command.config.add_friend": {
     "description": "Bir kullanıcıya bir arkadaşlık isteği gönderin veya bir arkadaşlık isteğini kabul edin.",
@@ -478,7 +478,7 @@
     "description": "Bot partiyi terk ediyor."
   },
   "command.run.leave": {
-    "msg.success": "Hoşçakal!."
+    "msg.success": "Hoşçakal!"
   },
   "command.config.level": {
     "description": "Bot seviyesini ayarlar.",

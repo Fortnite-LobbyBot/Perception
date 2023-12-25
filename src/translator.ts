@@ -5,7 +5,7 @@ const settings = {
 	langPaths: ['./src/locales/commands/'],
 	rootLangFiles: ['./src/locales/commands/en.json'],
 	rootLangCode: 'en',
-	outputLangs: ['es', 'fr', 'de', 'pt', 'it', 'tr', 'pl'],
+	outputLangs: ['es', 'de', 'fr', 'pt', 'pl', 'it', 'tr'],
 	translateDelay: 100,
 	debug: true,
 };
@@ -166,7 +166,7 @@ const translateString = async (
 			)} ==> ${colors.blue(rootText)}`,
 		);
 
-		return rootText;
+		return formatString(text, rootText);
 	} else {
 		debug(
 			`[ ${colors.blue(fromLangCode)} => ${colors.blue(
@@ -183,19 +183,10 @@ const translateString = async (
 			to: toLangCode.split('-')[0],
 		});
 
-		let translation = Array.isArray(result)
-			? result[0].text
-			: result.text.toString();
-
-		const originalVars = text.match(/[{(.*?)}|"(.*?)"]/gi);
-
-		let i = 0;
-
-		translation = translation.replace(/[{(.*?)}|"(.*?)"]/gi, () => {
-			const result = originalVars?.[i] ?? '';
-			i++;
-			return result;
-		});
+		const translation = formatString(
+			text,
+			Array.isArray(result) ? result[0].text : result.text.toString(),
+		);
 
 		debug(
 			`[ ${colors.blue(fromLangCode)} => ${colors.blue(
@@ -416,6 +407,18 @@ const deepMap = (
 	if (isArray(source)) return deepArray(source, rootObjPath, rootFileObjPath);
 
 	return source;
+};
+
+const formatString = (original: string, destination: string) => {
+	const originalVars = original.match(/[{|"](.*?)[}|"]/gi);
+
+	let i = 0;
+
+	return destination.replace(/[{|"](.*?)[}|"]/gi, () => {
+		const result = originalVars?.[i] ?? '';
+		i++;
+		return result;
+	});
 };
 
 main().catch(() => null);

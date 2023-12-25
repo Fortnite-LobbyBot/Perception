@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Cette commande n'est disponible que pour les utilisateurs sur la liste blanche du bot."
   },
   "command.config.all_items": {
-    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",
@@ -109,7 +109,7 @@
     "msg.emote_changed": "Définissez l'emote emoji sur {name}! ({id})"
   },
   "command.config.mimic": {
-    "description": "Fait la même chose qu'un utilisateur ou le même que vous ne spécifiez pas les arguments. Utilisez \"Stop\" pour arrêter la commande.",
+    "description": "Fait la même chose qu'un utilisateur ou le même que vous ne spécifiez pas les arguments. Utilisez \"stop\" pour arrêter la commande.",
     "usage.filter.options.all": "Toute",
     "usage.filter.options.changes": "Changements",
     "usage.filter.options.outfits": "Tenues",
@@ -129,7 +129,7 @@
     "msg.filter": "avec filtre {filter}"
   },
   "command.config.new_items": {
-    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",
@@ -194,7 +194,7 @@
     "msg.changed": "Définissez les variantes Pickaxe!"
   },
   "command.config.shop_items": {
-    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"Stop\".",
+    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",

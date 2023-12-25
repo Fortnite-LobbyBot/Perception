@@ -1,6 +1,6 @@
 {
     "name": "@fnlb/locales",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "FNLB Translation Service",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
         "build": "tsc --build --clean && tsc",
         "translate": "npm run build && node dist/translator",
         "lint": "eslint src/**/*.{ts,js}",
-        "pretty": "npm prettier --write .",
+        "pretty": "npx prettier --write .",
         "prepare": "npm run build"
     },
     "files": [

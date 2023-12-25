@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Questo comando è disponibile solo per gli utenti nella whitelist del bot."
   },
   "command.config.all_items": {
-    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"Stop\".",
+    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
     "usage.filter.options.outfits": "Abiti",
     "usage.filter.options.backpacks": "Zaini",
     "usage.filter.options.emojis": "Emoji",
@@ -109,7 +109,7 @@
     "msg.emote_changed": "Imposta Emote Emoji su {name}! ({id})"
   },
   "command.config.mimic": {
-    "description": "Fa lo stesso di un utente o lo stesso di te se non specifica gli argomenti. Usa \"Stop\" per fermare il comando.",
+    "description": "Fa lo stesso di un utente o lo stesso di te se non specifica gli argomenti. Usa \"stop\" per fermare il comando.",
     "usage.filter.options.all": "Tutto",
     "usage.filter.options.changes": "I cambiamenti",
     "usage.filter.options.outfits": "Abiti",
@@ -129,7 +129,7 @@
     "msg.filter": "con filtro {filter}"
   },
   "command.config.new_items": {
-    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"Stop\".",
+    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
     "usage.filter.options.outfits": "Abiti",
     "usage.filter.options.backpacks": "Zaini",
     "usage.filter.options.emojis": "Emoji",
@@ -194,7 +194,7 @@
     "msg.changed": "Imposta le varianti Pichaxe!"
   },
   "command.config.shop_items": {
-    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"Stop\".",
+    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
     "usage.filter.options.outfits": "Abiti",
     "usage.filter.options.backpacks": "Zaini",
     "usage.filter.options.emojis": "Emoji",
