@@ -1,5 +1,5 @@
 {
-  "command.handler": {
+  "handler": {
     "errors.only_for_party_members": "Bu komut yalnızca partimin üyeleri için kullanılabilir.",
     "errors.only_for_private_messages": "Bu komut yalnızca özel mesajlarda mevcuttur.",
     "errors.need_party_leader": "Bu komutu yürütmek için parti lideri olmalıyım!",
@@ -7,7 +7,7 @@
     "errors.only_for_admins": "Bu komut yalnızca bot yöneticileri için kullanılabilir.",
     "errors.only_for_whitelist": "Bu komut yalnızca botun beyaz listesindeki kullanıcılar için kullanılabilir."
   },
-  "command.config.all_items": {
+  "config.all_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
@@ -16,54 +16,54 @@
     "usage.filter.options.pickaxes": "Kazık",
     "usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
   },
-  "command.run.all_items": {
+  "run.all_items": {
     "msg.no_items": "Öğeleri alamıyor.",
     "msg.items_already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
     "msg.setting_items": "Tüm oyun öğelerini ayarlama ... {filtered}",
     "msg.filtered_by": "({filter} tarafından filtrelenmiş)",
     "msg.items_showed": "Tüm öğeleri göstermeyi bitirdim ..."
   },
-  "command.config.backpack": {
+  "config.backpack": {
     "description": "Botun sırt çantasını ayarlar.",
     "usage.query.name": "Sırt çantası adı veya kimliği",
     "usage.query.description": "Ayarlanacak sırt çantasının adı veya kimliği."
   },
-  "command.run.backpack": {
+  "run.backpack": {
     "msg.backpack_not_found": "Sırt çantası {item} bulunamadı!",
     "msg.backpack_changed": "Sırt çantasını {name} olarak ayarlayın! ({id})"
   },
-  "command.config.backpack_variants": {
+  "config.backpack_variants": {
     "description": "Sırt çantasının varyantlarını ayarlar."
   },
-  "command.run.backpack_variants": {
+  "run.backpack_variants": {
     "msg.backpack_not_found": "Botun bir sırt çantası yok!",
     "msg.invalid_backpack": "Geçersiz sırt çantası!",
     "msg.variants_not_founded": "Bu sırt çantasının varyantları yok!",
     "msg.variants_select": "{type} için seçmek istediğiniz varyantı gönderin",
     "msg.variants_changed": "Sırt çantası varyantlarını ayarlayın!"
   },
-  "command.config.banner": {
+  "config.banner": {
     "description": "Botun afişini ayarlar.",
     "usage.query.name": "Banner Adı veya Kimliği",
     "usage.query.description": "Banner'ın adı veya kimliği ayarlanacak."
   },
-  "command.run.banner": {
+  "run.banner": {
     "msg.banner_not_found": "Banner {item} bulunamadı!",
     "msg.banner_changed": "Banneyi {name} olarak ayarlayın! ({id})"
   },
-  "command.config.clear_backpack": {
+  "config.clear_backpack": {
     "description": "Botun sırt çantasını kaldırır."
   },
-  "command.run.clear_backpack": {
+  "run.clear_backpack": {
     "msg.backpack_cleared": "Sıralı sırt çantası!"
   },
-  "command.config.clear_emote": {
+  "config.clear_emote": {
     "description": "Botun dansını durdurur."
   },
-  "command.run.clear_emote": {
+  "run.clear_emote": {
     "msg.emote_cleared": "Emote'u temizledi!"
   },
-  "command.config.copy": {
+  "config.copy": {
     "description": "Bir kullanıcının kozmetiklerini kopyalayın veya bağımsız değişkenler belirtmezse kozmetikleri size kopyalayın.",
     "usage.filter.options.all": "Tüm",
     "usage.filter.options.outfit": "Kıyafet",
@@ -75,40 +75,40 @@
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Kozmetikleri kopyalamak için üyenin adı veya kimliği."
   },
-  "command.run.copy": {
+  "run.copy": {
     "msg.members_found": "Birden fazla üye bulundu:",
     "msg.member_not_found": "Üye {member} bulunamadı!",
     "msg.member_not_at_party": "Partimin bir üyesi değilsin.",
     "msg.member_copied": "Kopyalandı {member}!"
   },
-  "command.config.cosmetic": {
+  "config.cosmetic": {
     "description": "Botun kozmetikini ayarlar.",
     "usage.query.name": "Kozmetik Adı veya Kimliği",
     "usage.query.description": "Set için kozmetik adı veya kimliği."
   },
-  "command.run.cosmetic": {
+  "run.cosmetic": {
     "msg.cosmetic_not_found": "Kozmetik {query} bulunamadı!",
     "msg.cosmetic_changed": "{type} 'ye {name} olarak ayarlayın! ({id})"
   },
-  "command.config.emoji": {
+  "config.emoji": {
     "description": "Botun emojisini ayarlar.",
     "usage.query.name": "Emoji adı veya kimliği",
     "usage.query.description": "Emoji'nin adı veya kimliği ayarlanacak."
   },
-  "command.run.emoji": {
+  "run.emoji": {
     "msg.emoji_not_found": "Emoji {query} bulunamadı!",
     "msg.emoji_changed": "Emoji'yi {name} olarak ayarlayın! ({id})"
   },
-  "command.config.emote": {
+  "config.emote": {
     "description": "Botun emotesini ayarlar.",
     "usage.query.name": "Emote Adı veya Kimliği",
     "usage.query.description": "Ayarlanacak emote adı veya kimliği."
   },
-  "command.run.emote": {
+  "run.emote": {
     "msg.emote_not_found": "Emote {query} bulunamadı!",
     "msg.emote_changed": "Emote emojisini {name} olarak ayarlayın! ({id})"
   },
-  "command.config.mimic": {
+  "config.mimic": {
     "description": "Bir kullanıcı ile aynı veya bağımsız değişkenler belirtmezseniz sizinle aynı yapar. Komutu durdurmak için \"stop\" kullanın.",
     "usage.filter.options.all": "Tüm",
     "usage.filter.options.changes": "Değişim",
@@ -121,14 +121,14 @@
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Kozmetikleri taklit etmek için üyenin adı veya kimliği."
   },
-  "command.run.mimic": {
+  "run.mimic": {
     "msg.members_found": "Birden fazla üye bulundu:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.member_not_at_party": "Partimin bir üyesi değilsin.",
     "msg.mimic_enabled": "{member} {filter} için etkinleştirilmiş mimik!",
     "msg.filter": "filtre ile {filter}"
   },
-  "command.config.new_items": {
+  "config.new_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
@@ -137,7 +137,7 @@
     "usage.filter.options.pickaxes": "Kazık",
     "usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
   },
-  "command.run.new_items": {
+  "run.new_items": {
     "msg.type_error": "Bir filtre istiyorsanız, geçerli olduğundan emin olun, sadece kıyafetler, sırt çantaları, emojiler, emotlar veya kazıklar",
     "msg.cosmetic_fetch_error": "Yakın zamanda eklenemiyor kozmetikler eklenemiyor.",
     "msg.already_showing": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
@@ -145,55 +145,55 @@
     "msg.filter": "({filter} tarafından filtrelenmiş)",
     "msg.ended": "Yakın zamanda eklenen tüm öğeleri göstermeyi bitirdim ..."
   },
-  "command.config.outfit": {
+  "config.outfit": {
     "description": "Botun kıyafetini ayarlar.",
     "usage.query.name": "Kıyafet Adı veya Kimliği",
     "usage.query.description": "Ayarlanacak kıyafetin adı veya kimliği."
   },
-  "command.run.outfit": {
+  "run.outfit": {
     "msg.outfit_not_found": "Kıyafet {query} bulunamadı!",
     "msg.outfit_changed": "Kıyafeti {name} olarak ayarlayın! ({id})!"
   },
-  "command.config.outfit_variants": {
+  "config.outfit_variants": {
     "description": "Kıyafetin varyantlarını ayarlar."
   },
-  "command.run.outfit_variants": {
+  "run.outfit_variants": {
     "msg.outfit_not_found": "Botun bir kıyafeti yok!",
     "msg.invalid_outfit": "Geçersiz kıyafet!",
     "msg.variants_not_found": "Bu kıyafetin varyantları yok!",
     "msg.variants_select": "{type} için seçmek istediğiniz varyantı gönderin",
     "msg.changed": "Kıyafet varyantlarını ayarlayın!"
   },
-  "command.config.perfect_timing": {
+  "config.perfect_timing": {
     "description": "Bot'un kozmetiklerini senkronize ettirir.",
     "usage.query.name": "Kozmetik Adı veya Kimliği",
     "usage.query.description": "Set için kozmetik adı veya kimliği."
   },
-  "command.run.perfect_timing": {
+  "run.perfect_timing": {
     "msg.cosmetic_not_found": "Kozmetik {query} bulunamadı!",
     "msg.perfect_timing_success": "Mükemmel bir zamanlama yapmak için senkronizasyon ...",
     "msg.perfect_timing_done": "{value} ile {name} ile senkronize! ({id})"
   },
-  "command.config.pickaxe": {
+  "config.pickaxe": {
     "description": "Botun kazışmasını ayarlar.",
     "usage.query.name": "Kaçak Adı veya Kimliği",
     "usage.query.description": "Ayarlanacak kazma adı veya kimliği."
   },
-  "command.run.pickaxe": {
+  "run.pickaxe": {
     "msg.pickaxe_not_found": "Picsaxe {query} bulunamadı!",
     "msg.pickaxe_changed": "Kuşunu {name} olarak ayarlayın! ({id})"
   },
-  "command.config.pickaxe_variants": {
+  "config.pickaxe_variants": {
     "description": "Picakse'nin varyantlarını ayarlar."
   },
-  "command.run.pickaxe_variants": {
+  "run.pickaxe_variants": {
     "msg.pickaxe_not_found": "Botun bir kazma yok!",
     "msg.invalid_pickaxe": "Geçersiz kazma!",
     "msg.variants_not_found": "Bu kazma işleminin varyantları yok!",
     "msg.variants_select": "{type} için seçmek istediğiniz varyantı gönderin",
     "msg.changed": "Picakse varyantlarını ayarlayın!"
   },
-  "command.config.shop_items": {
+  "config.shop_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
@@ -202,7 +202,7 @@
     "usage.filter.options.pickaxes": "Kazık",
     "usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
   },
-  "command.run.shop_items": {
+  "run.shop_items": {
     "msg.invalid_type": "Bir filtre istiyorsanız, geçerli olduğundan emin olun, sadece kıyafetler, sırt çantaları, emojiler, emotlar veya kazıklar",
     "msg.fetch_failed": "Mağaza eşyalarını alamıyor.",
     "msg.already_displaying": "Kozmetikler zaten görüntüleniyor, önce \"stop\" komutuyla durdurulmalıdır.",
@@ -210,62 +210,62 @@
     "msg.filter": "({query} tarafından filtrelenmiş)",
     "msg.ended": "Mağazadaki tüm öğeleri göstermeyi bitirdim ..."
   },
-  "command.config.stop": {
+  "config.stop": {
     "description": "Bekleyen operasyonları durdurur."
   },
-  "command.run.stop": {
+  "run.stop": {
     "msg.stopped_items": "Öğeleri göstermeyi bıraktı!",
     "msg.stopped_mimic": "Mimik'i durdurdu!",
     "msg.stopped_emote": "Emote durdu!",
     "msg.nothing_to_stop": "Duracak bir şey yok!"
   },
-  "command.config.accept_friend": {
+  "config.accept_friend": {
     "description": "Bir arkadaşlık isteğini kabul edin.",
     "usage.query.name": "Bekleyen Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Kabul etmek için bekleyen arkadaşın adı veya kimliği."
   },
-  "command.run.accept_friend": {
+  "run.accept_friend": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friends_not_found": "Arkadaş {query} bulunamadı!",
     "msg.self_request": "Bekleyen arkadaşlık isteği benim!",
     "msg.error": "Bekleyen arkadaş kabul edilmedi!",
     "msg.request_accepted": "Bekleyen arkadaş {name} başarılı bir şekilde kabul edildi!"
   },
-  "command.config.add_friend": {
+  "config.add_friend": {
     "description": "Bir kullanıcıya bir arkadaşlık isteği gönderin veya bir arkadaşlık isteğini kabul edin.",
     "usage.query.name": "Kullanıcı adı veya kimlik",
     "usage.query.description": "Kullanıcının adı veya kimliği eklemek için."
   },
-  "command.run.add_friend": {
+  "run.add_friend": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friends_not_found": "Arkadaş {query} bulunamadı!",
     "msg.already_friends": "Zaten bir arkadaş!",
     "msg.error": "Kullanıcıyı ekleyemezsiniz!",
     "msg.request_sent": "{name} 'e gönderilen arkadaş isteği"
   },
-  "command.config.decline_friend": {
+  "config.decline_friend": {
     "description": "Bir arkadaşlık isteğini reddedin veya iptal edin.",
     "usage.query.name": "Bekleyen Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Reddetmek veya iptal etmek bekleyen arkadaşın adı veya kimliği."
   },
-  "command.run.decline_friend": {
+  "run.decline_friend": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friends_not_found": "Arkadaş {query} bulunamadı!",
     "msg.error": "Bekleyen arkadaş kaldırılmadı!",
     "msg.request_sent": "Bekleyen Friend {name} başarıyla kaldırıldı!"
   },
-  "command.config.friend_count": {
+  "config.friend_count": {
     "description": "Botun arkadaşlarının sayısını gösterir."
   },
-  "command.run.friend_count": {
+  "run.friend_count": {
     "msg.info": "{friends} arkadaşlarım var, {pending} Bekleyen ({incoming} Gelen, {outgoing} giden) ve {blocked} bloke!"
   },
-  "command.config.invite": {
+  "config.invite": {
     "description": "Bir arkadaşınızı veya sizi partiye davet eder.",
     "usage.query.name": "Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Arkadaşın adı veya kimliği davet etmek."
   },
-  "command.run.invite": {
+  "run.invite": {
     "msg.alone": "Benimle bir partide, kullanıcı davet etmek için gereklidir.",
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friends_not_found": "Arkadaş {query} bulunamadı!",
@@ -273,12 +273,12 @@
     "msg.invite_error": "Davetiyeyi {name} 'e gönderilemez!",
     "msg.invite_sent": "Davet {name} 'e gönderildi!"
   },
-  "command.config.join": {
+  "config.join": {
     "description": "Partinize veya bir kullanıcı partisine katılır.",
     "usage.query.name": "Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Arkadaşın adı veya kimliği katılacak."
   },
-  "command.run.join": {
+  "run.join": {
     "msg.invalid_param": "Arkadaşım olmalısın veya bir arkadaşım belirtmelisin!",
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friend_not_found": "Arkadaş {query} bulunamadı!",
@@ -288,66 +288,66 @@
     "msg.joined": "{name} 'e katıldı!",
     "msg.join_request_sent": "{name} adresine gönderilen isteğe katılın!"
   },
-  "command.config.promote": {
+  "config.promote": {
     "description": "Argüman belirtmezseniz bir üyesi tanıtır veya lider yapar.",
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Partinin adı veya kimliği yükselecek."
   },
-  "command.run.promote": {
+  "run.promote": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.member_not_at_party": "Partimin bir üyesi değilsin.",
     "msg.member_promoted": "Tanıtıldı {name}!"
   },
-  "command.config.remove_all_friends": {
+  "config.remove_all_friends": {
     "description": "Botun tüm arkadaşlarını kaldırır."
   },
-  "command.run.remove_all_friends": {
+  "run.remove_all_friends": {
     "msg.unauthorized": "Bu komut yalnızca bot sahipleri tarafından yürütülebilir!",
     "msg.removing_friends": "Tüm arkadaşları kaldırıyorum!",
     "msg.remove_friends": "Kaldırıldı {count} arkadaşlar!"
   },
-  "command.config.remove_friend": {
+  "config.remove_friend": {
     "description": "Bir botun arkadaşını kaldırır.",
     "usage.query.name": "Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Arkadaşın adı veya kimliği kaldırılacak."
   },
-  "command.run.remove_friend": {
+  "run.remove_friend": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friend_not_found": "Arkadaş {query} bulunamadı!",
     "msg.error": "{name} kaldırılamıyor!",
     "msg.friend_removed": "Arkadaş {name} başarıyla kaldırıldı!"
   },
-  "command.run.eval": {
+  "run.eval": {
     "msg.unauthorized_error": "Yalnızca tnfangel bu komuta erişebilir."
   },
-  "command.config.help": {
+  "config.help": {
     "description": "Yardım ve komut panelini gösterir.",
     "usage.query.name": "Komutun adı veya kimliği",
     "usage.query.description": "Ayrıntılı yardım almak için komutun adı veya kimliği."
   },
-  "command.config.message": {
+  "config.message": {
     "description": "Partiye bir mesaj gönderir.",
     "usage.message.name": "İleti",
     "usage.message.description": "Partiye gönderilecek mesaj."
   },
-  "command.run.message": {
+  "run.message": {
     "msg.success": "Partiye bir mesaj gönderdi"
   },
-  "command.config.ping": {
+  "config.ping": {
     "description": "Botun gecikmesini gösterir."
   },
-  "command.run.ping": {
+  "run.ping": {
     "msg.measuring": "Ölçme ...",
     "msg.info": "Pong! {time} ms"
   },
-  "command.config.prev": {
+  "config.prev": {
     "description": "Önceki komutu yürütür."
   },
-  "command.run.prev": {
+  "run.prev": {
     "msg.not_found": "Önceki bir komut yürütülmedi!"
   },
-  "command.config.send": {
+  "config.send": {
     "description": "Belirtme botuna bir komut gönderir.",
     "usage.bot.name": "Bot kimliği",
     "usage.bot.description": "Komutu göndermek için bot kimliği.",
@@ -356,20 +356,20 @@
     "usage.args.name": "Argümanlar",
     "usage.args.description": "Komutun argümanları gereklidir."
   },
-  "command.run.send": {
+  "run.send": {
     "msg.sending_command": "Bot için komut gönderme {user}"
   },
-  "command.config.send_all": {
+  "config.send_all": {
     "description": "Tüm botlara bir komut gönderir.",
     "usage.command.name": "Emretmek",
     "usage.command.description": "Botlarda yürütülecek komut.",
     "usage.args.name": "Argümanlar",
     "usage.args.description": "Komutun argümanları gereklidir."
   },
-  "command.run.send_all": {
+  "run.send_all": {
     "msg.sending_command": "Tüm botlara komut gönderme ..."
   },
-  "command.config.send_number": {
+  "config.send_number": {
     "description": "Belirtilen sayıda bot için bir komut gönderir.",
     "usage.number.name": "Bot sayısı",
     "usage.number.description": "Komutu gönderecek bot sayısı.",
@@ -378,200 +378,200 @@
     "usage.args.name": "Argümanlar",
     "usage.args.description": "Komutun argümanları gereklidir."
   },
-  "command.run.send_number": {
+  "run.send_number": {
     "msg.count_negative": "Sayı 0'dan büyük olmalı!",
     "msg.sending_command": "{number} botlarına komut gönderme ..."
   },
-  "command.config.send_party": {
+  "config.send_party": {
     "description": "Aynı partiyi paylaşan tüm botlara bir komut gönderir.",
     "usage.command.name": "Emretmek",
     "usage.command.description": "Botlarda yürütülecek komut.",
     "usage.args.name": "Argümanlar",
     "usage.args.description": "Komutun argümanları gereklidir."
   },
-  "command.run.send_party": {
+  "run.send_party": {
     "msg.sending_command": "Partimdeki tüm botlara komut gönderiyorum ..."
   },
-  "command.config.send_shard": {
+  "config.send_shard": {
     "description": "Bot parçasına bir komut gönderir.",
     "usage.command.name": "Emretmek",
     "usage.command.description": "Botlarda yürütülecek komut.",
     "usage.args.name": "Argümanlar",
     "usage.args.description": "Komutun argümanları gereklidir."
   },
-  "command.run.send_shard": {
+  "run.send_shard": {
     "msg.sending_command": "Parçalığımdaki tüm botlara komut gönderiyorum ..."
   },
-  "command.config.whisper": {
+  "config.whisper": {
     "description": "Bir arkadaşınıza özel bir mesaj gönderir.",
     "usage.query.name": "Arkadaşın Adı veya Kimliği",
     "usage.query.description": "Özel mesajı göndermek için arkadaşın adı veya kimliği.",
     "usage.message.name": "İleti",
     "usage.message.description": "Arkadaşa gönderilecek mesaj."
   },
-  "command.run.whisper": {
+  "run.whisper": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.friend_not_found": "Arkadaş {query} bulunamadı!",
     "msg.whisper_sent": "{name} 'e gönderildi!"
   },
-  "command.config.bp_level": {
+  "config.bp_level": {
     "description": "Botun Battle Pass seviyesini ayarlar.",
     "usage.level.name": "Seviyesi",
     "usage.level.description": "Belirtilecek savaş geçişinin seviyesi."
   },
-  "command.run.bp_level": {
+  "run.bp_level": {
     "msg.bp_level_set": "Battle Pass seviyesini {level} olarak ayarlayın!"
   },
-  "command.config.chat_ban": {
+  "config.chat_ban": {
     "description": "Sohbet bir parti üyesini yasaklar.",
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Partinin üyesinin adı veya kimliği."
   },
-  "command.run.chat_ban": {
+  "run.chat_ban": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.success": "Başarılı bir şekilde sohbete Bankalı {name}"
   },
-  "command.config.crowns": {
+  "config.crowns": {
     "description": "Bot kronlarını ayarlar.",
     "usage.crowns.name": "Kronlar",
     "usage.crowns.description": "Ayarlanacak kronlar."
   },
-  "command.run.crowns": {
+  "run.crowns": {
     "msg.success": "Kronları {crowns} olarak ayarlayın!"
   },
-  "command.config.hide": {
+  "config.hide": {
     "description": "Bir oyuncuyu partiden gizler veya argüman belirtmezseniz sizi gizler.",
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Saklanacak partinin üyesinin adı veya kimliği."
   },
-  "command.run.hide": {
+  "run.hide": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.member_not_at_party": "Partimin bir üyesi değilsin.",
     "msg.success": "Gizli {name}!"
   },
-  "command.config.hide_all": {
+  "config.hide_all": {
     "description": "Partideki tüm oyuncuları gizler."
   },
-  "command.run.hide_all": {
+  "run.hide_all": {
     "msg.success": "Tüm üyeler gizli!"
   },
-  "command.config.kick": {
+  "config.kick": {
     "description": "Partiden bir oyuncu vuruşu.",
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Partinin üyesinin adı veya kimliği, sınır dışı edilecek."
   },
-  "command.run.kick": {
+  "run.kick": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.success": "Tekme {name}!"
   },
-  "command.config.kick_all": {
+  "config.kick_all": {
     "description": "Partideki tüm oyuncuları tekmeliyor."
   },
-  "command.run.kick_all": {
+  "run.kick_all": {
     "msg.user_kicked": "Tekme {name}!",
     "msg.success": "Tüm üyeleri tekmelemeyi bitirdi!"
   },
-  "command.config.leave": {
+  "config.leave": {
     "description": "Bot partiyi terk ediyor."
   },
-  "command.run.leave": {
+  "run.leave": {
     "msg.success": "Hoşçakal!"
   },
-  "command.config.level": {
+  "config.level": {
     "description": "Bot seviyesini ayarlar.",
     "usage.level.name": "Seviyesi",
     "usage.level.description": "Ayarlanacak seviye."
   },
-  "command.run.level": {
+  "run.level": {
     "msg.success": "Seviyeyi {level} olarak ayarlayın!"
   },
-  "command.config.match": {
+  "config.match": {
     "description": "Devleti bir oyun oynamaya ayarlar.",
     "usage.number.name": "Oyuncu sayısı",
     "usage.number.description": "Oyundaki oyuncu sayısı."
   },
-  "command.run.match": {
+  "run.match": {
     "msg.success": "Oynatmaya ayarlanmış!"
   },
-  "command.config.party_info": {
+  "config.party_info": {
     "description": "Parti hakkında bilgi gösterir."
   },
-  "command.config.playlist": {
+  "config.playlist": {
     "description": "Partinin çalma listesini ayarlar.",
     "usage.query.name": "Oynatma listesinin adı veya kimliği",
     "usage.query.description": "Ayarlanacak çalma listesinin adı veya kimliği."
   },
-  "command.run.playlist": {
+  "run.playlist": {
     "msg.error": "Hata Ayarlama Çalma Listesi!",
     "msg.success": "Çalma listesini {query} olarak ayarlayın!"
   },
-  "command.config.privacy": {
+  "config.privacy": {
     "description": "Partinin gizliliğini belirler.",
     "usage.privacy.options.public": "Halk",
     "usage.privacy.options.private": "Özel",
     "usage.privacy.description": "Partinin gizliliği."
   },
-  "command.run.privacy": {
+  "run.privacy": {
     "msg.success": "Parti gizliliğini {privacy} olarak ayarlayın!",
     "msg.error": "Geçersiz gizlilik, kamuya açık veya özel olmalıdır!"
   },
-  "command.config.rank": {
+  "config.rank": {
     "description": "Bot sırasını ayarlar.",
     "usage.rank.name": "Rütbe",
     "usage.rank.description": "Ayarlanacak rütbe."
   },
-  "command.run.rank": {
+  "run.rank": {
     "msg.success": "Sıralamayı {rank} olarak ayarlayın!"
   },
-  "command.config.ready": {
+  "config.ready": {
     "description": "Durumu hazır hale getirir."
   },
-  "command.run.ready": {
+  "run.ready": {
     "msg.warning": "UYARI: Eşleme yapımını başlatmaya çalışıyorsanız, bu komutu kullanmayın! Sadece kendinizi hazırlayın ve otomatik olarak hazırım.",
     "msg.success": "Hazır!"
   },
-  "command.config.show": {
+  "config.show": {
     "description": "Partiden gizli bir oyuncuyu gösterir veya argüman belirtmediyseniz size gösterir.",
     "usage.query.name": "Üye Adı veya Kimlik",
     "usage.query.description": "Partinin üyesinin adı veya kimliği gösterilecek."
   },
-  "command.run.show": {
+  "run.show": {
     "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
     "msg.member_not_found": "Üye {query} bulunamadı!",
     "msg.member_not_at_party": "Partimin bir üyesi değilsin.",
     "msg.success": "Gösterilen {name}!"
   },
-  "command.config.show_all": {
+  "config.show_all": {
     "description": "Partideki tüm gizli oyuncuları gösterir."
   },
-  "command.run.show_all": {
+  "run.show_all": {
     "msg.success": "Tüm üyeler gösterildi!"
   },
-  "command.config.sit_in": {
+  "config.sit_in": {
     "description": "Devleti katılmaya ayarlar."
   },
-  "command.run.sit_in": {
+  "run.sit_in": {
     "msg.success": "Oturmak..."
   },
-  "command.config.sit_out": {
+  "config.sit_out": {
     "description": "Devleti katılmamaya ayarlar."
   },
-  "command.run.sit_out": {
+  "run.sit_out": {
     "msg.success": "Dışarıda oturuyor ..."
   },
-  "command.config.unmatch": {
+  "config.unmatch": {
     "description": "Devleti bir oyun oynamamaya ayarlar."
   },
-  "command.run.unmatch": {
+  "run.unmatch": {
     "msg.success": "Oynatma durumu kaldırıldı!"
   },
-  "command.config.unready": {
+  "config.unready": {
     "description": "Durumu hazırlamayacak şekilde ayarlar."
   },
-  "command.run.unready": {
+  "run.unready": {
     "msg.success": "Hazır değil!"
   }
 }
