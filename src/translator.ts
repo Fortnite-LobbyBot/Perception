@@ -31,11 +31,14 @@ const translatorError = (text: string): void => {
 
 const wait = (time: number) => new Promise((res) => setTimeout(res, time));
 
+const getArrayKey = (array: string | string[]) =>
+	Array.isArray(array) ? array[1] : array;
+
 const main = async () => {
 	let i = 0;
 
 	for (const langPath of settings.langPaths) {
-		const rootLangCode = settings.rootLangCode;
+		const rootLangCode = getArrayKey(settings.rootLangCode);
 
 		debug(
 			`[ ${colors.blue(
@@ -73,7 +76,9 @@ const main = async () => {
 		if (!rootFileObject)
 			return translatorError('[ main ] Invalid root file object.');
 
-		for (const langCode of settings.outputLangs) {
+		for (const outputLangs of settings.outputLangs) {
+			const langCode = getArrayKey(outputLangs);
+
 			debug(
 				`[ ${colors.blue(rootLangCode)} => ${colors.blue(
 					langCode,
