@@ -15,18 +15,28 @@ export class LocaleClient {
 	localeObject: Record<string, string>;
 	localeString: LocalesString;
 	defaultLocaleString: LocalesString;
+	removeDash: boolean;
 
 	constructor({
 		localeString,
 		localeRoute,
 		localeModule,
+		removeDash = false,
 	}: {
 		localeString?: LocalesString;
 		localeRoute: string;
 		localeModule: string;
+		removeDash?: boolean;
 	}) {
-		this.defaultLocaleString = Locales.Default;
-		this.localeString = localeString || this.defaultLocaleString;
+		this.removeDash = removeDash;
+		this.defaultLocaleString = this.removeDash
+			? (Locales.Default.split('-')[0] as LocalesString)
+			: Locales.Default;
+		this.localeString = this.removeDash
+			? ((localeString || this.defaultLocaleString).split(
+					'-',
+				)[0] as LocalesString)
+			: localeString || this.defaultLocaleString;
 
 		let requiredLocale;
 
