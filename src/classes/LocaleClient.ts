@@ -18,12 +18,12 @@ export class LocaleClient {
 	removeDash: boolean;
 
 	constructor({
-		localeString,
+		locale,
 		localeRoute,
 		localeModule,
 		removeDash = false,
 	}: {
-		localeString?: LocalesString;
+		locale?: LocalesString;
 		localeRoute: string;
 		localeModule: string;
 		removeDash?: boolean;
@@ -33,16 +33,16 @@ export class LocaleClient {
 			? (Locales.Default.split('-')[0] as LocalesString)
 			: Locales.Default;
 		this.localeString = this.removeDash
-			? ((localeString || this.defaultLocaleString).split(
+			? ((locale || this.defaultLocaleString).split(
 					'-',
 				)[0] as LocalesString)
-			: localeString || this.defaultLocaleString;
+			: locale || this.defaultLocaleString;
 
 		let requiredLocale;
 
 		try {
 			requiredLocale = require(
-				`../locales/${localeRoute}/${localeString}.json`,
+				`../locales/${localeRoute}/${locale}.json`,
 			);
 		} catch {
 			requiredLocale = require(
