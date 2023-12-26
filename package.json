@@ -1,6 +1,6 @@
 {
     "name": "@fnlb/locales",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "FNLB Translation Service",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",

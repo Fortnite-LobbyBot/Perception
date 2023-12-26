@@ -12,40 +12,41 @@ export enum Locales {
 export type LocalesString = `${Locales}`;
 
 export class LocaleClient {
-	locale: Record<string, string>;
+	localeObject: Record<string, string>;
 	localeString: LocalesString;
 	defaultLocaleString: LocalesString;
 
 	constructor({
-		locale,
+		localeString,
 		localeRoute,
 		localeModule,
 	}: {
-		locale?: LocalesString;
+		localeString?: LocalesString;
 		localeRoute: string;
 		localeModule: string;
 	}) {
 		this.defaultLocaleString = Locales.Default;
-		this.localeString = locale || this.defaultLocaleString;
+		this.localeString = localeString || this.defaultLocaleString;
 
 		let requiredLocale;
 
 		try {
 			requiredLocale = require(
-				`../locales/${localeRoute}/${locale}.json`,
+				`../locales/${localeRoute}/${localeString}.json`,
 			);
 		} catch {
 			requiredLocale = require(
 				`../locales/${localeRoute}/${this.defaultLocaleString}.json`,
 			);
+
 			this.localeString = this.defaultLocaleString;
 		}
 
-		this.locale = requiredLocale[localeModule];
+		this.localeObject = requiredLocale[localeModule];
 	}
 
 	translate(key: string, variables?: Record<string, string>) {
-		const result = this.locale[key];
+		const result = this.localeObject[key];
 
 		return result.replace(/{(.*?)}/gi, (_match, value) => {
 			return variables?.[value] ?? '';
