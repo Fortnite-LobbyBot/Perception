@@ -5,7 +5,8 @@
     "errors.need_party_leader": "Eu preciso ser o líder do partido para executar este comando!",
     "errors.only_for_owners": "Este comando está disponível apenas para proprietários de bot.",
     "errors.only_for_admins": "Este comando está disponível apenas para administradores de bot.",
-    "errors.only_for_whitelist": "Este comando está disponível apenas para usuários na lista de permissões do bot."
+    "errors.only_for_whitelist": "Este comando está disponível apenas para usuários na lista de permissões do bot.",
+    "test": "isto é um teste"
   },
   "config.all_items": {
     "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",

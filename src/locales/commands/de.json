@@ -5,7 +5,8 @@
     "errors.need_party_leader": "Ich muss der Parteiführer sein, um diesen Befehl auszuführen!",
     "errors.only_for_owners": "Dieser Befehl ist nur für Bot -Besitzer verfügbar.",
     "errors.only_for_admins": "Dieser Befehl ist nur für Bot -Administratoren verfügbar.",
-    "errors.only_for_whitelist": "Dieser Befehl ist nur für Benutzer der Whitelist des Bots verfügbar."
+    "errors.only_for_whitelist": "Dieser Befehl ist nur für Benutzer der Whitelist des Bots verfügbar.",
+    "test": "das ist ein Test"
   },
   "config.all_items": {
     "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
