@@ -43,6 +43,8 @@ jobs:
     translate:
         needs: [avoid_redundancy_lint_pretty_and_cache_deps]
         runs-on: ubuntu-22.04
+        permissions:
+          contents: write
         steps:
             - uses: actions/checkout@v4
               with:
