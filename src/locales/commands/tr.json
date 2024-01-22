@@ -5,8 +5,7 @@
     "errors.need_party_leader": "Bu komutu yürütmek için parti lideri olmalıyım!",
     "errors.only_for_owners": "Bu komut yalnızca bot sahipleri için kullanılabilir.",
     "errors.only_for_admins": "Bu komut yalnızca bot yöneticileri için kullanılabilir.",
-    "errors.only_for_whitelist": "Bu komut yalnızca botun beyaz listesindeki kullanıcılar için kullanılabilir.",
-    "test": "bu bir test"
+    "errors.only_for_whitelist": "Bu komut yalnızca botun beyaz listesindeki kullanıcılar için kullanılabilir."
   },
   "config.all_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",

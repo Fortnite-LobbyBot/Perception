@@ -5,8 +5,7 @@
     "errors.need_party_leader": "Muszę być liderem partii, aby wykonać to polecenie!",
     "errors.only_for_owners": "To polecenie jest dostępne tylko dla właścicieli botów.",
     "errors.only_for_admins": "To polecenie jest dostępne tylko dla administratorów BOT.",
-    "errors.only_for_whitelist": "To polecenie jest dostępne tylko dla użytkowników na białej bota.",
-    "test": "to jest test"
+    "errors.only_for_whitelist": "To polecenie jest dostępne tylko dla użytkowników na białej bota."
   },
   "config.all_items": {
     "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
