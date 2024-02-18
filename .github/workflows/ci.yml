@@ -65,7 +65,7 @@ jobs:
               run: pnpm install
               
             - name: Translate
-              run: pnpm run start
+              run: pnpm run translate
 
             - name: Get last commit author
               id: last-commit
