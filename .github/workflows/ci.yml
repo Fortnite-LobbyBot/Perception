@@ -2,13 +2,13 @@ name: CI
 
 on:
     pull_request:
-        branches: [main]
+        branches: [stable]
         types: [opened, synchronize]
         paths-ignore:
             - '*.md'
             - '.*ignore'
     push:
-        branches: [main]
+        branches: [stable]
         paths-ignore:
             - '*.md'
             - '.*ignore'
@@ -35,6 +35,10 @@ jobs:
             - name: Install dependencies
               run: pnpm install
 
+            - name: Lint
+              continue-on-error: true
+              run: pnpm run lint
+
             - name: Prettify code
               uses: creyD/prettier_action@v4.3
               with:
@@ -45,7 +49,7 @@ jobs:
         needs: [lint_pretty_and_cache_deps]
         runs-on: ubuntu-22.04
         permissions:
-          contents: write
+            contents: write
         if: ${{ github.event_name == 'push' }}
         steps:
             - uses: actions/checkout@v4
