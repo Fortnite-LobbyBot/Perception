@@ -1,34 +1,28 @@
 {
-    "name": "@fnlb/locales",
-    "version": "1.0.5",
+    "name": "@fnlb-project/locales",
     "description": "FNLB Translation Service",
+    "version": "1.1.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "type": "module",
     "scripts": {
-        "build": "tsc --build --clean && tsc",
-        "translate": "pnpm run build && node dist/translator",
-        "lint": "eslint src/**/*.{ts,js}",
-        "pretty": "pnpx prettier --write .",
-        "prepare": "pnpm run build"
+        "build": "bun run build.ts",
+        "prepublishOnly": "bun run build",
+        "lint": "bunx --bun @biomejs/biome check --apply .",
+        "prepare": "bun run build"
     },
     "files": [
-        "dist/**/*"
+        "dist"
     ],
-    "keywords": [],
-    "author": "tnfAngel",
-    "license": "ISC",
+    "author": "FNLB-Project",
     "dependencies": {
-        "dotenv": "^16.3.2",
         "google-translate-api-x": "^10.6.8",
-        "tslib": "^2.6.2",
-        "typescript": "^5.3.3"
+        "tslib": "^2.6.2"
     },
     "devDependencies": {
-        "@types/node": "^20.11.5",
-        "@typescript-eslint/eslint-plugin": "^6.19.0",
-        "@typescript-eslint/parser": "^6.19.0",
-        "eslint": "^8.56.0",
-        "prettier": "^3.2.4"
+        "@types/bun": "^1.0.8",
+        "bun-plugin-dts": "^0.2.1",
+        "typescript": "^5.3.3"
     },
     "packageManager": "pnpm@8.14.1"
 }

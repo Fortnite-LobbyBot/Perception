@@ -6,7 +6,7 @@ export enum Locales {
 	It = 'it',
 	Pl = 'pl',
 	Pt = 'pt',
-	Tr = 'tr',
+	Tr = 'tr'
 }
 
 export type LocalesString = `${Locales}`;
@@ -21,7 +21,7 @@ export class LocaleClient {
 		locale,
 		localeRoute,
 		localeModule,
-		removeDash = false,
+		removeDash = false
 	}: {
 		locale?: LocalesString;
 		localeRoute: string;
@@ -34,20 +34,16 @@ export class LocaleClient {
 			: Locales.Default;
 		this.localeString = this.removeDash
 			? ((locale || this.defaultLocaleString).split(
-					'-',
-				)[0] as LocalesString)
+					'-'
+			  )[0] as LocalesString)
 			: locale || this.defaultLocaleString;
 
 		let requiredLocale;
 
 		try {
-			requiredLocale = require(
-				`../locales/${localeRoute}/${locale}.json`,
-			);
+			requiredLocale = require(`../locales/${localeRoute}/${locale}.json`);
 		} catch {
-			requiredLocale = require(
-				`../locales/${localeRoute}/${this.defaultLocaleString}.json`,
-			);
+			requiredLocale = require(`../locales/${localeRoute}/${this.defaultLocaleString}.json`);
 
 			this.localeString = this.defaultLocaleString;
 		}
