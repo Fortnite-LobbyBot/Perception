@@ -35,15 +35,19 @@ export class LocaleClient {
 		this.localeString = this.removeDash
 			? ((locale || this.defaultLocaleString).split(
 					'-'
-			  )[0] as LocalesString)
+				)[0] as LocalesString)
 			: locale || this.defaultLocaleString;
 
 		let requiredLocale;
 
 		try {
-			requiredLocale = require(`../locales/${localeRoute}/${locale}.json`);
+			requiredLocale = require(
+				`../src/locales/${localeRoute}/${locale}.json`
+			);
 		} catch {
-			requiredLocale = require(`../locales/${localeRoute}/${this.defaultLocaleString}.json`);
+			requiredLocale = require(
+				`../src/locales/${localeRoute}/${this.defaultLocaleString}.json`
+			);
 
 			this.localeString = this.defaultLocaleString;
 		}

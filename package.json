@@ -1,9 +1,9 @@
 {
     "name": "@fnlb-project/locales",
     "description": "FNLB Translation Service",
-    "version": "1.1.0",
-    "main": "src/index.ts",
-    "types": "src/index.ts",
+    "version": "1.1.2",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
     "type": "module",
     "scripts": {
         "build": "bun run build.ts",
