@@ -10,15 +10,22 @@ declare enum Locales {
 	Pt = "pt",
 	Tr = "tr"
 }
-declare class LocaleContext {
-	private localeClient;
-	private route;
-	localeObject?: Record<string, string>;
-	constructor(localeClient: LocaleClient, route: string);
-	load(): Promise<void>;
+export type LocalesString = `${Locales}`;
+export type LocaleObject = Record<string, string>;
+export declare class LocaleTranslator {
+	private localeObject;
+	constructor(localeObject: LocaleObject);
 	translate(key: string, variables?: Record<string, string>): string;
 }
-export type LocalesString = `${Locales}`;
+export declare class LocaleContext {
+	private localeClient;
+	private route;
+	localeObject?: LocaleObject;
+	private loadLock;
+	constructor(localeClient: LocaleClient, route: string);
+	createTranslator(): Promise<LocaleTranslator>;
+	private load;
+}
 export declare class LocaleClient {
 	scope: string;
 	protected contextCache: Record<string, LocaleContext>;
