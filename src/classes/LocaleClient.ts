@@ -42,11 +42,11 @@ export class LocaleClient {
 
 		try {
 			requiredLocale = require(
-				`../src/locales/${localeRoute}/${locale}.json`
+				`./locales/${localeRoute}/${locale}.json`
 			);
 		} catch {
 			requiredLocale = require(
-				`../src/locales/${localeRoute}/${this.defaultLocaleString}.json`
+				`./locales/${localeRoute}/${this.defaultLocaleString}.json`
 			);
 
 			this.localeString = this.defaultLocaleString;

@@ -1,3 +1,4 @@
+import { $ } from 'bun';
 import dts from 'bun-plugin-dts';
 
 await Bun.build({
@@ -6,3 +7,5 @@ await Bun.build({
 	minify: true,
 	plugins: [dts()]
 });
+
+await $`cp -R src/locales dist/locales/`
