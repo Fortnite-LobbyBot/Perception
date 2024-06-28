@@ -1,6 +1,6 @@
 {
 	"name": "@fnlb-project/locales",
-	"description": "FNLB Translation Service",
+	"description": "FNLB Locales & Translation Module",
 	"version": "2.0.0",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -8,6 +8,7 @@
 	"scripts": {
 		"build": "bun run src/build.ts",
 		"translate": "bun run src/translator.ts",
+		"upload": "bun run src/upload.ts",
 		"prepublishOnly": "bun run src/build",
 		"lint": "bunx --bun @biomejs/biome check --write .",
 		"prepare": "bun run build"
