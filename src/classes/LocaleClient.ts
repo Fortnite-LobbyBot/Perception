@@ -1,77 +1,30 @@
-export enum Locales {
-	Default = 'en',
-	De = 'de',
-	Es = 'es',
-	Fr = 'fr',
-	It = 'it',
-	Pl = 'pl',
-	Pt = 'pt',
-	Tr = 'tr'
-}
-
-export type LocalesString = `${Locales}`;
+import { Locales, type LocalesString } from '../types/enums/Locales';
+import { LocaleContext } from './LocaleContext';
 
 export class LocaleClient {
-	localeObject: Record<string, string>;
-	localeString: LocalesString;
-	defaultLocaleString: LocalesString;
-	removeDash: boolean;
+	public scope: string;
+	protected contextCache: Record<string, LocaleContext> = {};
 
-	constructor({
-		locale,
-		localeRoute,
-		localeModule,
-		removeDash = false
-	}: {
-		locale?: LocalesString;
-		localeRoute: string;
-		localeModule: string;
-		removeDash?: boolean;
-	}) {
-		this.removeDash = removeDash;
-		this.defaultLocaleString = this.removeDash
-			? (Locales.Default.split('-')[0] as LocalesString)
-			: Locales.Default;
-		this.localeString = this.removeDash
-			? ((locale || this.defaultLocaleString).split(
-					'-'
-				)[0] as LocalesString)
-			: locale || this.defaultLocaleString;
-
-		let requiredLocale;
-
-		try {
-			requiredLocale = require(
-				`../src/locales/${localeRoute}/${locale}.json`
-			);
-		} catch {
-			requiredLocale = require(
-				`../src/locales/${localeRoute}/${this.defaultLocaleString}.json`
-			);
-
-			this.localeString = this.defaultLocaleString;
-		}
-
-		this.localeObject = requiredLocale[localeModule];
+	public constructor(scope: string) {
+		this.scope = scope
 	}
 
-	translate(key: string, variables?: Record<string, string>) {
-		const result = this.localeObject[key];
+	public getContext(route: string) {
+		const cachedContext = this.contextCache[route]
 
-		return result.replace(/{(.*?)}/gi, (_match, value) => {
-			return variables?.[value] ?? '';
-		});
-	}
+		if (cachedContext) return cachedContext;
 
-	numberToLocaleString(number: number): string {
-		return number.toLocaleString(this.localeString);
+		const ctx = new LocaleContext(this, route);
+
+		this.contextCache[route] = ctx
+
+		return ctx
 	}
 
 	static transformToSupportedLocale(locale: any): LocalesString {
 		if (typeof locale !== 'string') return Locales.Default;
 
-		if (Object.values(Locales).includes(locale as Locales))
-			return locale as Locales;
+		if (Object.values(Locales).includes(locale as Locales)) return locale as Locales;
 
 		return Locales.Default;
 	}

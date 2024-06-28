@@ -1,0 +1,1 @@
+export type LocaleObject = Record<string, string>

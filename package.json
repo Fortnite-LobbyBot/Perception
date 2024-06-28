@@ -1,28 +1,31 @@
 {
-    "name": "@fnlb-project/locales",
-    "description": "FNLB Translation Service",
-    "version": "1.1.2",
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "type": "module",
-    "scripts": {
-        "build": "bun run build.ts",
-        "prepublishOnly": "bun run build",
-        "lint": "bunx --bun @biomejs/biome check --apply .",
-        "prepare": "bun run build"
-    },
-    "files": [
-        "dist"
-    ],
-    "author": "FNLB-Project",
-    "dependencies": {
-        "google-translate-api-x": "^10.6.8",
-        "tslib": "^2.6.2"
-    },
-    "devDependencies": {
-        "@types/bun": "^1.0.8",
-        "bun-plugin-dts": "^0.2.1",
-        "typescript": "^5.3.3"
-    },
-    "packageManager": "pnpm@8.14.1"
+	"name": "@fnlb-project/locales",
+	"description": "FNLB Locales & Translation Module",
+	"version": "2.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"type": "module",
+	"scripts": {
+		"build": "bun run src/build.ts",
+		"translate": "bun run src/translator.ts",
+		"upload": "bun run src/upload.ts",
+		"prepublishOnly": "bun run src/build",
+		"lint": "bunx --bun @biomejs/biome check --write .",
+		"prepare": "bun run build"
+	},
+	"files": ["dist"],
+	"author": "FNLB-Project",
+	"dependencies": {
+		"ky": "^1.4.0",
+		"tslib": "^2.6.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@types/bun": "^1.0.8",
+		"bun-plugin-dts": "^0.2.1",
+		"google-translate-api-x": "^10.6.8",
+		"minio": "^8.0.1",
+		"typescript": "^5.3.3"
+	},
+	"packageManager": "bun@1.1.17"
 }

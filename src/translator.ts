@@ -1,19 +1,21 @@
+import { existsSync, readFileSync, writeFileSync } from 'fs';
 import translator from 'google-translate-api-x';
-import { writeFileSync, existsSync, readFileSync } from 'fs';
+import type { TranslatorSettings } from './types/TranslatorSettings';
+import { Locales } from './types/enums/Locales';
 
-const settings = {
-	langPaths: ['./src/locales/commands/'],
-	rootLangFiles: ['./src/locales/commands/en.json'],
-	rootLangCode: 'en',
-	outputLangs: ['es', 'de', 'fr', 'pt', 'pl', 'it', 'tr'],
+const settings: TranslatorSettings = {
+	langPaths: ['./locales/bot/commands/'],
+	rootLangFiles: ['./locales/bot/commands/en.json'],
+	rootLangCode: Locales.Default,
+	outputLangs: [Locales.Es, Locales.De, Locales.Fr, Locales.Pt, Locales.Pl, Locales.It, Locales.Tr],
 	translateDelay: 100,
-	debug: true,
+	debug: true
 };
 
 const colors = {
 	blue: (str: string): string => `\x1B[1;34m${str}\x1B[1;0m`,
 	green: (str: string): string => `\x1B[1;32m${str}\x1B[1;0m`,
-	magenta: (str: string): string => `\x1B[1;35m${str}\x1B[1;0m`,
+	magenta: (str: string): string => `\x1B[1;35m${str}\x1B[1;0m`
 };
 
 const debug = (text: string): void => {
@@ -28,11 +30,9 @@ const translatorError = (text: string): void => {
 
 const wait = (time: number) => new Promise((res) => setTimeout(res, time));
 
-const getArrayKey = (array: string | string[]) =>
-	Array.isArray(array) ? array[0] : array;
+const getArrayKey = (array: string | string[]) => (Array.isArray(array) ? array[0]! : array);
 
-const getArrayValue = (array: string | string[]) =>
-	Array.isArray(array) ? array[1] : array;
+const getArrayValue = (array: string | string[]) => (Array.isArray(array) ? array[1]! : array);
 
 const main = async () => {
 	let i = 0;
@@ -41,26 +41,13 @@ const main = async () => {
 		const rootLangCode = getArrayKey(settings.rootLangCode);
 		const rootLangCodeFilename = getArrayValue(settings.rootLangCode);
 
-		debug(
-			`[${colors.blue(
-				'main',
-			)}] Starting root translation service (${colors.green(
-				rootLangCodeFilename,
-			)})`,
-		);
+		debug(`[${colors.blue('main')}] Starting root translation service (${colors.green(rootLangCodeFilename)})`);
 
-		const rootFilePath = settings.rootLangFiles[i];
+		const rootFilePath = settings.rootLangFiles[i]!;
 
-		if (!existsSync(rootFilePath))
-			return translatorError(
-				'[main] Invalid path provided on rootLangFile.',
-			);
+		if (!existsSync(rootFilePath)) return translatorError('[main] Invalid path provided on rootLangFile.');
 
-		debug(
-			`[${colors.blue('main')}] Opening root file: ${colors.green(
-				rootFilePath,
-			)}`,
-		);
+		debug(`[${colors.blue('main')}] Opening root file: ${colors.green(rootFilePath)}`);
 
 		const rootFileContent = readFileSync(rootFilePath, 'utf8');
 
@@ -69,13 +56,10 @@ const main = async () => {
 		try {
 			rootFileObject = JSON.parse(rootFileContent);
 		} catch {
-			return translatorError(
-				`[main] The content in the root file ${rootFilePath} is not a valid JSON object.`,
-			);
+			return translatorError(`[main] The content in the root file ${rootFilePath} is not a valid JSON object.`);
 		}
 
-		if (!rootFileObject)
-			return translatorError('[main] Invalid root file object.');
+		if (!rootFileObject) return translatorError('[main] Invalid root file object.');
 
 		for (const outputLangs of settings.outputLangs) {
 			const langCode = getArrayKey(outputLangs);
@@ -83,10 +67,8 @@ const main = async () => {
 
 			debug(
 				`[${colors.blue(rootLangCodeFilename)} => ${colors.blue(
-					langCodeFilename,
-				)}] Starting translation service (${colors.green(
-					langCodeFilename,
-				)})`,
+					langCodeFilename
+				)}] Starting translation service (${colors.green(langCodeFilename)})`
 			);
 
 			const filePath = `${langPath}${langCodeFilename}.json`;
@@ -94,8 +76,8 @@ const main = async () => {
 			if (!existsSync(filePath)) {
 				debug(
 					`[${colors.blue(rootLangCodeFilename)} => ${colors.blue(
-						langCodeFilename,
-					)}] Creating file: ${colors.green(filePath)}`,
+						langCodeFilename
+					)}] Creating file: ${colors.green(filePath)}`
 				);
 
 				writeFileSync(filePath, '{}');
@@ -103,8 +85,8 @@ const main = async () => {
 
 			debug(
 				`[${colors.blue(rootLangCodeFilename)} => ${colors.blue(
-					langCodeFilename,
-				)}] Opening file: ${colors.green(filePath)}`,
+					langCodeFilename
+				)}] Opening file: ${colors.green(filePath)}`
 			);
 
 			const fileContent = readFileSync(filePath, 'utf8');
@@ -115,14 +97,12 @@ const main = async () => {
 				fileObject = JSON.parse(fileContent);
 			} catch {
 				return translatorError(
-					`[${rootLangCodeFilename} => ${langCodeFilename}] The content in the file ${filePath} is not a valid JSON object.`,
+					`[${rootLangCodeFilename} => ${langCodeFilename}] The content in the file ${filePath} is not a valid JSON object.`
 				);
 			}
 
 			if (!fileObject)
-				return translatorError(
-					`[${rootLangCodeFilename} => ${langCodeFilename}] Invalid file object.`,
-				);
+				return translatorError(`[${rootLangCodeFilename} => ${langCodeFilename}] Invalid file object.`);
 
 			const rootFileObjPath = {};
 
@@ -136,17 +116,15 @@ const main = async () => {
 				langCodeFilename,
 				['root'],
 				rootFileObjPath,
-				filePath,
+				filePath
 			);
 
 			writeFileSync(filePath, JSON.stringify(result, null, 2));
 
 			debug(
 				`[${colors.blue(rootLangCodeFilename)} => ${colors.blue(
-					langCode,
-				)}] Translation ended for ${colors.green(
-					langCode,
-				)}, written in ${filePath}`,
+					langCode
+				)}] Translation ended for ${colors.green(langCode)}, written in ${filePath}`
 			);
 		}
 
@@ -157,8 +135,7 @@ const main = async () => {
 const isString = <Value>(val: Value): boolean => typeof val === 'string';
 
 const isObject = <Value>(val: Value): boolean =>
-	val === Object(val) &&
-	Object.prototype.toString.call(val) !== '[object Array]';
+	val === Object(val) && Object.prototype.toString.call(val) !== '[object Array]';
 
 const isArray = <Value>(val: Value): boolean => Array.isArray(val);
 
@@ -169,7 +146,7 @@ const translateString = async (
 	toLangCode: string,
 	toLangCodeFilename: string,
 	rootObjPath: string[],
-	rootFileObjPath: Record<string, any>,
+	rootFileObjPath: Record<string, any>
 ): Promise<string> => {
 	const rootText = rootFileObjPath[rootObjPath.join('')];
 
@@ -178,40 +155,31 @@ const translateString = async (
 	if (rootText && rootText !== 'untranslated') {
 		debug(
 			`[${colors.blue(fromLangCodeFilename)} => ${colors.blue(
-				toLangCodeFilename,
-			)}] [${colors.magenta('skipped')}] ${colors.green(
-				rootObjPath.join(''),
-			)} ==> ${colors.blue(rootText)}`,
+				toLangCodeFilename
+			)}] [${colors.magenta('skipped')}] ${colors.green(rootObjPath.join(''))} ==> ${colors.blue(rootText)}`
 		);
 
 		translationResult = formatString(text, rootText);
 	} else {
 		debug(
 			`[${colors.blue(fromLangCodeFilename)} => ${colors.blue(
-				toLangCodeFilename,
-			)}] Starting translation for ${colors.green(
-				rootObjPath.join(''),
-			)} ==> ${colors.blue(text)}`,
+				toLangCodeFilename
+			)}] Starting translation for ${colors.green(rootObjPath.join(''))} ==> ${colors.blue(text)}`
 		);
 
 		await wait(settings.translateDelay);
 
 		const result = await translator(text, {
 			from: fromLangCode,
-			to: toLangCode,
+			to: toLangCode
 		});
 
-		const translation = formatString(
-			text,
-			Array.isArray(result) ? result[0].text : result.text.toString(),
-		);
+		const translation = formatString(text, Array.isArray(result) ? result[0].text : result.text.toString());
 
 		debug(
-			`[${colors.blue(fromLangCodeFilename)} => ${colors.blue(
-				toLangCode,
-			)}] Translation ended for ${colors.green(
-				rootObjPath.join(''),
-			)} ==> ${colors.blue(translation)}`,
+			`[${colors.blue(fromLangCodeFilename)} => ${colors.blue(toLangCode)}] Translation ended for ${colors.green(
+				rootObjPath.join('')
+			)} ==> ${colors.blue(translation)}`
 		);
 
 		translationResult = translation;
@@ -220,10 +188,7 @@ const translateString = async (
 	return translationResult;
 };
 
-const translateObject = async <
-	TObject extends Record<string, any>,
-	RObject extends Record<string, any>,
->(
+const translateObject = async <TObject extends Record<string, any>, RObject extends Record<string, any>>(
 	object: TObject,
 	fromLangCode: string,
 	fromLangCodeFilename: string,
@@ -231,7 +196,7 @@ const translateObject = async <
 	toLangCodeFilename: string,
 	rootObjPath: string[],
 	rootFileObjPath: RObject,
-	filePath: string,
+	filePath: string
 ) => {
 	const result: Record<string, any> = {};
 
@@ -255,15 +220,14 @@ const translateObject = async <
 			toLangCodeFilename,
 			rootObjPath,
 			rootFileObjPath,
-			filePath,
+			filePath
 		);
 
 		result[key] = translatedValue;
 
 		iteration = iteration + 1;
 
-		if (iteration === entries.length)
-			rootObjPath.splice(rootObjPath.length - 1, 1);
+		if (iteration === entries.length) rootObjPath.splice(rootObjPath.length - 1, 1);
 	}
 
 	return result;
@@ -277,7 +241,7 @@ const translateArray = async <TArray, RObject extends Record<string, any>>(
 	toLangCodeFilename: string,
 	rootObjPath: string[],
 	rootFileObjPath: RObject,
-	filePath: string,
+	filePath: string
 ) => {
 	const result = [];
 
@@ -299,7 +263,7 @@ const translateArray = async <TArray, RObject extends Record<string, any>>(
 			toLangCodeFilename,
 			rootObjPath,
 			rootFileObjPath,
-			filePath,
+			filePath
 		);
 
 		result.push(translatedValue);
@@ -322,7 +286,7 @@ const translate = async <TSource, RObject extends Record<string, any>>(
 	toLangCodeFilename: string,
 	rootObjPath: string[],
 	rootFileObjPath: RObject,
-	filePath: string,
+	filePath: string
 ): Promise<unknown> => {
 	if (isString(source))
 		return translateString(
@@ -332,7 +296,7 @@ const translate = async <TSource, RObject extends Record<string, any>>(
 			toLangCode,
 			toLangCodeFilename,
 			rootObjPath,
-			rootFileObjPath,
+			rootFileObjPath
 		);
 
 	if (isObject(source))
@@ -344,7 +308,7 @@ const translate = async <TSource, RObject extends Record<string, any>>(
 			toLangCodeFilename,
 			rootObjPath,
 			rootFileObjPath,
-			filePath,
+			filePath
 		);
 
 	if (isArray(source))
@@ -356,27 +320,19 @@ const translate = async <TSource, RObject extends Record<string, any>>(
 			toLangCodeFilename,
 			rootObjPath,
 			rootFileObjPath,
-			filePath,
+			filePath
 		);
 
 	return source;
 };
 
-const deepString = (
-	text: string,
-	rootObjPath: string[],
-	rootFileObjPath: any,
-): string => {
+const deepString = (text: string, rootObjPath: string[], rootFileObjPath: any): string => {
 	rootFileObjPath[rootObjPath.join('')] = text;
 
 	return text;
 };
 
-const deepObject = (
-	object: any,
-	rootObjPath: string[],
-	rootFileObjPath: any,
-): any => {
+const deepObject = (object: any, rootObjPath: string[], rootFileObjPath: any): any => {
 	const result: Record<string, any> = {};
 
 	let iteration = 0;
@@ -404,11 +360,7 @@ const deepObject = (
 	return result;
 };
 
-const deepArray = (
-	array: any[],
-	rootObjPath: string[],
-	rootFileObjPath: any,
-): any[] => {
+const deepArray = (array: any[], rootObjPath: string[], rootFileObjPath: any): any[] => {
 	const result = [];
 
 	let iteration = 0;
@@ -435,16 +387,10 @@ const deepArray = (
 	return result;
 };
 
-const deepMap = (
-	source: any,
-	rootObjPath: string[],
-	rootFileObjPath: any,
-): any => {
-	if (isString(source))
-		return deepString(source, rootObjPath, rootFileObjPath);
+const deepMap = (source: any, rootObjPath: string[], rootFileObjPath: any): any => {
+	if (isString(source)) return deepString(source, rootObjPath, rootFileObjPath);
 
-	if (isObject(source))
-		return deepObject(source, rootObjPath, rootFileObjPath);
+	if (isObject(source)) return deepObject(source, rootObjPath, rootFileObjPath);
 
 	if (isArray(source)) return deepArray(source, rootObjPath, rootFileObjPath);
 
