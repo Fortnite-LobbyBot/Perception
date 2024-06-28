@@ -8,4 +8,5 @@ await Bun.build({
 	plugins: [dts()]
 });
 
-await $`cp -R src/locales dist/locales/`
+await $`rm -rf dist/locales`
+await $`cp -R src/locales dist/locales`

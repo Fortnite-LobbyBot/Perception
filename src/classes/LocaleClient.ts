@@ -1,3 +1,5 @@
+import { join } from 'path'
+
 export enum Locales {
 	Default = 'en',
 	De = 'de',
@@ -34,19 +36,19 @@ export class LocaleClient {
 			: Locales.Default;
 		this.localeString = this.removeDash
 			? ((locale || this.defaultLocaleString).split(
-					'-'
-				)[0] as LocalesString)
+				'-'
+			)[0] as LocalesString)
 			: locale || this.defaultLocaleString;
 
 		let requiredLocale;
 
 		try {
 			requiredLocale = require(
-				`./locales/${localeRoute}/${locale}.json`
+				join(__dirname, `./locales/${localeRoute}/${locale}.json`)
 			);
 		} catch {
 			requiredLocale = require(
-				`./locales/${localeRoute}/${this.defaultLocaleString}.json`
+				join(__dirname, `./locales/${localeRoute}/${this.defaultLocaleString}.json`)
 			);
 
 			this.localeString = this.defaultLocaleString;
