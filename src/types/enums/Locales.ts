@@ -8,5 +8,3 @@ export enum Locales {
 	Pt = 'pt',
 	Tr = 'tr'
 }
-
-export type LocalesString = `${Locales}`;
