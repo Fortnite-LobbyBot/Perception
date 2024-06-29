@@ -11,7 +11,6 @@
 		"upload": "bun run src/upload.ts",
 		"prepublishOnly": "bun run src/build",
 		"lint": "bunx --bun @biomejs/biome check --write .",
-		"prepare": "bun run build",
 		"test": "bun run test/index.ts"
 	},
 	"files": ["dist"],
