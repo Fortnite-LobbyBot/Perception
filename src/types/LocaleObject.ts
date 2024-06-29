@@ -1,1 +1,3 @@
-export type LocaleObject = Record<string, string>
+export type ModuleObject = Record<string, string>;
+
+export type LocaleObject = Record<string, ModuleObject>;
