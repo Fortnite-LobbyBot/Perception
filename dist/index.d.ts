@@ -17,13 +17,15 @@ export interface LocaleOptions {
 }
 export declare class LocaleTranslator {
 	private moduleObject;
+	locale: Locales;
 	options: LocaleOptions;
-	constructor(moduleObject: ModuleObject | undefined, options: LocaleOptions);
+	constructor(moduleObject: ModuleObject | undefined, locale: Locales, options: LocaleOptions);
 	translate(key: string, variables?: Record<string, string>): string;
 }
 export declare class LocaleContext {
 	localeObject?: LocaleObject;
-	constructor(localeObject?: LocaleObject);
+	locale: Locales;
+	constructor(localeObject: LocaleObject | undefined, locale: Locales);
 	createTranslator(options: LocaleOptions): LocaleTranslator;
 }
 export declare class LocaleClient {

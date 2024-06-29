@@ -36,7 +36,7 @@ export class LocaleClient {
 
 			if (!localeObject) return undefined;
 
-			const ctx = new LocaleContext(localeObject);
+			const ctx = new LocaleContext(localeObject, locale);
 
 			this.contextCache[fullRoute] = ctx;
 
