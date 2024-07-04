@@ -1,12 +1,13 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.0/schema.json",
 	"files": {
-		"ignoreUnknown": true
+		"ignoreUnknown": true,
+		"ignore": ["**/node_modules/", "dist"]
 	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": ["**/node_modules/"],
+		"ignore": ["**/node_modules/", "**/dist/"],
 		"indentStyle": "tab",
 		"indentWidth": 4,
 		"lineEnding": "lf",
@@ -32,7 +33,7 @@
 	},
 	"linter": {
 		"enabled": false,
-		"ignore": ["**/node_modules/"],
+		"ignore": ["**/node_modules/", "**/dist/"],
 		"rules": {}
 	},
 	"organizeImports": {
