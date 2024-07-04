@@ -16,6 +16,7 @@
 	"files": ["dist"],
 	"author": "FNLB-Project",
 	"dependencies": {
+		"@fnlb-project/shared": "github:Fortnite-LobbyBot/Pragmatic#stable",
 		"ky": "^1.4.0",
 		"tslib": "^2.6.2"
 	},
