@@ -1,5 +1,5 @@
+import { Locales } from '@fnlb-project/shared/types';
 import type { LocaleObject } from '../types/LocaleObject';
-import { Locales } from '../types/enums/Locales';
 import { AsyncLock } from './AsyncLock';
 import { LocaleContext } from './LocaleContext';
 

@@ -1,10 +1,7 @@
 {
 	"$schema": "https://json.schemastore.org/tsconfig.json",
 	"compilerOptions": {
-		"lib": [
-			"ESNext",
-			"DOM"
-		],
+		"lib": ["ESNext", "DOM"],
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleDetection": "force",
@@ -30,14 +27,6 @@
 		"verbatimModuleSyntax": true,
 		"types": []
 	},
-	"include": [
-		"src/index.ts",
-		"src/**/*",
-		"src/**/*.json"
-	],
-	"exclude": [
-		"dist/",
-		"node_modules/",
-		"node_modules/**/*"
-	]
+	"include": ["src/index.ts", "src/**/*", "src/**/*.json"],
+	"exclude": ["dist/", "node_modules/", "node_modules/**/*"]
 }

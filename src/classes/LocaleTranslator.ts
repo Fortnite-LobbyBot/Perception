@@ -1,4 +1,4 @@
-import type { Locales } from '../types/enums/Locales';
+import type { Locales } from '@fnlb-project/shared/types';
 import type { ModuleObject } from '../types/LocaleObject';
 import type { LocaleOptions } from '../types/LocaleOptions';
 
@@ -16,7 +16,8 @@ export class LocaleTranslator {
 	public translate(key: string, variables?: Record<string, string>) {
 		const result = this.moduleObject?.[key];
 
-		if (!result) console.error(`TRANSLATION_ERROR: LOCALE "${this.locale}" KEY "${key}" MODULE "${this.options.module}"`)
+		if (!result)
+			console.error(`TRANSLATION_ERROR: LOCALE "${this.locale}" KEY "${key}" MODULE "${this.options.module}"`);
 
 		return (
 			result?.replace(/{(.*?)}/gi, (_match, value) => {

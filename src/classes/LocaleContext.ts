@@ -1,4 +1,4 @@
-import type { Locales } from '../types/enums/Locales';
+import type { Locales } from '@fnlb-project/shared/types';
 import type { LocaleObject } from '../types/LocaleObject';
 import type { LocaleOptions } from '../types/LocaleOptions';
 import { LocaleTranslator } from './LocaleTranslator';
@@ -9,7 +9,7 @@ export class LocaleContext {
 
 	public constructor(localeObject: LocaleObject | undefined, locale: Locales) {
 		this.localeObject = localeObject;
-		this.locale = locale
+		this.locale = locale;
 	}
 
 	public createTranslator(options: LocaleOptions) {
