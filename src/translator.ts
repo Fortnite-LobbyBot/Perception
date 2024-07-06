@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { Locales } from '@fnlb-project/shared/types';
 import translator from 'google-translate-api-x';
 import type { TranslatorSettings } from './types/TranslatorSettings';
-import { Locales } from './types/enums/Locales';
 
 const settings: TranslatorSettings = {
 	langPaths: ['./locales/bot/commands/'],

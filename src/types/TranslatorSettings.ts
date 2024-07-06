@@ -1,4 +1,4 @@
-import type { Locales } from './enums/Locales';
+import type { Locales } from '@fnlb-project/shared/types';
 
 export interface TranslatorSettings {
 	langPaths: string[];
