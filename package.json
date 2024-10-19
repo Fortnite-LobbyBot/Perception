@@ -25,7 +25,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.8.3",
 		"@types/bun": "^1.0.8",
-		"bun-plugin-dts": "^0.2.1",
+		"bun-plugin-dts": "^0.3.0",
 		"google-translate-api-x": "^10.6.8",
 		"minio": "^8.0.1",
 		"typescript": "^5.3.3"
