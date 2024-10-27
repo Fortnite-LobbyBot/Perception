@@ -1,12 +1,16 @@
 {
 	"name": "@fnlb-project/locales",
 	"description": "FNLB Locales & Translation Module",
-	"version": "2.0.6",
+	"version": "2.0.7",
 	"main": "src/index.ts",
 	"types": "src/index.ts",
 	"type": "module",
 	"publishConfig": {
 		"access": "public"
+	},
+	"exports": {
+		"types": "./dist/index.d.ts",
+		"default": "./dist/index.js"
 	},
 	"scripts": {
 		"build": "bun run src/build.ts",
