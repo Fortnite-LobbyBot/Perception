@@ -243,6 +243,14 @@
 		"msg.error": "Cannot add the user!",
 		"msg.request_sent": "Friend request sent to {name}"
 	},
+	"config.decline_all_friends": {
+		"description": "Declinas all the pending friends of the bot."
+	},
+	"run.decline_all_friends": {
+		"msg.unauthorized": "This command can only be executed by bot owners!",
+		"msg.declining_friends": "Declining all the pending friends!",
+		"msg.declined_friends": "Declined {count} friends!"
+	},
 	"config.decline_friend": {
 		"description": "Reject or abort a friend request.",
 		"usage.query.name": "Pending friend's name or ID",
@@ -305,7 +313,7 @@
 	"run.remove_all_friends": {
 		"msg.unauthorized": "This command can only be executed by bot owners!",
 		"msg.removing_friends": "Removing all friends!",
-		"msg.remove_friends": "Removed {count} friends!"
+		"msg.removed_friends": "Removed {count} friends!"
 	},
 	"config.remove_friend": {
 		"description": "Removes a bot's friend.",
