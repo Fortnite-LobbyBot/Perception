@@ -244,11 +244,11 @@
     "msg.request_sent": "Solicitud de amistad enviada a {name}"
   },
   "config.decline_all_friends": {
-    "description": "Declinas todas las amigas pendientes del bot."
+    "description": "Rechaza todos los amigos pendientes del bot."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "¡Este comando solo puede ser ejecutado por los propietarios de BOT!",
-    "msg.declining_friends": "¡Declinando a todas las amigas pendientes!",
+    "msg.unauthorized": "¡Este comando solo puede ser ejecutado por los propietarios de bot!",
+    "msg.declining_friends": "Rechazando a todos los amigos pendientes!",
     "msg.declined_friends": "Declinado {count} Amigos!"
   },
   "config.decline_friend": {

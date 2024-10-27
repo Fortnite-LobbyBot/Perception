@@ -244,7 +244,7 @@
 		"msg.request_sent": "Friend request sent to {name}"
 	},
 	"config.decline_all_friends": {
-		"description": "Declinas all the pending friends of the bot."
+		"description": "Declines all the pending friends of the bot."
 	},
 	"run.decline_all_friends": {
 		"msg.unauthorized": "This command can only be executed by bot owners!",
