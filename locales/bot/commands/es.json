@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
+    "usage.filter.name": "Filtrar",
     "usage.filter.options.outfits": "Trajes",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Copia los cosméticos de un usuario o se los copia a usted si no especifica los argumentos.",
+    "usage.filter.name": "Filtrar",
     "usage.filter.options.all": "Todo",
     "usage.filter.options.outfit": "Traje",
     "usage.filter.options.backpack": "Mochila",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Hace lo mismo que un usuario o lo mismo que tú si no especificas argumentos.",
+    "usage.filter.name": "Filtrar",
     "usage.filter.options.all": "Todo",
     "usage.filter.options.changes": "Cambios",
     "usage.filter.options.outfits": "Trajes",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
+    "usage.filter.name": "Filtrar",
     "usage.filter.options.outfits": "Trajes",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
+    "usage.filter.name": "Filtrar",
     "usage.filter.options.outfits": "Trajes",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -244,11 +249,11 @@
     "msg.request_sent": "Solicitud de amistad enviada a {name}"
   },
   "config.decline_all_friends": {
-    "description": "Declinas todas las amigas pendientes del bot."
+    "description": "Rechaza todos los amigos pendientes del bot."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "¡Este comando solo puede ser ejecutado por los propietarios de BOT!",
-    "msg.declining_friends": "¡Declinando a todas las amigas pendientes!",
+    "msg.unauthorized": "¡Este comando solo puede ser ejecutado por los propietarios de bot!",
+    "msg.declining_friends": "Rechazando a todos los amigos pendientes!",
     "msg.declined_friends": "Declinado {count} Amigos!"
   },
   "config.decline_friend": {
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Establece la privacidad de la fiesta.",
+    "usage.privacy.name": "Privacidad",
     "usage.privacy.options.public": "Público",
     "usage.privacy.options.private": "Privado",
     "usage.privacy.description": "La privacidad de la sala a establecer."

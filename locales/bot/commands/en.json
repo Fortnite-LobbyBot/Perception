@@ -9,6 +9,7 @@
 	},
 	"config.all_items": {
 		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
 		"usage.filter.options.emojis": "Emojis",
@@ -65,6 +66,7 @@
 	},
 	"config.copy": {
 		"description": "Copy the cosmetics of a user or copy the cosmetics to you if not specify arguments.",
+		"usage.filter.name": "Filter",
 		"usage.filter.options.all": "All",
 		"usage.filter.options.outfit": "Outfit",
 		"usage.filter.options.backpack": "Backpack",
@@ -110,6 +112,7 @@
 	},
 	"config.mimic": {
 		"description": "Does the same as a user or the same as you if not specify arguments. Use \"stop\" to stop the command.",
+		"usage.filter.name": "Filter",
 		"usage.filter.options.all": "All",
 		"usage.filter.options.changes": "Changes",
 		"usage.filter.options.outfits": "Outfits",
@@ -130,6 +133,7 @@
 	},
 	"config.new_items": {
 		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
 		"usage.filter.options.emojis": "Emojis",
@@ -195,6 +199,7 @@
 	},
 	"config.shop_items": {
 		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
 		"usage.filter.options.emojis": "Emojis",
@@ -244,7 +249,7 @@
 		"msg.request_sent": "Friend request sent to {name}"
 	},
 	"config.decline_all_friends": {
-		"description": "Declinas all the pending friends of the bot."
+		"description": "Declines all the pending friends of the bot."
 	},
 	"run.decline_all_friends": {
 		"msg.unauthorized": "This command can only be executed by bot owners!",
@@ -518,6 +523,7 @@
 	},
 	"config.privacy": {
 		"description": "Sets the privacy of the party.",
+		"usage.privacy.name": "Privacy",
 		"usage.privacy.options.public": "Public",
 		"usage.privacy.options.private": "Private",
 		"usage.privacy.description": "The privacy of the party to set."

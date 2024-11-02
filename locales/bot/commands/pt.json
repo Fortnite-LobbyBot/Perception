@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
+    "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Copie os cosméticos de um usuário ou copie os cosméticos para você, se não especificar argumentos.",
+    "usage.filter.name": "Filtro",
     "usage.filter.options.all": "Todos",
     "usage.filter.options.outfit": "Roupa",
     "usage.filter.options.backpack": "Mochila",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Faz o mesmo que um usuário ou o mesmo que você, se não especificar argumentos. Use \"stop\" para parar o comando.",
+    "usage.filter.name": "Filtro",
     "usage.filter.options.all": "Todos",
     "usage.filter.options.changes": "Mudanças",
     "usage.filter.options.outfits": "Roupas",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
+    "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Mostra os cosméticos mais recentes adicionados ao jogo, um filtro opcional pode ser adicionado e você pode parar com o comando \"stop\".",
+    "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Roupas",
     "usage.filter.options.backpacks": "Mochilas",
     "usage.filter.options.emojis": "Emojis",
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Define a privacidade da parte.",
+    "usage.privacy.name": "Privacidade",
     "usage.privacy.options.public": "Pública",
     "usage.privacy.options.private": "Privada",
     "usage.privacy.description": "A privacidade da parte para definir."

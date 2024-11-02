@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Copiez les cosmétiques d'un utilisateur ou copiez les cosmétiques si vous ne spécifiez pas d'arguments.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.all": "Toute",
     "usage.filter.options.outfit": "Tenue",
     "usage.filter.options.backpack": "Sac à dos",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Fait la même chose qu'un utilisateur ou le même que vous ne spécifiez pas les arguments. Utilisez \"stop\" pour arrêter la commande.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.all": "Toute",
     "usage.filter.options.changes": "Changements",
     "usage.filter.options.outfits": "Tenues",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
     "usage.filter.options.emojis": "Emojis",
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Définit l'intimité du parti.",
+    "usage.privacy.name": "Confidentialité",
     "usage.privacy.options.public": "Publique",
     "usage.privacy.options.private": "Privée",
     "usage.privacy.description": "La confidentialité du parti à définir."

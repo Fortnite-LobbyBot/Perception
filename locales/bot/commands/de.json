@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
+    "usage.filter.name": "Filter",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Kopieren Sie die Kosmetik eines Benutzers oder kopieren Sie die Kosmetik an Sie, wenn Sie keine Argumente angeben.",
+    "usage.filter.name": "Filter",
     "usage.filter.options.all": "Alle",
     "usage.filter.options.outfit": "Outfit",
     "usage.filter.options.backpack": "Rucksack",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Tut dasselbe wie ein Benutzer oder das gleiche wie Sie, wenn nicht Argumente angeben. Verwenden Sie \"stop\", um den Befehl zu stoppen.",
+    "usage.filter.name": "Filter",
     "usage.filter.options.all": "Alle",
     "usage.filter.options.changes": "Änderungen",
     "usage.filter.options.outfits": "Outfits",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
+    "usage.filter.name": "Filter",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
+    "usage.filter.name": "Filter",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
     "usage.filter.options.emojis": "Emojis",
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Legt die Privatsphäre der Partei fest.",
+    "usage.privacy.name": "Privatsphäre",
     "usage.privacy.options.public": "Öffentlich",
     "usage.privacy.options.private": "Privat",
     "usage.privacy.description": "Die Privatsphäre der Partei zu setzen."

@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Bir kullanıcının kozmetiklerini kopyalayın veya bağımsız değişkenler belirtmezse kozmetikleri size kopyalayın.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.all": "Tüm",
     "usage.filter.options.outfit": "Kıyafet",
     "usage.filter.options.backpack": "Sırt çantası",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Bir kullanıcı ile aynı veya bağımsız değişkenler belirtmezseniz sizinle aynı yapar. Komutu durdurmak için \"stop\" kullanın.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.all": "Tüm",
     "usage.filter.options.changes": "Değişim",
     "usage.filter.options.outfits": "Kıyafetler",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
+    "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
     "usage.filter.options.emojis": "Emojiler",
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Partinin gizliliğini belirler.",
+    "usage.privacy.name": "Mahremiyet",
     "usage.privacy.options.public": "Halk",
     "usage.privacy.options.private": "Özel",
     "usage.privacy.description": "Partinin gizliliği."
