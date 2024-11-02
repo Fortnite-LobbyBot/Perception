@@ -1,7 +1,7 @@
 {
 	"name": "@fnlb-project/locales",
 	"description": "FNLB Locales & Translation Module",
-	"version": "2.0.7",
+	"version": "2.0.8",
 	"main": "src/index.ts",
 	"types": "src/index.ts",
 	"type": "module",
