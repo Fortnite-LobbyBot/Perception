@@ -9,6 +9,7 @@
   },
   "config.all_items": {
     "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
+    "usage.filter.name": "Filtr",
     "usage.filter.options.outfits": "Stroje",
     "usage.filter.options.backpacks": "Plecaki",
     "usage.filter.options.emojis": "Emoji",
@@ -65,6 +66,7 @@
   },
   "config.copy": {
     "description": "Skopiuj kosmetyki użytkownika lub skopiuj kosmetyki, jeśli nie określa argumentów.",
+    "usage.filter.name": "Filtr",
     "usage.filter.options.all": "Wszystko",
     "usage.filter.options.outfit": "Strój",
     "usage.filter.options.backpack": "Plecak",
@@ -110,6 +112,7 @@
   },
   "config.mimic": {
     "description": "Czy to samo co użytkownik lub taki sam jak ty, jeśli nie określa argumentów. Użyj „Stop”, aby zatrzymać polecenie.",
+    "usage.filter.name": "Filtr",
     "usage.filter.options.all": "Wszystko",
     "usage.filter.options.changes": "Zmiany",
     "usage.filter.options.outfits": "Stroje",
@@ -130,6 +133,7 @@
   },
   "config.new_items": {
     "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
+    "usage.filter.name": "Filtr",
     "usage.filter.options.outfits": "Stroje",
     "usage.filter.options.backpacks": "Plecaki",
     "usage.filter.options.emojis": "Emoji",
@@ -195,6 +199,7 @@
   },
   "config.shop_items": {
     "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
+    "usage.filter.name": "Filtr",
     "usage.filter.options.outfits": "Stroje",
     "usage.filter.options.backpacks": "Plecaki",
     "usage.filter.options.emojis": "Emoji",
@@ -518,6 +523,7 @@
   },
   "config.privacy": {
     "description": "Ustawia prywatność partii.",
+    "usage.privacy.name": "Prywatność",
     "usage.privacy.options.public": "Publiczny",
     "usage.privacy.options.private": "Prywatny",
     "usage.privacy.description": "Prywatność partii do ustalenia."
