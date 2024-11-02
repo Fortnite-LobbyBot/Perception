@@ -386,7 +386,7 @@
 		"description": "Envía un comando a un número específico de bots.",
 		"usage.number.name": "Número de bots",
 		"usage.number.description": "La cantidad de bots para enviar el comando.",
-		"usage.command.name": "Dominio",
+		"usage.command.name": "Comando",
 		"usage.command.description": "El comando a ejecutar en los bots.",
 		"usage.args.name": "Argumentos",
 		"usage.args.description": "Los argumentos del comando son obligatorios."
@@ -514,7 +514,7 @@
 	},
 	"config.playlist": {
 		"description": "Establece el modo de juego de la fiesta.",
-		"usage.query.name": "Nombre o ID del modo de juego.",
+		"usage.query.name": "Nombre o ID del modo de juego",
 		"usage.query.description": "El nombre o ID del modo de juego que se establecerá."
 	},
 	"run.playlist": {
