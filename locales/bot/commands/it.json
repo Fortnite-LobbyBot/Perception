@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emote",
 		"usage.filter.options.pickaxes": "Pichaxes",
+		"usage.filter.options.shoes": "Scarpe",
 		"usage.filter.description": "Il filtro da impostare mostrando gli elementi."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "EMOTE CHILED!"
 	},
+	"config.clear_shoes": {
+		"description": "Rimuove le scarpe del bot."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Scarpe eliminate!"
+	},
 	"config.copy": {
 		"description": "Copia i cosmetici di un utente o copia i cosmetici se non specifica gli argomenti.",
 		"usage.filter.name": "Filtro",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Emote",
 		"usage.filter.options.pickaxe": "Piccone",
+		"usage.filter.options.shoes": "Scarpe",
 		"usage.filter.description": "Il filtro da impostare durante la copia dei cosmetici.",
 		"usage.query.name": "Nome o ID membro",
 		"usage.query.description": "Il nome o l'ID del membro per copiare i cosmetici."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emote",
 		"usage.filter.options.pickaxes": "Pichaxes",
+		"usage.filter.options.shoes": "Scarpe",
 		"usage.filter.description": "Il filtro da impostare quando si imita i cosmetici.",
 		"usage.query.name": "Nome o ID membro",
 		"usage.query.description": "Il nome o l'ID del membro per imitare i cosmetici."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emote",
 		"usage.filter.options.pickaxes": "Pichaxes",
+		"usage.filter.options.shoes": "Scarpe",
 		"usage.filter.description": "Il filtro da impostare mostrando gli elementi."
 	},
 	"run.new_items": {
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Invia la variante che desideri selezionare per {type}",
 		"msg.changed": "Imposta le varianti Pichaxe!"
 	},
+	"config.shoes": {
+		"description": "Imposta le scarpe del bot.",
+		"usage.query.name": "Nome delle scarpe o ID",
+		"usage.query.description": "Il nome o l'ID delle scarpe da impostare."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Scarpe {query} non trovate!",
+		"msg.shoes_changed": "Imposta le scarpe su {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
 		"usage.filter.name": "Filtro",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emote",
 		"usage.filter.options.pickaxes": "Pichaxes",
+		"usage.filter.options.shoes": "Scarpe",
 		"usage.filter.description": "Il filtro da impostare mostrando gli elementi."
 	},
 	"run.shop_items": {

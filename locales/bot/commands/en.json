@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Shoes",
 		"usage.filter.description": "The filter to be set by showing the items."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "Cleared emote!"
 	},
+	"config.clear_shoes": {
+		"description": "Removes the shoes of the bot."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Cleared shoes!"
+	},
 	"config.copy": {
 		"description": "Copy the cosmetics of a user or copy the cosmetics to you if not specify arguments.",
 		"usage.filter.name": "Filter",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Emote",
 		"usage.filter.options.pickaxe": "Pickaxe",
+		"usage.filter.options.shoes": "Shoes",
 		"usage.filter.description": "The filter to set when copying cosmetics.",
 		"usage.query.name": "Member name or ID",
 		"usage.query.description": "The member's name or ID to copy the cosmetics."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Shoes",
 		"usage.filter.description": "The filter to set when imitating cosmetics.",
 		"usage.query.name": "Member name or ID",
 		"usage.query.description": "The member's name or ID to imitate cosmetics."
@@ -139,10 +148,11 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Shoes",
 		"usage.filter.description": "The filter to be set by showing the items."
 	},
 	"run.new_items": {
-		"msg.type_error": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes or pickaxes",
+		"msg.type_error": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
 		"msg.cosmetic_fetch_error": "Unable to fetch recently added cosmetics.",
 		"msg.already_showing": "Cosmetics are already being displayed, it must first be stopped with the \"stop\" command.",
 		"msg.showing_cosmetics": "Setting all the recently added items... {filter}",
@@ -156,7 +166,7 @@
 	},
 	"run.outfit": {
 		"msg.outfit_not_found": "Outfit {query} not found!",
-		"msg.outfit_changed": "Set the outfit to {name}! ({id})!"
+		"msg.outfit_changed": "Set the outfit to {name}! ({id})"
 	},
 	"config.outfit_variants": {
 		"description": "Sets the outfit's variants."
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Send the variant you want to select for {type}",
 		"msg.changed": "Set the pickaxe variants!"
 	},
+	"config.shoes": {
+		"description": "Sets the bot's shoes.",
+		"usage.query.name": "Shoes name or ID",
+		"usage.query.description": "The name or ID of the shoes to be set."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Shoes {query} not found!",
+		"msg.shoes_changed": "Set the shoes to {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
@@ -205,10 +224,11 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Shoes",
 		"usage.filter.description": "The filter to be set by showing the items."
 	},
 	"run.shop_items": {
-		"msg.invalid_type": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes or pickaxes",
+		"msg.invalid_type": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
 		"msg.fetch_failed": "Unable to fetch the shop items.",
 		"msg.already_displaying": "Cosmetics are already being displayed, it must first be stopped with the \"stop\" command.",
 		"msg.showing_items": "Setting all the items in the shop... {filter}",

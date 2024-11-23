@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emocje",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Buty",
 		"usage.filter.description": "Filtr, który ma być ustawiony, pokazując elementy."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "Wyczyszczona emotka!"
 	},
+	"config.clear_shoes": {
+		"description": "Usuwa buty bota."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Oczyszczone buty!"
+	},
 	"config.copy": {
 		"description": "Skopiuj kosmetyki użytkownika lub skopiuj kosmetyki, jeśli nie określa argumentów.",
 		"usage.filter.name": "Filtr",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Emotka",
 		"usage.filter.options.pickaxe": "Kilof",
+		"usage.filter.options.shoes": "Buty",
 		"usage.filter.description": "Filtr, który ma ustawić podczas kopiowania kosmetyków.",
 		"usage.query.name": "Nazwa lub identyfikator członka",
 		"usage.query.description": "Nazwisko lub identyfikator członka do kopiowania kosmetyków."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emocje",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Buty",
 		"usage.filter.description": "Filtr do naśladowania kosmetyków.",
 		"usage.query.name": "Nazwa lub identyfikator członka",
 		"usage.query.description": "Imię lub nazwisko członka lub identyfikator naśladowania kosmetyków."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emocje",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Buty",
 		"usage.filter.description": "Filtr, który ma być ustawiony, pokazując elementy."
 	},
 	"run.new_items": {
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Wyślij wariant, który chcesz wybrać dla {type}",
 		"msg.changed": "Ustaw warianty Pickaxe!"
 	},
+	"config.shoes": {
+		"description": "Ustawia buty bota.",
+		"usage.query.name": "Nazwa lub identyfikator butów",
+		"usage.query.description": "Nazwa lub identyfikator butów, które mają być ustawione."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Buty {query} nie znaleziono!",
+		"msg.shoes_changed": "Ustaw buty na {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
 		"usage.filter.name": "Filtr",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emoji",
 		"usage.filter.options.emotes": "Emocje",
 		"usage.filter.options.pickaxes": "Pickaxes",
+		"usage.filter.options.shoes": "Buty",
 		"usage.filter.description": "Filtr, który ma być ustawiony, pokazując elementy."
 	},
 	"run.shop_items": {

@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Bailes",
 		"usage.filter.options.pickaxes": "Picos",
+		"usage.filter.options.shoes": "Zapatos",
 		"usage.filter.description": "El filtro que se establecerá mostrando los elementos."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "¡Baile quitado!"
 	},
+	"config.clear_shoes": {
+		"description": "Quita los zapatos del bot."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "¡Zapatos quitados!"
+	},
 	"config.copy": {
 		"description": "Copia los cosméticos de un usuario o se los copia a usted si no especifica los argumentos.",
 		"usage.filter.name": "Filtro",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Baile",
 		"usage.filter.options.pickaxe": "Pico",
+		"usage.filter.options.shoes": "Zapatos",
 		"usage.filter.description": "El filtro que se establecerá al copiar cosméticos.",
 		"usage.query.name": "Nombre o ID del miembro",
 		"usage.query.description": "El nombre o ID para copiar los cosméticos."
@@ -90,7 +98,7 @@
 	},
 	"run.cosmetic": {
 		"msg.cosmetic_not_found": "¡Cosmético {query} no encontrado!",
-		"msg.cosmetic_changed": "¡Cambié el {type} a {name}!"
+		"msg.cosmetic_changed": "¡Cambié el {type} a {name}! ({id})"
 	},
 	"config.emoji": {
 		"description": "Establece el emoji del bot.",
@@ -99,7 +107,7 @@
 	},
 	"run.emoji": {
 		"msg.emoji_not_found": "¡Emoji {query} no encontrado!",
-		"msg.emoji_changed": "Cambié el emoji a {name}!"
+		"msg.emoji_changed": "Cambié el emoji a {name}! ({id})"
 	},
 	"config.emote": {
 		"description": "Establece el baile del bot.",
@@ -108,7 +116,7 @@
 	},
 	"run.emote": {
 		"msg.emote_not_found": "¡Baile {query} no encontrado!",
-		"msg.emote_changed": "¡Cambié el baile a {name}!"
+		"msg.emote_changed": "¡Cambié el baile a {name}! ({id})"
 	},
 	"config.mimic": {
 		"description": "Hace lo mismo que un usuario o lo mismo que tú si no especificas argumentos.",
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Bailes",
 		"usage.filter.options.pickaxes": "Picos",
+		"usage.filter.options.shoes": "Zapatos",
 		"usage.filter.description": "El filtro a fijar al imitar cosméticos.",
 		"usage.query.name": "Nombre o ID del miembro",
 		"usage.query.description": "El nombre o ID del miembro para imitar cosméticos."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Bailes",
 		"usage.filter.options.pickaxes": "Picos",
+		"usage.filter.options.shoes": "Zapatos",
 		"usage.filter.description": "El filtro que se establecerá mostrando los elementos."
 	},
 	"run.new_items": {
@@ -156,7 +166,7 @@
 	},
 	"run.outfit": {
 		"msg.outfit_not_found": "¡Traje {query} no encontrado!",
-		"msg.outfit_changed": "¡Me he establecido el traje {name}!"
+		"msg.outfit_changed": "¡Me he establecido el traje {name}! ({id})"
 	},
 	"config.outfit_variants": {
 		"description": "Establece las variantes de el traje."
@@ -176,7 +186,7 @@
 	"run.perfect_timing": {
 		"msg.cosmetic_not_found": "¡Cosmético {query} no encontrado!",
 		"msg.perfect_timing_success": "Sincronizando para realizar una sincronización perfecta...",
-		"msg.perfect_timing_done": "¡Sincronicé el {value} con {name}! "
+		"msg.perfect_timing_done": "¡Sincronicé el {value} con {name}! ({id})"
 	},
 	"config.pickaxe": {
 		"description": "Establece el pico del bot.",
@@ -185,7 +195,7 @@
 	},
 	"run.pickaxe": {
 		"msg.pickaxe_not_found": "¡Pico {query} no encontrado!",
-		"msg.pickaxe_changed": "¡Pon el pico en {name}! "
+		"msg.pickaxe_changed": "¡Me puse el pico {name}! ({id})"
 	},
 	"config.pickaxe_variants": {
 		"description": "Establece las variantes del pico."
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Envía la variante que desea seleccionar para {type}",
 		"msg.changed": "¡Establecí las variantes del pico!"
 	},
+	"config.shoes": {
+		"description": "Establece los zapatos del bot.",
+		"usage.query.name": "Nombre o ID de los zapatos",
+		"usage.query.description": "El nombre o ID de los zapatos a establecer."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Zapatos {query} no encontrados!",
+		"msg.shoes_changed": "¡Me puse los zapatos {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
 		"usage.filter.name": "Filtro",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Bailes",
 		"usage.filter.options.pickaxes": "Picos",
+		"usage.filter.options.shoes": "Zapatos",
 		"usage.filter.description": "El filtro que se establecerá mostrando los elementos."
 	},
 	"run.shop_items": {

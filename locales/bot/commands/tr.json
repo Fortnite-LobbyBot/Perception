@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emojiler",
 		"usage.filter.options.emotes": "Eşler",
 		"usage.filter.options.pickaxes": "Kazık",
+		"usage.filter.options.shoes": "Ayakkabı",
 		"usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "Emote'u temizledi!"
 	},
+	"config.clear_shoes": {
+		"description": "Botun ayakkabılarını kaldırır."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Temizlenmiş ayakkabılar!"
+	},
 	"config.copy": {
 		"description": "Bir kullanıcının kozmetiklerini kopyalayın veya bağımsız değişkenler belirtmezse kozmetikleri size kopyalayın.",
 		"usage.filter.name": "Filtre",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Zorlamak",
 		"usage.filter.options.pickaxe": "Kazma",
+		"usage.filter.options.shoes": "Ayakkabı",
 		"usage.filter.description": "Kozmetik kopyalarken ayarlanacak filtre.",
 		"usage.query.name": "Üye Adı veya Kimlik",
 		"usage.query.description": "Kozmetikleri kopyalamak için üyenin adı veya kimliği."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emojiler",
 		"usage.filter.options.emotes": "Eşler",
 		"usage.filter.options.pickaxes": "Kazık",
+		"usage.filter.options.shoes": "Ayakkabı",
 		"usage.filter.description": "Kozmetik taklit ederken ayarlanacak filtre.",
 		"usage.query.name": "Üye Adı veya Kimlik",
 		"usage.query.description": "Kozmetikleri taklit etmek için üyenin adı veya kimliği."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emojiler",
 		"usage.filter.options.emotes": "Eşler",
 		"usage.filter.options.pickaxes": "Kazık",
+		"usage.filter.options.shoes": "Ayakkabı",
 		"usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
 	},
 	"run.new_items": {
@@ -197,6 +207,15 @@
 		"msg.variants_select": "{type} için seçmek istediğiniz varyantı gönderin",
 		"msg.changed": "Picakse varyantlarını ayarlayın!"
 	},
+	"config.shoes": {
+		"description": "Botun ayakkabılarını ayarlar.",
+		"usage.query.name": "Ayakkabı adı veya kimliği",
+		"usage.query.description": "Ayarlanacak ayakkabıların adı veya kimliği."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Ayakkabı {query} bulunamadı!",
+		"msg.shoes_changed": "Ayakkabıları {name} olarak ayarlayın! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
 		"usage.filter.name": "Filtre",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emojiler",
 		"usage.filter.options.emotes": "Eşler",
 		"usage.filter.options.pickaxes": "Kazık",
+		"usage.filter.options.shoes": "Ayakkabı",
 		"usage.filter.description": "Öğeleri göstererek ayarlanacak filtre."
 	},
 	"run.shop_items": {
