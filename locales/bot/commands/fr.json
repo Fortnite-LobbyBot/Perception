@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Émotes",
 		"usage.filter.options.pickaxes": "Pic",
+		"usage.filter.options.shoes": "Chaussures",
 		"usage.filter.description": "Le filtre à définir en affichant les éléments."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "Emote effacé!"
 	},
+	"config.clear_shoes": {
+		"description": "Supprime les chaussures du bot."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Chaussures effacées!"
+	},
 	"config.copy": {
 		"description": "Copiez les cosmétiques d'un utilisateur ou copiez les cosmétiques si vous ne spécifiez pas d'arguments.",
 		"usage.filter.name": "Filtre",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Émoter",
 		"usage.filter.options.pickaxe": "Pioche",
+		"usage.filter.options.shoes": "Chaussures",
 		"usage.filter.description": "Le filtre à définir lors de la copie des cosmétiques.",
 		"usage.query.name": "Nom ou identifiant du membre",
 		"usage.query.description": "Le nom ou l'identifiant du membre pour copier les cosmétiques."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Émotes",
 		"usage.filter.options.pickaxes": "Pic",
+		"usage.filter.options.shoes": "Chaussures",
 		"usage.filter.description": "Le filtre à définir lors de l'imitation des cosmétiques.",
 		"usage.query.name": "Nom ou identifiant du membre",
 		"usage.query.description": "Le nom ou l'identifiant du membre pour imiter les cosmétiques."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Émotes",
 		"usage.filter.options.pickaxes": "Pic",
+		"usage.filter.options.shoes": "Chaussures",
 		"usage.filter.description": "Le filtre à définir en affichant les éléments."
 	},
 	"run.new_items": {
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Envoyer la variante que vous souhaitez sélectionner pour {type}",
 		"msg.changed": "Définissez les variantes Pickaxe!"
 	},
+	"config.shoes": {
+		"description": "Définit les chaussures du bot.",
+		"usage.query.name": "Nom des chaussures ou identifiant",
+		"usage.query.description": "Le nom ou l'identifiant des chaussures à définir."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Chaussures {query} introuvable!",
+		"msg.shoes_changed": "Définissez les chaussures sur {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
 		"usage.filter.name": "Filtre",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Émotes",
 		"usage.filter.options.pickaxes": "Pic",
+		"usage.filter.options.shoes": "Chaussures",
 		"usage.filter.description": "Le filtre à définir en affichant les éléments."
 	},
 	"run.shop_items": {

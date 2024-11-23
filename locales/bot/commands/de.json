@@ -15,6 +15,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Spitzhahn",
+		"usage.filter.options.shoes": "Schuhe",
 		"usage.filter.description": "Der Filter muss durch Anzeigen der Elemente festgelegt werden."
 	},
 	"run.all_items": {
@@ -64,6 +65,12 @@
 	"run.clear_emote": {
 		"msg.emote_cleared": "Löschte Emote!"
 	},
+	"config.clear_shoes": {
+		"description": "Entfernt die Schuhe des Bots."
+	},
+	"run.clear_shoes": {
+		"msg.shoes_cleared": "Gelöschte Schuhe!"
+	},
 	"config.copy": {
 		"description": "Kopieren Sie die Kosmetik eines Benutzers oder kopieren Sie die Kosmetik an Sie, wenn Sie keine Argumente angeben.",
 		"usage.filter.name": "Filter",
@@ -73,6 +80,7 @@
 		"usage.filter.options.emoji": "Emoji",
 		"usage.filter.options.emote": "Emote",
 		"usage.filter.options.pickaxe": "Spitzhacke",
+		"usage.filter.options.shoes": "Schuhe",
 		"usage.filter.description": "Der Filter, der beim Kopieren von Kosmetika festgelegt ist.",
 		"usage.query.name": "Mitgliedsname oder ID",
 		"usage.query.description": "Der Name oder die ID des Mitglieds, um die Kosmetik zu kopieren."
@@ -120,6 +128,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Spitzhahn",
+		"usage.filter.options.shoes": "Schuhe",
 		"usage.filter.description": "Der Filter, der beim Nachahmung von Kosmetika festgelegt wird.",
 		"usage.query.name": "Mitgliedsname oder ID",
 		"usage.query.description": "Der Name oder die ID des Mitglieds, um Kosmetika zu imitieren."
@@ -139,6 +148,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Spitzhahn",
+		"usage.filter.options.shoes": "Schuhe",
 		"usage.filter.description": "Der Filter muss durch Anzeigen der Elemente festgelegt werden."
 	},
 	"run.new_items": {
@@ -197,6 +207,15 @@
 		"msg.variants_select": "Senden Sie die Variante, die Sie für {type} auswählen möchten",
 		"msg.changed": "Setzen Sie die Spickaxe -Varianten!"
 	},
+	"config.shoes": {
+		"description": "Stellt die Schuhe des Bots fest.",
+		"usage.query.name": "Schuhe Name oder ID",
+		"usage.query.description": "Der Name oder die ID der zu setzenden Schuhe."
+	},
+	"run.shoes": {
+		"msg.shoes_not_found": "Schuhe {query} Nicht gefunden!",
+		"msg.shoes_changed": "Setzen Sie die Schuhe auf {name}! ({id})"
+	},
 	"config.shop_items": {
 		"description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
 		"usage.filter.name": "Filter",
@@ -205,6 +224,7 @@
 		"usage.filter.options.emojis": "Emojis",
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Spitzhahn",
+		"usage.filter.options.shoes": "Schuhe",
 		"usage.filter.description": "Der Filter muss durch Anzeigen der Elemente festgelegt werden."
 	},
 	"run.shop_items": {
