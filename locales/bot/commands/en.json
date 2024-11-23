@@ -16,7 +16,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.all_items": {
 		"msg.no_items": "Unable to fetch the items.",
@@ -149,7 +153,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.new_items": {
 		"msg.type_error": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
@@ -225,7 +233,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.shop_items": {
 		"msg.invalid_type": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
@@ -267,6 +279,16 @@
 		"msg.already_friends": "Already a friend!",
 		"msg.error": "Cannot add the user!",
 		"msg.request_sent": "Friend request sent to {name}"
+	},
+	"config.block_user": {
+		"description": "Blocks a user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID to block."
+	},
+	"run.block_user": {
+		"msg.user_not_found": "User {query} not found!",
+		"msg.error": "Cannot block {name}!",
+		"msg.user_unblocked": "User {name} blocked successfully!"
 	},
 	"config.decline_all_friends": {
 		"description": "Declines all the pending friends of the bot."
@@ -350,6 +372,16 @@
 		"msg.friend_not_found": "Friend {query} not found!",
 		"msg.error": "Cannot remove {name}!",
 		"msg.friend_removed": "Friend {name} removed successfully!"
+	},
+	"config.unblock_user": {
+		"description": "Unblocks a user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID to unblock."
+	},
+	"run.unblock_user": {
+		"msg.user_not_found": "User {query} not found!",
+		"msg.error": "Cannot unblock {name}!",
+		"msg.user_unblocked": "User {name} unblocked successfully!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Only tnfAngel have access to this command."
