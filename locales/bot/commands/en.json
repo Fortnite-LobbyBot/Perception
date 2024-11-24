@@ -286,6 +286,7 @@
 		"usage.query.description": "The user's name or ID to block."
 	},
 	"run.block_user": {
+		"msg.multiple_users_found": "Found multiple users:",
 		"msg.user_not_found": "User {query} not found!",
 		"msg.error": "Cannot block {name}!",
 		"msg.user_unblocked": "User {name} blocked successfully!"
@@ -379,6 +380,7 @@
 		"usage.query.description": "The user's name or ID to unblock."
 	},
 	"run.unblock_user": {
+		"msg.multiple_users_found": "Found multiple users:",
 		"msg.user_not_found": "User {query} not found!",
 		"msg.error": "Cannot unblock {name}!",
 		"msg.user_unblocked": "User {name} unblocked successfully!"
