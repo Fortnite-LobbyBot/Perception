@@ -618,6 +618,12 @@
 		"msg.warning": "Aviso: se você está tentando iniciar a correspondência, não use este comando! Basta acertar o Ready a si mesmo e eu vou acertar o Ready automaticamente.",
 		"msg.success": "Preparar!"
 	},
+	"config.say": {
+		"description": "Envie uma mensagem para o bate -papo da festa.",
+		"usage.message.name": "Mensagem",
+		"usage.message.description": "A mensagem a ser enviada para a parte."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Mostra um jogador oculto da festa ou mostra se você não especificar argumentos.",
 		"usage.query.name": "Nome do membro ou ID",

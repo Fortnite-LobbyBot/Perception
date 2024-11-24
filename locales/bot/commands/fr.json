@@ -618,6 +618,12 @@
 		"msg.warning": "AVERTISSEMENT: Si vous essayez de faire du matchmaking, n'utilisez pas cette commande! Appuyez simplement sur vous-même et je vais frapper automatiquement.",
 		"msg.success": "Prêt!"
 	},
+	"config.say": {
+		"description": "Envoyez un message au chat du parti.",
+		"usage.message.name": "Message",
+		"usage.message.description": "Le message à envoyer à la fête."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Affiche un lecteur caché de la fête ou vous montre si vous ne spécifiez pas d'arguments.",
 		"usage.query.name": "Nom ou identifiant du membre",

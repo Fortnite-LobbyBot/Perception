@@ -618,6 +618,12 @@
 		"msg.warning": "Warnung: Wenn Sie versuchen, das Matchmaking zu initieren, verwenden Sie diesen Befehl nicht! Schlagen Sie einfach bereit und ich werde automatisch fertig schlagen.",
 		"msg.success": "Bereit!"
 	},
+	"config.say": {
+		"description": "Senden Sie eine Nachricht an den Party -Chat.",
+		"usage.message.name": "Nachricht",
+		"usage.message.description": "Die Nachricht, die an die Partei gesendet wird."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Zeigt einen versteckten Spieler aus der Party oder zeigt Ihnen, ob Sie keine Argumente angeben.",
 		"usage.query.name": "Mitgliedsname oder ID",

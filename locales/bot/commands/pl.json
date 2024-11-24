@@ -618,6 +618,12 @@
 		"msg.warning": "OSTRZEŻENIE: Jeśli próbujesz inicjować tworzenie dopasowań, nie używaj tego polecenia! Po prostu uderzam, a automatycznie uderzę w gotowe.",
 		"msg.success": "Gotowy!"
 	},
+	"config.say": {
+		"description": "Wyślij wiadomość na czat na imprezę.",
+		"usage.message.name": "Wiadomość",
+		"usage.message.description": "Wiadomość, która ma zostać wysłana na imprezę."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Pokazuje ukryty gracz z imprezy lub pokazuje, czy nie określacie argumentów.",
 		"usage.query.name": "Nazwa lub identyfikator członka",

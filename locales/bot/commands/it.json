@@ -618,6 +618,12 @@
 		"msg.warning": "ATTENZIONE: se stai cercando di iniziare il matchmaking, non usare questo comando! Basta preparati e colprò pronto automaticamente.",
 		"msg.success": "Pronta!"
 	},
+	"config.say": {
+		"description": "Invia un messaggio alla chat della festa.",
+		"usage.message.name": "Messaggio",
+		"usage.message.description": "Il messaggio da inviare alla parte."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Mostra un giocatore nascosto dalla festa o ti mostra se non si specificano gli argomenti.",
 		"usage.query.name": "Nome o ID membro",

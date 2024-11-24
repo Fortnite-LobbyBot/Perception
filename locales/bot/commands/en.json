@@ -618,6 +618,12 @@
 		"msg.warning": "WARNING: If you're trying to init matchmaking, don't use this command! Just hit ready yourself and I'll hit ready automatically.",
 		"msg.success": "Ready!"
 	},
+	"config.say": {
+		"description": "Send a message to the party chat.",
+		"usage.message.name": "Message",
+		"usage.message.description": "The message to be sent to the party."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Shows a hidden player from the party or shows you if you do not specify arguments.",
 		"usage.query.name": "Member name or ID",

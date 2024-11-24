@@ -618,6 +618,12 @@
 		"msg.warning": "ADVERTENCIA: Si estás intentando iniciar el emparejamiento, ¡no uses este comando!",
 		"msg.success": "¡Listo!"
 	},
+	"config.say": {
+		"description": "Envía un mensaje al chat de la fiesta.",
+		"usage.message.name": "Mensaje",
+		"usage.message.description": "El mensaje que se enviará a la fiesta."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Muestra un jugador oculto del grupo o te lo muestra si no especificas argumentos.",
 		"usage.query.name": "Nombre o ID del miembro",

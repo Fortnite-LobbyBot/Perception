@@ -618,6 +618,12 @@
 		"msg.warning": "UYARI: Eşleme yapımını başlatmaya çalışıyorsanız, bu komutu kullanmayın! Sadece kendinizi hazırlayın ve otomatik olarak hazırım.",
 		"msg.success": "Hazır!"
 	},
+	"config.say": {
+		"description": "Parti sohbetine bir mesaj gönderin.",
+		"usage.message.name": "Mesaj",
+		"usage.message.description": "Partiye gönderilecek mesaj."
+	},
+	"run.say": {},
 	"config.show": {
 		"description": "Partiden gizli bir oyuncuyu gösterir veya argüman belirtmediyseniz size gösterir.",
 		"usage.query.name": "Üye Adı veya Kimlik",
