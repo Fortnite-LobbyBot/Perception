@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Cosmetic {query} not found!",
 		"msg.cosmetic_changed": "Set the {type} to {name}! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Shows info about a cosmetic.",
+		"usage.query.name": "Cosmetic name or ID",
+		"usage.query.description": "The name or ID of the cosmetic to set."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Cosmetic {query} not found!"
+	},
 	"config.emoji": {
 		"description": "Sets the bot's emoji.",
 		"usage.query.name": "Emoji name or ID",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "User {query} not found!",
 		"msg.error": "Cannot unblock {name}!",
 		"msg.user_unblocked": "User {name} unblocked successfully!"
+	},
+	"config.user_info": {
+		"description": "Shows the information of a specified user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Found multiple users:",
+		"msg.user_not_found": "User {query} not found!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Only tnfAngel have access to this command."

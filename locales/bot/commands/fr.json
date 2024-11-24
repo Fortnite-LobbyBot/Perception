@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Cosmetic {query} introuvable!",
 		"msg.cosmetic_changed": "Définissez le {type} sur {name}! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Montre des informations sur un cosmétique.",
+		"usage.query.name": "Nom ou pièce d'identité esthétique",
+		"usage.query.description": "Le nom ou l'identifiant du cosmétique à définir."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Cosmetic {query} introuvable!"
+	},
 	"config.emoji": {
 		"description": "Définit les emoji du bot.",
 		"usage.query.name": "Nom ou identifiant des emoji",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "Utilisateur {query} n'est pas trouvé!",
 		"msg.error": "Impossible de débloquer {name}!",
 		"msg.user_unblocked": "Utilisateur {name} débloqué avec succès!"
+	},
+	"config.user_info": {
+		"description": "Affiche les informations d'un utilisateur spécifié.",
+		"usage.query.name": "Nom d'utilisateur ou identifiant",
+		"usage.query.description": "Le nom ou l'ID de l'utilisateur."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Trouvé plusieurs utilisateurs:",
+		"msg.user_not_found": "Utilisateur {query} n'est pas trouvé!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Seuls TNFAngel ont accès à cette commande."

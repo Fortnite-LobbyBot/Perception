@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Kosmetische {query} Nicht gefunden!",
 		"msg.cosmetic_changed": "Setzen Sie den {type} auf {name}! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Zeigt Informationen zu einer Kosmetik.",
+		"usage.query.name": "Kosmetischer Name oder ID",
+		"usage.query.description": "Der Name oder die ID der zu setzenden Kosmetik."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Kosmetische {query} Nicht gefunden!"
+	},
 	"config.emoji": {
 		"description": "Legt den Emoji des Bots fest.",
 		"usage.query.name": "Emoji -Name oder ID",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "Benutzer {query} Nicht gefunden!",
 		"msg.error": "Kann nicht entsperren {name}!",
 		"msg.user_unblocked": "Benutzer {name} erfolgreich entsperrt!"
+	},
+	"config.user_info": {
+		"description": "Zeigt die Informationen eines bestimmten Benutzers an.",
+		"usage.query.name": "Benutzername oder ID",
+		"usage.query.description": "Der Name oder die ID des Benutzers."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Mehrere Benutzer gefunden:",
+		"msg.user_not_found": "Benutzer {query} Nicht gefunden!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Nur TNFangel hat Zugriff auf diesen Befehl."

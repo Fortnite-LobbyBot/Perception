@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Kozmetik {query} bulunamadı!",
 		"msg.cosmetic_changed": "{type} 'ye {name} olarak ayarlayın! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Bir kozmetik hakkında bilgi gösterir.",
+		"usage.query.name": "Kozmetik Adı veya Kimliği",
+		"usage.query.description": "Set için kozmetik adı veya kimliği."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Kozmetik {query} bulunamadı!"
+	},
 	"config.emoji": {
 		"description": "Botun emojisini ayarlar.",
 		"usage.query.name": "Emoji adı veya kimliği",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "Kullanıcı {query} bulunamadı!",
 		"msg.error": "Engellenemez {name}!",
 		"msg.user_unblocked": "Kullanıcı {name} başarıyla engellenmedi!"
+	},
+	"config.user_info": {
+		"description": "Belirli bir kullanıcının bilgilerini gösterir.",
+		"usage.query.name": "Kullanıcı adı veya kimlik",
+		"usage.query.description": "Kullanıcının adı veya kimliği."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Birden fazla kullanıcı bulundu:",
+		"msg.user_not_found": "Kullanıcı {query} bulunamadı!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Yalnızca tnfangel bu komuta erişebilir."

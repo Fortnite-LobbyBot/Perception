@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Cosmético {query} não encontrado!",
 		"msg.cosmetic_changed": "Defina o {type} como {name}! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Mostra informações sobre um cosmético.",
+		"usage.query.name": "Nome de cosmético ou ID",
+		"usage.query.description": "O nome ou ID do cosmético para definir."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Cosmético {query} não encontrado!"
+	},
 	"config.emoji": {
 		"description": "Define o emoji do bot.",
 		"usage.query.name": "Nome emoji ou id",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "Usuário {query} não encontrado!",
 		"msg.error": "Não é possível desbloquear {name}!",
 		"msg.user_unblocked": "Usuário {name} desbloqueado com sucesso!"
+	},
+	"config.user_info": {
+		"description": "Mostra as informações de um usuário especificado.",
+		"usage.query.name": "Nome de usuário ou id",
+		"usage.query.description": "O nome do usuário ou ID."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Encontrou vários usuários:",
+		"msg.user_not_found": "Usuário {query} não encontrado!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Somente tnfangel tem acesso a este comando."

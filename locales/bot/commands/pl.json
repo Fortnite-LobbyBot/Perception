@@ -104,6 +104,14 @@
 		"msg.cosmetic_not_found": "Kosmetyki {query} nie znaleziono!",
 		"msg.cosmetic_changed": "Ustaw {type} na {name}! ({id})"
 	},
+	"config.cosmetic_info": {
+		"description": "Pokazuje informacje o kosmetyce.",
+		"usage.query.name": "Nazwa lub identyfikator kosmetyki",
+		"usage.query.description": "Nazwa lub identyfikator kosmetyki do ustawiania."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Kosmetyki {query} nie znaleziono!"
+	},
 	"config.emoji": {
 		"description": "Ustawia emoji bota.",
 		"usage.query.name": "Nazwa lub identyfikator emoji",
@@ -384,6 +392,15 @@
 		"msg.user_not_found": "Użytkownik {query} nie znaleziono!",
 		"msg.error": "Nie można odblokować {name}!",
 		"msg.user_unblocked": "Użytkownik {name} Unblocked pomyślnie!"
+	},
+	"config.user_info": {
+		"description": "Pokazuje informacje o określonym użytkowniku.",
+		"usage.query.name": "Nazwa użytkownika lub identyfikator",
+		"usage.query.description": "Nazwa lub identyfikator użytkownika."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Znalazłem wielu użytkowników:",
+		"msg.user_not_found": "Użytkownik {query} nie znaleziono!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Tylko tnfangel ma dostęp do tego polecenia."
