@@ -51,10 +51,13 @@
 	"config.banner": {
 		"description": "Establece el banner del bot.",
 		"usage.query.name": "Nombre o ID del banner",
-		"usage.query.description": "El nombre o ID del banner a establecer."
+		"usage.query.description": "El nombre o ID del banner a establecer.",
+		"usage.color.name": "Nombre de color o identificación",
+		"usage.color.description": "El nombre o la identificación del color a establecer."
 	},
 	"run.banner": {
 		"msg.banner_not_found": "¡Banner {item} no encontrado!",
+		"msg.color_not_found": "Color {item} no encontrado!",
 		"msg.banner_changed": "¡Banner establecido a {name}!"
 	},
 	"config.clear_backpack": {

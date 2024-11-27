@@ -51,10 +51,13 @@
 	"config.banner": {
 		"description": "Définit la bannière du bot.",
 		"usage.query.name": "Nom de la bannière ou identifiant",
-		"usage.query.description": "Le nom ou l'identifiant de la bannière à définir."
+		"usage.query.description": "Le nom ou l'identifiant de la bannière à définir.",
+		"usage.color.name": "Nom de couleur ou identifiant",
+		"usage.color.description": "Le nom ou l'identifiant de la couleur à définir."
 	},
 	"run.banner": {
 		"msg.banner_not_found": "Bannière {item} introuvable!",
+		"msg.color_not_found": "Couleur {item} introuvable!",
 		"msg.banner_changed": "Définissez la bannière sur {name}! ({id})"
 	},
 	"config.clear_backpack": {

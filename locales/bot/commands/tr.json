@@ -51,10 +51,13 @@
 	"config.banner": {
 		"description": "Botun afişini ayarlar.",
 		"usage.query.name": "Banner Adı veya Kimliği",
-		"usage.query.description": "Banner'ın adı veya kimliği ayarlanacak."
+		"usage.query.description": "Banner'ın adı veya kimliği ayarlanacak.",
+		"usage.color.name": "Renk Adı veya Kimliği",
+		"usage.color.description": "Ayarlanacak rengin adı veya kimliği."
 	},
 	"run.banner": {
 		"msg.banner_not_found": "Banner {item} bulunamadı!",
+		"msg.color_not_found": "Renk {item} bulunamadı!",
 		"msg.banner_changed": "Banneyi {name} olarak ayarlayın! ({id})"
 	},
 	"config.clear_backpack": {

@@ -51,10 +51,13 @@
 	"config.banner": {
 		"description": "Ustawia sztandar bota.",
 		"usage.query.name": "Nazwa lub identyfikator banerów",
-		"usage.query.description": "Nazwa lub identyfikator sztandaru do ustalenia."
+		"usage.query.description": "Nazwa lub identyfikator sztandaru do ustalenia.",
+		"usage.color.name": "Nazwa koloru lub identyfikator",
+		"usage.color.description": "Nazwa lub identyfikator koloru do ustawienia."
 	},
 	"run.banner": {
 		"msg.banner_not_found": "Banner {item} nie znaleziono!",
+		"msg.color_not_found": "Kolor {item} nie znaleziono!",
 		"msg.banner_changed": "Ustaw baner na {name}! ({id})"
 	},
 	"config.clear_backpack": {
