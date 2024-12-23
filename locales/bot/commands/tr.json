@@ -300,7 +300,7 @@
 		"msg.multiple_users_found": "Birden fazla kullanıcı bulundu:",
 		"msg.user_not_found": "Kullanıcı {query} bulunamadı!",
 		"msg.error": "{name} engellenemez!",
-		"msg.user_unblocked": "Kullanıcı {name} başarıyla engellendi!"
+		"msg.user_blocked": "Kullanıcı {name} başarıyla engellendi!"
 	},
 	"config.decline_all_friends": {
 		"description": "Botun bekleyen tüm arkadaşlarını çekin."

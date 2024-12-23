@@ -300,7 +300,7 @@
 		"msg.multiple_users_found": "Znalazłem wielu użytkowników:",
 		"msg.user_not_found": "Użytkownik {query} nie znaleziono!",
 		"msg.error": "Nie można zablokować {name}!",
-		"msg.user_unblocked": "Użytkownik {name} pomyślnie zablokowana!"
+		"msg.user_blocked": "Użytkownik {name} pomyślnie zablokowana!"
 	},
 	"config.decline_all_friends": {
 		"description": "Odmówi wszystkich oczekujących przyjaciół bota."

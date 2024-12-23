@@ -300,7 +300,7 @@
 		"msg.multiple_users_found": "Mehrere Benutzer gefunden:",
 		"msg.user_not_found": "Benutzer {query} Nicht gefunden!",
 		"msg.error": "Kann {name} nicht blockieren!",
-		"msg.user_unblocked": "Benutzer {name} erfolgreich blockiert!"
+		"msg.user_blocked": "Benutzer {name} erfolgreich blockiert!"
 	},
 	"config.decline_all_friends": {
 		"description": "Deklinas alle anstehenden Freunde des Bots."
