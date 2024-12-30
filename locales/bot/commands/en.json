@@ -235,6 +235,16 @@
 		"msg.shoes_not_found": "Shoes {query} not found!",
 		"msg.shoes_changed": "Set the shoes to {name}! ({id})"
 	},
+	"config.shoe_variants": {
+		"description": "Sets the shoe variants."
+	},
+	"run.shoe_variants": {
+		"msg.shoes_not_found": "The bot does not have shoes!",
+		"msg.invalid_shoes": "Invalid shoes!",
+		"msg.variants_not_found": "This shoes does not have variants!",
+		"msg.variants_select": "Send the variant you want to select for {type}",
+		"msg.changed": "Set the shoe variants!"
+	},
 	"config.shop_items": {
 		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
