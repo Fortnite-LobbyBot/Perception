@@ -277,6 +277,13 @@
     "msg.stopped_emote": "Emote durdu!",
     "msg.nothing_to_stop": "Duracak bir şey yok!"
   },
+  "config.accept_all_friends": {
+    "description": "Botun bekleyen tüm arkadaşlarını kabul eder."
+  },
+  "run.accept_all_friends": {
+    "msg.accepting_friends": "Bekleyen tüm arkadaşları kabul ediyorum!",
+    "msg.accepted_friends": "Kabul Edildi {count} Arkadaşlar!"
+  },
   "config.accept_friend": {
     "description": "Bir arkadaşlık isteğini kabul edin.",
     "usage.query.name": "Bekleyen Arkadaşın Adı veya Kimliği",
@@ -316,7 +323,6 @@
     "description": "Botun bekleyen tüm arkadaşlarını çekin."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "Bu komut yalnızca bot sahipleri tarafından yürütülebilir!",
     "msg.declining_friends": "Bekleyen tüm arkadaşları azaltmak!",
     "msg.declined_friends": "Redel {count} arkadaşlar!"
   },
@@ -380,7 +386,6 @@
     "description": "Botun tüm arkadaşlarını kaldırır."
   },
   "run.remove_all_friends": {
-    "msg.unauthorized": "Bu komut yalnızca bot sahipleri tarafından yürütülebilir!",
     "msg.removing_friends": "Tüm arkadaşları kaldırıyorum!",
     "msg.removed_friends": "Kaldırıldı {count} arkadaşlar!"
   },
@@ -394,6 +399,13 @@
     "msg.friend_not_found": "Arkadaş {query} bulunamadı!",
     "msg.error": "{name} kaldırılamıyor!",
     "msg.friend_removed": "Arkadaş {name} başarıyla kaldırıldı!"
+  },
+  "config.unblock_all_users": {
+    "description": "Botun tüm engellenen kullanıcılarını engeller."
+  },
+  "run.unblock_all_users": {
+    "msg.removing_friends": "Tüm engellenen kullanıcıları engellemek!",
+    "msg.removed_friends": "Engelsiz {count} bloke kullanıcıları!"
   },
   "config.unblock_user": {
     "description": "Bir kullanıcıyı engeller.",
@@ -518,16 +530,6 @@
   },
   "run.bp_level": {
     "msg.bp_level_set": "Battle Pass seviyesini {level} olarak ayarlayın!"
-  },
-  "config.chat_ban": {
-    "description": "Sohbet bir parti üyesini yasaklar.",
-    "usage.query.name": "Üye Adı veya Kimlik",
-    "usage.query.description": "Partinin üyesinin adı veya kimliği."
-  },
-  "run.chat_ban": {
-    "msg.multiple_friends_found": "Birden fazla arkadaş buldum:",
-    "msg.member_not_found": "Üye {query} bulunamadı!",
-    "msg.success": "Başarılı bir şekilde sohbete Bankalı {name}"
   },
   "config.crowns": {
     "description": "Bot kronlarını ayarlar.",

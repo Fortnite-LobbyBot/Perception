@@ -277,6 +277,13 @@
     "msg.stopped_emote": "Zatrzymałem emotkę!",
     "msg.nothing_to_stop": "Nic do zatrzymania!"
   },
+  "config.accept_all_friends": {
+    "description": "Przyjmuje wszystkich oczekujących przyjaciół bota."
+  },
+  "run.accept_all_friends": {
+    "msg.accepting_friends": "Akceptując wszystkich oczekujących przyjaciół!",
+    "msg.accepted_friends": "Przyjęty {count} Friends!"
+  },
   "config.accept_friend": {
     "description": "Zaakceptuj zaproszenie do znajomych.",
     "usage.query.name": "W oczekiwaniu na imię lub identyfikator przyjaciela",
@@ -316,7 +323,6 @@
     "description": "Odmówi wszystkich oczekujących przyjaciół bota."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "To polecenie może być wykonywane tylko przez właścicieli bota!",
     "msg.declining_friends": "Odrzucanie wszystkich oczekujących przyjaciół!",
     "msg.declined_friends": "Odrzucone {count} Friends!"
   },
@@ -380,7 +386,6 @@
     "description": "Usuwa wszystkich przyjaciół bota."
   },
   "run.remove_all_friends": {
-    "msg.unauthorized": "To polecenie może być wykonywane tylko przez właścicieli bota!",
     "msg.removing_friends": "Usuwanie wszystkich przyjaciół!",
     "msg.removed_friends": "Usunięte {count} Friends!"
   },
@@ -394,6 +399,13 @@
     "msg.friend_not_found": "Przyjaciel {query} nie znaleziono!",
     "msg.error": "Nie można usunąć {name}!",
     "msg.friend_removed": "Friend {name} Usunięto pomyślnie!"
+  },
+  "config.unblock_all_users": {
+    "description": "Odblokowuje wszystkich zablokowanych użytkowników bota."
+  },
+  "run.unblock_all_users": {
+    "msg.removing_friends": "Odblokowanie wszystkich zablokowanych użytkowników!",
+    "msg.removed_friends": "Unblokowane {count} zablokowane użytkowników!"
   },
   "config.unblock_user": {
     "description": "Odblokowuje użytkownika.",
@@ -518,16 +530,6 @@
   },
   "run.bp_level": {
     "msg.bp_level_set": "Ustaw poziom bitwy na {level}!"
-  },
-  "config.chat_ban": {
-    "description": "Czat zakazuje członkowi partii.",
-    "usage.query.name": "Nazwa lub identyfikator członka",
-    "usage.query.description": "Nazwa lub identyfikator członka partii do zakazu."
-  },
-  "run.chat_ban": {
-    "msg.multiple_friends_found": "Znalazłem wielu przyjaciół:",
-    "msg.member_not_found": "Członek {query} nie znaleziono!",
-    "msg.success": "Pomyślnie zakazane czatu {name}"
   },
   "config.crowns": {
     "description": "Ustawia korony bota.",

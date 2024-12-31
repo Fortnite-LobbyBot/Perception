@@ -277,6 +277,13 @@
     "msg.stopped_emote": "Emote arrêté!",
     "msg.nothing_to_stop": "Rien à arrêter!"
   },
+  "config.accept_all_friends": {
+    "description": "Accepte tous les amis du bot en attente."
+  },
+  "run.accept_all_friends": {
+    "msg.accepting_friends": "Accepter tous les amis en attente!",
+    "msg.accepted_friends": "Amis {count} acceptés!"
+  },
   "config.accept_friend": {
     "description": "Accepter une demande d'ami.",
     "usage.query.name": "Le nom ou l'identification de l'ami en attente",
@@ -316,7 +323,6 @@
     "description": "Déclinas tous les amis du bot en attente."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "Cette commande ne peut être exécutée que par les propriétaires de bots!",
     "msg.declining_friends": "Refuser tous les amis en attente!",
     "msg.declined_friends": "A décliné {count} amis!"
   },
@@ -380,7 +386,6 @@
     "description": "Supprime tous les amis du bot."
   },
   "run.remove_all_friends": {
-    "msg.unauthorized": "Cette commande ne peut être exécutée que par les propriétaires de bots!",
     "msg.removing_friends": "Retirer tous les amis!",
     "msg.removed_friends": "Remoute {count} amis!"
   },
@@ -394,6 +399,13 @@
     "msg.friend_not_found": "Ami {query} n'est pas trouvé!",
     "msg.error": "Impossible de supprimer {name}!",
     "msg.friend_removed": "Ami {name} a supprimé avec succès!"
+  },
+  "config.unblock_all_users": {
+    "description": "Débloque tous les utilisateurs bloqués du bot."
+  },
+  "run.unblock_all_users": {
+    "msg.removing_friends": "Débloquer tous les utilisateurs bloqués!",
+    "msg.removed_friends": "Utilisateurs bloqués {count} non bloqués!"
   },
   "config.unblock_user": {
     "description": "Débloque un utilisateur.",
@@ -518,16 +530,6 @@
   },
   "run.bp_level": {
     "msg.bp_level_set": "Réglez le niveau de passe de bataille à {level}!"
-  },
-  "config.chat_ban": {
-    "description": "Le chat interdit un membre du parti.",
-    "usage.query.name": "Nom ou identifiant du membre",
-    "usage.query.description": "Le nom ou l'identifiant du membre du parti à l'interdiction."
-  },
-  "run.chat_ban": {
-    "msg.multiple_friends_found": "Trouvé plusieurs amis:",
-    "msg.member_not_found": "Membre {query} n'est pas trouvé!",
-    "msg.success": "CHAT-BANNÉ CHATS {name}"
   },
   "config.crowns": {
     "description": "Définit les couronnes de bot.",

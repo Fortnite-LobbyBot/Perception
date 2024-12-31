@@ -277,6 +277,13 @@
     "msg.stopped_emote": "Hör auf Emote!",
     "msg.nothing_to_stop": "Nichts zu stoppen!"
   },
+  "config.accept_all_friends": {
+    "description": "Akzeptiert alle anstehenden Freunde des Bots."
+  },
+  "run.accept_all_friends": {
+    "msg.accepting_friends": "Annahme aller anstehenden Freunde!",
+    "msg.accepted_friends": "Angenommene Freunde!"
+  },
   "config.accept_friend": {
     "description": "Akzeptiere eine Freundschaftsanfrage.",
     "usage.query.name": "Name oder Ausweis des Freundes ausstehend",
@@ -316,7 +323,6 @@
     "description": "Deklinas alle anstehenden Freunde des Bots."
   },
   "run.decline_all_friends": {
-    "msg.unauthorized": "Dieser Befehl kann nur von Bot -Eigentümern ausgeführt werden!",
     "msg.declining_friends": "Ablehnen Sie alle anstehenden Freunde!",
     "msg.declined_friends": "Abgelehnt {count} Freunde!"
   },
@@ -380,7 +386,6 @@
     "description": "Entfernt alle Freunde des Bots."
   },
   "run.remove_all_friends": {
-    "msg.unauthorized": "Dieser Befehl kann nur von Bot -Eigentümern ausgeführt werden!",
     "msg.removing_friends": "Alle Freunde entfernen!",
     "msg.removed_friends": "Freunde entfernt {count} Freunde!"
   },
@@ -394,6 +399,13 @@
     "msg.friend_not_found": "Freund {query} Nicht gefunden!",
     "msg.error": "Kann {name} nicht entfernen!",
     "msg.friend_removed": "Freund {name} erfolgreich entfernt!"
+  },
+  "config.unblock_all_users": {
+    "description": "Entsperren Sie alle blockierten Benutzer des Bots."
+  },
+  "run.unblock_all_users": {
+    "msg.removing_friends": "Entfernen Sie alle blockierten Benutzer!",
+    "msg.removed_friends": "Entsperrte {count} blockierte Benutzer!"
   },
   "config.unblock_user": {
     "description": "Entsperren Sie einen Benutzer.",
@@ -518,16 +530,6 @@
   },
   "run.bp_level": {
     "msg.bp_level_set": "Setzen Sie das Battle Pass Level auf {level}!"
-  },
-  "config.chat_ban": {
-    "description": "Chat verbietet ein Parteimitglied.",
-    "usage.query.name": "Mitgliedsname oder ID",
-    "usage.query.description": "Der Name oder die ID des Mitglieds der Partei zu verbieten."
-  },
-  "run.chat_ban": {
-    "msg.multiple_friends_found": "Mehrere Freunde gefunden:",
-    "msg.member_not_found": "Mitglied {query} Nicht gefunden!",
-    "msg.success": "Erfolgreich Chat-Banned {name}"
   },
   "config.crowns": {
     "description": "Stellt die Bot -Kronen fest.",

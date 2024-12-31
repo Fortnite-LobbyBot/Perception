@@ -277,6 +277,13 @@
 		"msg.stopped_emote": "Stopped emote!",
 		"msg.nothing_to_stop": "Nothing to stop!"
 	},
+	"config.accept_all_friends": {
+		"description": "Accepts all the pending friends of the bot."
+	},
+	"run.accept_all_friends": {
+		"msg.accepting_friends": "Accepting all the pending friends!",
+		"msg.accepted_friends": "Accepted {count} friends!"
+	},
 	"config.accept_friend": {
 		"description": "Accept a friend request.",
 		"usage.query.name": "Pending friend's name or ID",
@@ -316,7 +323,6 @@
 		"description": "Declines all the pending friends of the bot."
 	},
 	"run.decline_all_friends": {
-		"msg.unauthorized": "This command can only be executed by bot owners!",
 		"msg.declining_friends": "Declining all the pending friends!",
 		"msg.declined_friends": "Declined {count} friends!"
 	},
@@ -377,10 +383,9 @@
 		"msg.member_promoted": "Promoted {name}!"
 	},
 	"config.remove_all_friends": {
-		"description": "Removes all the friends of the bot."
+		"description": "Removes all the friends of the bot. Admins and owners are excluded."
 	},
 	"run.remove_all_friends": {
-		"msg.unauthorized": "This command can only be executed by bot owners!",
 		"msg.removing_friends": "Removing all friends!",
 		"msg.removed_friends": "Removed {count} friends!"
 	},
@@ -394,6 +399,13 @@
 		"msg.friend_not_found": "Friend {query} not found!",
 		"msg.error": "Cannot remove {name}!",
 		"msg.friend_removed": "Friend {name} removed successfully!"
+	},
+	"config.unblock_all_users": {
+		"description": "Unblocks all the blocked users of the bot."
+	},
+	"run.unblock_all_users": {
+		"msg.removing_friends": "Unblocking all blocked users!",
+		"msg.removed_friends": "Unblocked {count} blocked users!"
 	},
 	"config.unblock_user": {
 		"description": "Unblocks a user.",
@@ -518,16 +530,6 @@
 	},
 	"run.bp_level": {
 		"msg.bp_level_set": "Set battle pass level to {level}!"
-	},
-	"config.chat_ban": {
-		"description": "Chat bans a party member.",
-		"usage.query.name": "Member name or ID",
-		"usage.query.description": "The name or ID of the member of the party to ban."
-	},
-	"run.chat_ban": {
-		"msg.multiple_friends_found": "Found multiple friends:",
-		"msg.member_not_found": "Member {query} not found!",
-		"msg.success": "Successfully chat-banned {name}"
 	},
 	"config.crowns": {
 		"description": "Sets the bot crowns.",
