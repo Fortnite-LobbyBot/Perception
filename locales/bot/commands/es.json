@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Este comando solo está disponible para usuarios en la lista blanca del bot."
   },
   "config.all_items": {
-    "description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
+    "description": "Muestra todos los cosméticos del juego, se puede agregar un filtro opcional y puedes detenerte con el comando \"stop\".",
     "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Trajes",
     "usage.filter.options.backpacks": "Mochilas",
@@ -246,7 +246,7 @@
     "msg.changed": "¡Establezca las variantes del zapato!"
   },
   "config.shop_items": {
-    "description": "Muestra los últimos cosméticos agregados al juego, se puede agregar un filtro opcional y puedes detenerlo con el comando \"stop\".",
+    "description": "Muestra los cosméticos de la tienda de artículos, se puede agregar un filtro opcional y puede detenerse con el comando \"stop\".",
     "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Trajes",
     "usage.filter.options.backpacks": "Mochilas",

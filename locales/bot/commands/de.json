@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Dieser Befehl ist nur für Benutzer der Whitelist des Bots verfügbar."
   },
   "config.all_items": {
-    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
+    "description": "Zeigt alle Kosmetika des Spiels an, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
     "usage.filter.name": "Filter",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",
@@ -246,7 +246,7 @@
     "msg.changed": "Stellen Sie die Schuhvarianten ein!"
   },
   "config.shop_items": {
-    "description": "Zeigt die neuesten Kosmetik, die dem Spiel hinzugefügt wurden, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
+    "description": "Zeigt die Kosmetik aus dem Artikelladen an, ein optionaler Filter kann hinzugefügt werden und Sie können mit dem Befehl \"stop\" anhalten.",
     "usage.filter.name": "Filter",
     "usage.filter.options.outfits": "Outfits",
     "usage.filter.options.backpacks": "Rucksäcke",

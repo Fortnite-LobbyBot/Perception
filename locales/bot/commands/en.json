@@ -8,7 +8,7 @@
 		"errors.only_for_whitelist": "This command is only available for users on the whitelist of the bot."
 	},
 	"config.all_items": {
-		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"description": "Shows all the cosmetics of the game, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
@@ -246,7 +246,7 @@
 		"msg.changed": "Set the shoe variants!"
 	},
 	"config.shop_items": {
-		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"description": "Shows the cosmetics from the item shop, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",

@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "To polecenie jest dostępne tylko dla użytkowników na białej bota."
   },
   "config.all_items": {
-    "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
+    "description": "Pokazuje wszystkie kosmetyki gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
     "usage.filter.name": "Filtr",
     "usage.filter.options.outfits": "Stroje",
     "usage.filter.options.backpacks": "Plecaki",
@@ -246,7 +246,7 @@
     "msg.changed": "Ustaw warianty obuwia!"
   },
   "config.shop_items": {
-    "description": "Pokazuje najnowsze kosmetyki dodane do gry, można dodać opcjonalny filtr i możesz zatrzymać się przy poleceniu „Stop”.",
+    "description": "Pokazuje kosmetyki ze sklepu z przedmiotami, można dodać filtr opcjonalny i możesz zatrzymać się przy poleceniu „Stop”.",
     "usage.filter.name": "Filtr",
     "usage.filter.options.outfits": "Stroje",
     "usage.filter.options.backpacks": "Plecaki",

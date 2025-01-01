@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Cette commande n'est disponible que pour les utilisateurs sur la liste blanche du bot."
   },
   "config.all_items": {
-    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
+    "description": "Affiche tous les cosmétiques du jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
     "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",
@@ -246,7 +246,7 @@
     "msg.changed": "Réglez les variantes de chaussures!"
   },
   "config.shop_items": {
-    "description": "Affiche les derniers cosmétiques ajoutés au jeu, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
+    "description": "Affiche les cosmétiques de la boutique d'articles, un filtre en option peut être ajouté et vous pouvez vous arrêter avec la commande \"stop\".",
     "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Tenues",
     "usage.filter.options.backpacks": "Sac à dos",

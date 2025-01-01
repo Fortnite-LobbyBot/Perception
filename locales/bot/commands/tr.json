@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Bu komut yalnızca botun beyaz listesindeki kullanıcılar için kullanılabilir."
   },
   "config.all_items": {
-    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
+    "description": "Oyunun tüm kozmetiklerini gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",
@@ -246,7 +246,7 @@
     "msg.changed": "Ayakkabı varyantlarını ayarlayın!"
   },
   "config.shop_items": {
-    "description": "Oyuna eklenen en son kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
+    "description": "Ürün dükkanından kozmetikleri gösterir, isteğe bağlı bir filtre eklenebilir ve \"stop\" komutuyla durabilirsiniz.",
     "usage.filter.name": "Filtre",
     "usage.filter.options.outfits": "Kıyafetler",
     "usage.filter.options.backpacks": "Sırt çantaları",

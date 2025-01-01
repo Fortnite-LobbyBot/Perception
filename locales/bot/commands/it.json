@@ -8,7 +8,7 @@
     "errors.only_for_whitelist": "Questo comando è disponibile solo per gli utenti nella whitelist del bot."
   },
   "config.all_items": {
-    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
+    "description": "Mostra tutti i cosmetici del gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
     "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Abiti",
     "usage.filter.options.backpacks": "Zaini",
@@ -246,7 +246,7 @@
     "msg.changed": "Imposta le varianti di scarpe!"
   },
   "config.shop_items": {
-    "description": "Mostra gli ultimi cosmetici aggiunti al gioco, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
+    "description": "Mostra i cosmetici dal negozio di articoli, è possibile aggiungere un filtro opzionale e puoi fermarti con il comando \"stop\".",
     "usage.filter.name": "Filtro",
     "usage.filter.options.outfits": "Abiti",
     "usage.filter.options.backpacks": "Zaini",
