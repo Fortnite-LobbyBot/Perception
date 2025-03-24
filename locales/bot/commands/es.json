@@ -226,10 +226,26 @@
     "msg.variants_select": "Envía la variante que desea seleccionar para {type}",
     "msg.changed": "¡Establecí las variantes del pico!"
   },
+  "config.preset": {
+    "description": "Establece el preajuste del bot. Use \"none\" para eliminar un cosmético.",
+    "usage.outfit.name": "ID de atuendo",
+    "usage.outfit.description": "La identificación del atuendo.",
+    "usage.backpack.name": "ID de mochila",
+    "usage.backpack.description": "La identificación de la mochila.",
+    "usage.pickaxe.name": "ID de pico",
+    "usage.pickaxe.description": "La identificación del pickaxe.",
+    "usage.emote.name": "ID de emote",
+    "usage.emote.description": "La identificación del emote.",
+    "usage.shoes.name": "ID de zapatos",
+    "usage.shoes.description": "La identificación de los zapatos."
+  },
+  "run.preset": {
+    "msg.preset_changed": "¡Establezca el preajuste!"
+  },
   "config.shoes": {
     "description": "Establece los zapatos del bot.",
-    "usage.query.name": "Nombre o ID de los zapatos",
-    "usage.query.description": "El nombre o ID de los zapatos a establecer."
+    "usage.outfit.name": "ID de atuendo",
+    "usage.outfit.description": "La identificación de los zapatos a establecer."
   },
   "run.shoes": {
     "msg.shoes_not_found": "Zapatos {query} no encontrados!",

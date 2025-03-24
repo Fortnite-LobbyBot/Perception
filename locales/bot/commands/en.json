@@ -226,10 +226,26 @@
 		"msg.variants_select": "Send the variant you want to select for {type}",
 		"msg.changed": "Set the pickaxe variants!"
 	},
+	"config.preset": {
+		"description": "Sets the bot's preset. Use \"none\" to remove a cosmetic.",
+		"usage.outfit.name": "Outfit ID",
+		"usage.outfit.description": "The ID of the outfit.",
+		"usage.backpack.name": "Backpack ID",
+		"usage.backpack.description": "The ID of the backpack.",
+		"usage.pickaxe.name": "Pickaxe ID",
+		"usage.pickaxe.description": "The ID of the pickaxe.",
+		"usage.emote.name": "Emote ID",
+		"usage.emote.description": "The ID of the emote.",
+		"usage.shoes.name": "Shoes ID",
+		"usage.shoes.description": "The ID of the shoes."
+	},
+	"run.preset": {
+		"msg.preset_changed": "Set the preset!"
+	},
 	"config.shoes": {
 		"description": "Sets the bot's shoes.",
-		"usage.query.name": "Shoes name or ID",
-		"usage.query.description": "The name or ID of the shoes to be set."
+		"usage.outfit.name": "Outfit ID",
+		"usage.outfit.description": "The ID of the shoes to be set."
 	},
 	"run.shoes": {
 		"msg.shoes_not_found": "Shoes {query} not found!",
@@ -559,7 +575,7 @@
 	"config.kick": {
 		"description": "Kick's a player from the party.",
 		"usage.query.name": "Member name or ID",
-		"usage.query.description": "The name or ID of the member of the party to expel."
+		"usage.query.description": "The name or ID of the member of the party to kick."
 	},
 	"run.kick": {
 		"msg.multiple_friends_found": "Found multiple friends:",
