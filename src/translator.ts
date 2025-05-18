@@ -1,5 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { Locales } from '@fnlb-project/shared/types';
+import { PromiseUtil } from '@fnlb-project/shared/util';
 import translator from 'google-translate-api-x';
 import type { TranslatorSettings } from './types/TranslatorSettings';
 
@@ -28,7 +29,7 @@ const translatorError = (text: string): void => {
 	throw new Error(` ${text}`);
 };
 
-const wait = (time: number) => new Promise((res) => setTimeout(res, time));
+const wait = PromiseUtil.wait;
 
 const getArrayKey = (array: string | string[]) => (Array.isArray(array) ? array[0]! : array);
 

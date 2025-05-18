@@ -8,7 +8,7 @@
 		"errors.only_for_whitelist": "This command is only available for users on the whitelist of the bot."
 	},
 	"config.all_items": {
-		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"description": "Shows all the cosmetics of the game, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
@@ -16,7 +16,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.all_items": {
 		"msg.no_items": "Unable to fetch the items.",
@@ -47,10 +51,13 @@
 	"config.banner": {
 		"description": "Sets the bot's banner.",
 		"usage.query.name": "Banner name or ID",
-		"usage.query.description": "The name or ID of the banner to set."
+		"usage.query.description": "The name or ID of the banner to set.",
+		"usage.color.name": "Color name or ID",
+		"usage.color.description": "The name or ID of the color to set."
 	},
 	"run.banner": {
 		"msg.banner_not_found": "Banner {item} not found!",
+		"msg.color_not_found": "Color {item} not found!",
 		"msg.banner_changed": "Set the banner to {name}! ({id})"
 	},
 	"config.clear_backpack": {
@@ -99,6 +106,14 @@
 	"run.cosmetic": {
 		"msg.cosmetic_not_found": "Cosmetic {query} not found!",
 		"msg.cosmetic_changed": "Set the {type} to {name}! ({id})"
+	},
+	"config.cosmetic_info": {
+		"description": "Shows info about a cosmetic.",
+		"usage.query.name": "Cosmetic name or ID",
+		"usage.query.description": "The name or ID of the cosmetic to set."
+	},
+	"run.cosmetic_info": {
+		"msg.cosmetic_not_found": "Cosmetic {query} not found!"
 	},
 	"config.emoji": {
 		"description": "Sets the bot's emoji.",
@@ -149,7 +164,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.new_items": {
 		"msg.type_error": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
@@ -207,6 +226,22 @@
 		"msg.variants_select": "Send the variant you want to select for {type}",
 		"msg.changed": "Set the pickaxe variants!"
 	},
+	"config.preset": {
+		"description": "Sets the bot's preset. Use \"none\" to remove a cosmetic.",
+		"usage.outfit.name": "Outfit ID",
+		"usage.outfit.description": "The ID of the outfit.",
+		"usage.backpack.name": "Backpack ID",
+		"usage.backpack.description": "The ID of the backpack.",
+		"usage.pickaxe.name": "Pickaxe ID",
+		"usage.pickaxe.description": "The ID of the pickaxe.",
+		"usage.emote.name": "Emote ID",
+		"usage.emote.description": "The ID of the emote.",
+		"usage.shoes.name": "Shoes ID",
+		"usage.shoes.description": "The ID of the shoes."
+	},
+	"run.preset": {
+		"msg.preset_changed": "Set the preset!"
+	},
 	"config.shoes": {
 		"description": "Sets the bot's shoes.",
 		"usage.query.name": "Shoes name or ID",
@@ -216,8 +251,18 @@
 		"msg.shoes_not_found": "Shoes {query} not found!",
 		"msg.shoes_changed": "Set the shoes to {name}! ({id})"
 	},
+	"config.shoe_variants": {
+		"description": "Sets the shoe variants."
+	},
+	"run.shoe_variants": {
+		"msg.shoes_not_found": "The bot does not have shoes!",
+		"msg.invalid_shoes": "Invalid shoes!",
+		"msg.variants_not_found": "This shoes does not have variants!",
+		"msg.variants_select": "Send the variant you want to select for {type}",
+		"msg.changed": "Set the shoe variants!"
+	},
 	"config.shop_items": {
-		"description": "Shows the latest cosmetics added to the game, an optional filter can be added and you can stop with the \"stop\" command.",
+		"description": "Shows the cosmetics from the item shop, an optional filter can be added and you can stop with the \"stop\" command.",
 		"usage.filter.name": "Filter",
 		"usage.filter.options.outfits": "Outfits",
 		"usage.filter.options.backpacks": "Backpacks",
@@ -225,7 +270,11 @@
 		"usage.filter.options.emotes": "Emotes",
 		"usage.filter.options.pickaxes": "Pickaxes",
 		"usage.filter.options.shoes": "Shoes",
-		"usage.filter.description": "The filter to be set by showing the items."
+		"usage.filter.description": "The filter to be set by showing the items.",
+		"usage.random_order.name": "Random order",
+		"usage.random_order.description": "Use a random order instead of ordering by newest first.",
+		"usage.random_order.options.yes": "Yes",
+		"usage.random_order.options.no": "No"
 	},
 	"run.shop_items": {
 		"msg.invalid_type": "If you want an filter, make sure is valid, only outfits, backpacks, emojis, emotes, pickaxes or shoes.",
@@ -243,6 +292,13 @@
 		"msg.stopped_mimic": "Stopped mimic!",
 		"msg.stopped_emote": "Stopped emote!",
 		"msg.nothing_to_stop": "Nothing to stop!"
+	},
+	"config.accept_all_friends": {
+		"description": "Accepts all the pending friends of the bot."
+	},
+	"run.accept_all_friends": {
+		"msg.accepting_friends": "Accepting all the pending friends!",
+		"msg.accepted_friends": "Accepted {count} friends!"
 	},
 	"config.accept_friend": {
 		"description": "Accept a friend request.",
@@ -268,11 +324,21 @@
 		"msg.error": "Cannot add the user!",
 		"msg.request_sent": "Friend request sent to {name}"
 	},
+	"config.block_user": {
+		"description": "Blocks a user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID to block."
+	},
+	"run.block_user": {
+		"msg.multiple_users_found": "Found multiple users:",
+		"msg.user_not_found": "User {query} not found!",
+		"msg.error": "Cannot block {name}!",
+		"msg.user_blocked": "User {name} blocked successfully!"
+	},
 	"config.decline_all_friends": {
 		"description": "Declines all the pending friends of the bot."
 	},
 	"run.decline_all_friends": {
-		"msg.unauthorized": "This command can only be executed by bot owners!",
 		"msg.declining_friends": "Declining all the pending friends!",
 		"msg.declined_friends": "Declined {count} friends!"
 	},
@@ -333,10 +399,9 @@
 		"msg.member_promoted": "Promoted {name}!"
 	},
 	"config.remove_all_friends": {
-		"description": "Removes all the friends of the bot."
+		"description": "Removes all the friends of the bot. Admins and owners are excluded."
 	},
 	"run.remove_all_friends": {
-		"msg.unauthorized": "This command can only be executed by bot owners!",
 		"msg.removing_friends": "Removing all friends!",
 		"msg.removed_friends": "Removed {count} friends!"
 	},
@@ -350,6 +415,33 @@
 		"msg.friend_not_found": "Friend {query} not found!",
 		"msg.error": "Cannot remove {name}!",
 		"msg.friend_removed": "Friend {name} removed successfully!"
+	},
+	"config.unblock_all_users": {
+		"description": "Unblocks all the blocked users of the bot."
+	},
+	"run.unblock_all_users": {
+		"msg.removing_friends": "Unblocking all blocked users!",
+		"msg.removed_friends": "Unblocked {count} blocked users!"
+	},
+	"config.unblock_user": {
+		"description": "Unblocks a user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID to unblock."
+	},
+	"run.unblock_user": {
+		"msg.multiple_users_found": "Found multiple users:",
+		"msg.user_not_found": "User {query} not found!",
+		"msg.error": "Cannot unblock {name}!",
+		"msg.user_unblocked": "User {name} unblocked successfully!"
+	},
+	"config.user_info": {
+		"description": "Shows the information of a specified user.",
+		"usage.query.name": "Username or ID",
+		"usage.query.description": "The user's name or ID."
+	},
+	"run.user_info": {
+		"msg.multiple_users_found": "Found multiple users:",
+		"msg.user_not_found": "User {query} not found!"
 	},
 	"run.eval": {
 		"msg.unauthorized_error": "Only tnfAngel have access to this command."
@@ -379,6 +471,18 @@
 	},
 	"run.prev": {
 		"msg.not_found": "A previous command has not been executed!"
+	},
+	"config.restart_bot": {
+		"description": "Restarts the current bot."
+	},
+	"run.restart_bot": {
+		"msg.success": "The bot is restarting now!"
+	},
+	"config.restart_shard": {
+		"description": "Restarts the current shard."
+	},
+	"run.restart_shard": {
+		"msg.success": "The shard is restarting now!"
 	},
 	"config.send": {
 		"description": "Sends a command to a specify bot.",
@@ -435,6 +539,14 @@
 	"run.send_shard": {
 		"msg.sending_command": "Sending command to all bots in my shard..."
 	},
+	"config.set_status": {
+		"description": "Sets the bot status",
+		"usage.status.name": "Status",
+		"usage.status.description": "The new status of the bot."
+	},
+	"run.set_status": {
+		"msg.success": "Status set successfully!"
+	},
 	"config.whisper": {
 		"description": "Sends a private message to a friend.",
 		"usage.query.name": "Friend's name or ID",
@@ -455,15 +567,11 @@
 	"run.bp_level": {
 		"msg.bp_level_set": "Set battle pass level to {level}!"
 	},
-	"config.chat_ban": {
-		"description": "Chat bans a party member.",
-		"usage.query.name": "Member name or ID",
-		"usage.query.description": "The name or ID of the member of the party to ban."
+	"config.clear_custom_key": {
+		"description": "Clears the custom matchmaking key."
 	},
-	"run.chat_ban": {
-		"msg.multiple_friends_found": "Found multiple friends:",
-		"msg.member_not_found": "Member {query} not found!",
-		"msg.success": "Successfully chat-banned {name}"
+	"run.clear_custom_key": {
+		"msg.success": "Cleared the custom matchmaking key!"
 	},
 	"config.crowns": {
 		"description": "Sets the bot crowns.",
@@ -493,7 +601,7 @@
 	"config.kick": {
 		"description": "Kick's a player from the party.",
 		"usage.query.name": "Member name or ID",
-		"usage.query.description": "The name or ID of the member of the party to expel."
+		"usage.query.description": "The name or ID of the member of the party to kick."
 	},
 	"run.kick": {
 		"msg.multiple_friends_found": "Found multiple friends:",
@@ -566,6 +674,20 @@
 	"run.ready": {
 		"msg.warning": "WARNING: If you're trying to init matchmaking, don't use this command! Just hit ready yourself and I'll hit ready automatically.",
 		"msg.success": "Ready!"
+	},
+	"config.say": {
+		"description": "Send a message to the party chat.",
+		"usage.message.name": "Message",
+		"usage.message.description": "The message to be sent to the party."
+	},
+	"run.say": {},
+	"config.set_custom_key": {
+		"description": "Sets a custom matchmaking key.",
+		"usage.key.name": "Custom Key",
+		"usage.key.description": "The custom matchmaking key to set."
+	},
+	"run.set_custom_key": {
+		"msg.success": "Set custom matchmaking key!"
 	},
 	"config.show": {
 		"description": "Shows a hidden player from the party or shows you if you do not specify arguments.",

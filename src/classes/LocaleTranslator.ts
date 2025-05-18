@@ -3,7 +3,7 @@ import type { ModuleObject } from '../types/LocaleObject';
 import type { LocaleOptions } from '../types/LocaleOptions';
 
 export class LocaleTranslator {
-	private moduleObject: ModuleObject | undefined;
+	private readonly moduleObject: ModuleObject | undefined;
 	public locale: Locales;
 	public options: LocaleOptions;
 
@@ -15,20 +15,23 @@ export class LocaleTranslator {
 
 	public translate(key: string, variables?: Record<string, string>) {
 		if (!this.moduleObject) {
-			console.error(`TRANSLATOR_ERROR: LOCALE "${this.locale}" MODULE "${this.options.module}" NOT LOADED.`);
+			const notLoadedError = `ERR_FNLB_TRANSLATOR_NOT_LOADED: LOCALE "${this.locale}" MODULE "${this.options.module}" NOT LOADED.`;
 
-			return `TRANSLATOR_ERROR: LOCALE "${this.locale}" MODULE "${this.options.module}" NOT LOADED. KEY: "${key}"`;
+			console.error(notLoadedError);
+
+			return notLoadedError;
 		}
 
 		const result = this.moduleObject[key];
 
-		if (!result)
-			console.error(`TRANSLATION_ERROR: LOCALE "${this.locale}" KEY "${key}" MODULE "${this.options.module}"`);
+		const notFoundError = `ERR_FNLB_TRANSLATION_NOT_FOUND: LOCALE "${this.locale}" MODULE "${this.options.module} KEY "${key}" NOT FOUND."`;
+
+		if (!result) console.error(notFoundError);
 
 		return (
 			result?.replace(/{(.*?)}/gi, (_match, value) => {
 				return variables?.[value] ?? '';
-			}) ?? `TRANSLATION_ERROR: LOCALE "${this.locale}" KEY "${key}" MODULE "${this.options.module}"`
+			}) ?? notFoundError
 		);
 	}
 }
