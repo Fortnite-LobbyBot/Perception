@@ -244,8 +244,8 @@
   },
   "config.shoes": {
     "description": "Establece los zapatos del bot.",
-    "usage.outfit.name": "ID de atuendo",
-    "usage.outfit.description": "La identificación de los zapatos a establecer."
+    "usage.query.name": "Nombre o identificación de zapatos",
+    "usage.query.description": "El nombre o identificación de los zapatos a establecer."
   },
   "run.shoes": {
     "msg.shoes_not_found": "Zapatos {query} no encontrados!",
@@ -472,6 +472,18 @@
   "run.prev": {
     "msg.not_found": "¡No se ha ejecutado un comando anterior!"
   },
+  "config.restart_bot": {
+    "description": "Reinicia el bot actual."
+  },
+  "run.restart_bot": {
+    "msg.success": "¡El bot está reiniciando ahora!"
+  },
+  "config.restart_shard": {
+    "description": "Reinicia el fragmento actual."
+  },
+  "run.restart_shard": {
+    "msg.success": "¡El fragmento está reiniciando ahora!"
+  },
   "config.send": {
     "description": "Envía un comando a un bot específico.",
     "usage.bot.name": "ID del bot",
@@ -527,6 +539,14 @@
   "run.send_shard": {
     "msg.sending_command": "Enviando comando a todos los bots en mi fragmento..."
   },
+  "config.set_status": {
+    "description": "Establece el estado del bot",
+    "usage.status.name": "Estado",
+    "usage.status.description": "El nuevo estado del bot."
+  },
+  "run.set_status": {
+    "msg.success": "Estado establecido con éxito!"
+  },
   "config.whisper": {
     "description": "Envía un mensaje privado a un amigo.",
     "usage.query.name": "Nombre o ID de un amigo",
@@ -546,6 +566,12 @@
   },
   "run.bp_level": {
     "msg.bp_level_set": "¡Establece el nivel del pase de batalla en {level}!"
+  },
+  "config.clear_custom_key": {
+    "description": "Borra la tecla de emparejamiento personalizado."
+  },
+  "run.clear_custom_key": {
+    "msg.success": "¡Borrar la tecla de emparejamiento personalizado!"
   },
   "config.crowns": {
     "description": "Establece las coronas del bot.",
@@ -655,6 +681,14 @@
     "usage.message.description": "El mensaje que se enviará a la fiesta."
   },
   "run.say": {},
+  "config.set_custom_key": {
+    "description": "Establece una tecla de emparejamiento personalizado.",
+    "usage.key.name": "Clave personalizada",
+    "usage.key.description": "La tecla de emparejamiento personalizado para configurar."
+  },
+  "run.set_custom_key": {
+    "msg.success": "¡Establezca la tecla de emparejamiento personalizado!"
+  },
   "config.show": {
     "description": "Muestra un jugador oculto del grupo o te lo muestra si no especificas argumentos.",
     "usage.query.name": "Nombre o ID del miembro",
